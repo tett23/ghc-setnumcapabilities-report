@@ -1,0 +1,10 @@
+repro i=179 ok=174 fail=0 hang=5
+repro-debug i=51 ok=49 fail=0 hang=2
+font-fixed i=100 ok=100 fail=0 hang=0
+done
+race-fixed i=300 ok=300 fail=0 hang=0
+done
+race-orig-debug i=38 ok=36 fail=0 hang=2
+kept pid 4197
+race-orig i=87 ok=87 fail=0 hang=0
+kept pid 7138

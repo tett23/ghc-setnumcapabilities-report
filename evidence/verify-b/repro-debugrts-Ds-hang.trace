@@ -1,0 +1,364 @@
+ff4212023420: created capset 0 of type 2
+ff4212023420: created capset 1 of type 3
+ff4212023420: cap 0: initialised
+ff4212023420: assigned cap 0 to capset 0
+ff4212023420: assigned cap 0 to capset 1
+ff4212023420: allocated 1 more capabilities
+ff4212023420: new task (taskCount: 1)
+ff4212023420: returning; I want capability 0
+ff4212023420: resuming capability 0
+ff4212023420: cap 0: created thread 1[""]
+ff4212023420: new bound thread (1)
+ff4212023420: cap 0: schedule()
+ff4212023420: cap 0: running thread 1[""] (ThreadRunGHC)
+ff4212023420: cap 0: thread 1[""] stopped (stack overflow, size 108)
+ff4212023420: cap 0: allocating new stack chunk of size 32768 bytes
+ff4212023420: cap 0: running thread 1[""] (ThreadRunGHC)
+ff4212023420: cap 0: created thread 2[""]
+ff4212023420: cap 0: thread 2 has label IOManager on cap 0
+ff4212023420: cap 0: thread 1[""] stopped (yielding)
+ff4212023420: giving up capability 0
+ff4212023420: starting new worker on capability 0
+ff4212023420: new task (taskCount: 2)
+ff4212023420: new worker task (taskCount: 2)
+ff421101a180: cap 0: schedule()
+ff421101a180: cap 0: running thread 2["IOManager on cap 0"] (ThreadRunGHC)
+ff421101a180: cap 0: thread 2["IOManager on cap 0"] stopped (yielding)
+ff421101a180: giving up capability 0
+ff421101a180: passing capability 0 to bound task 0xff4212023420
+ff4212023420: woken up on capability 0
+ff4212023420: resuming capability 0
+ff4212023420: cap 0: running thread 1[""] (ThreadRunGHC)
+ff4212023420: cap 0: created thread 3[""]
+ff4212023420: cap 0: thread 3 has label TimerManager
+ff4212023420: cap 0: thread 1[""] stopped (finished)
+ff4212023420: bound thread (1) finished
+ff4212023420: passing capability 0 to worker 0xff421101a180
+ff4212023420: task exiting
+ff421101a180: woken up on capability 0
+ff421101a180: resuming capability 0
+ff421101a180: cap 0: running thread 2["IOManager on cap 0"] (ThreadRunGHC)
+ff421101a180: cap 0: thread 2["IOManager on cap 0"] stopped (suspended while making a foreign call)
+ff421101a180: starting new worker on capability 0
+ff421101a180: new task (taskCount: 3)
+ff421101a180: new worker task (taskCount: 3)
+ff420bfff180: cap 0: schedule()
+ff420bfff180: cap 0: running thread 3["TimerManager"] (ThreadRunGHC)
+ff420bfff180: cap 0: thread 3["TimerManager"] stopped (suspended while making a foreign call)
+ff420bfff180: starting new worker on capability 0
+ff420bfff180: new task (taskCount: 4)
+ff420bfff180: new worker task (taskCount: 4)
+ff420b7ef180: cap 0: schedule()
+ff420b7ef180: giving up capability 0
+ff420b7ef180: freeing capability 0
+ff4212023420: returning; I want capability 0
+ff4212023420: resuming capability 0
+ff4212023420: cap 0: created thread 4[""]
+ff4212023420: new bound thread (4)
+ff4212023420: cap 0: schedule()
+ff4212023420: cap 0: running thread 4[""] (ThreadRunGHC)
+ff4212023420: cap 0: thread 4[""] stopped (yielding)
+ff4212023420: cap 0: running thread 4[""] (ThreadRunGHC)
+ff4212023420: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ff4212023420: freeing capability 0
+ff4212023420: changing the number of Capabilities from 1 to 2
+ff4212023420: returning; I want capability 0
+ff4212023420: resuming capability 0
+ff4212023420: grabbing all the capabilities (0/1)
+ff4212023420: cap 1: initialised
+ff4212023420: assigned cap 1 to capset 0
+ff4212023420: assigned cap 1 to capset 1
+ff4212023420: allocated 1 more capabilities
+ff4212023420: cap 0: created thread 5[""]
+ff4212023420: new bound thread (5)
+ff4212023420: cap 0: schedule()
+ff4212023420: cap 0: running thread 5[""] (ThreadRunGHC)
+ff4212023420: cap 0: thread 5[""] stopped (stack overflow, size 108)
+ff4212023420: cap 0: allocating new stack chunk of size 32768 bytes
+ff4212023420: cap 0: running thread 5[""] (ThreadRunGHC)
+ff4212023420: cap 0: created thread 6[""]
+ff4212023420: cap 0: thread 6[""] migrating to cap 1
+ff4212023420: cap 0: waking up thread 6[""] on cap 1
+ff4212023420: starting new worker on capability 1
+ff4212023420: new task (taskCount: 5)
+ff4212023420: new worker task (taskCount: 5)
+ff4212023420: cap 0: message: try wakeup thread 6 on cap 1
+ff4212023420: cap 0: thread 6 has label IOManager on cap 1
+ff4212023420: cap 0: thread 5[""] stopped (finished)
+ff4212023420: bound thread (5) finished
+ff4212023420: freeing capability 0
+ff4212023420: task exiting
+ff4212023420: returning; I want capability 0
+ff4212023420: resuming capability 0
+ff4212023420: cap 0: running thread 4[""] (ThreadRunGHC)
+ff4212023420: cap 0: created thread 7[""]
+ff4212023420: cap 0: created thread 8[""]
+ff4212023420: cap 0: thread 4[""] stopped (blocked on an MVar)
+	thread    4 @ 0x4200406d20 is blocked on an MVar @ 0x420040e1a0 (TSO_DIRTY)
+ff4212023420: giving up capability 0
+ff4212023420: passing capability 0 to worker 0xff420b7ef180
+ff420afdf180: cap 1: schedule()
+ff420afdf180: cap 1: message: try wakeup thread 6
+ff420afdf180: cap 1: waking up thread 6["IOManager on cap 1"] on cap 1
+ff420afdf180: cap 1: running thread 6["IOManager on cap 1"] (ThreadRunGHC)
+ff420afdf180: cap 1: thread 6["IOManager on cap 1"] stopped (yielding)
+ff420afdf180: cap 1: running thread 6["IOManager on cap 1"] (ThreadRunGHC)
+ff420afdf180: cap 1: thread 6["IOManager on cap 1"] stopped (suspended while making a foreign call)
+ff420afdf180: starting new worker on capability 1
+ff420afdf180: new task (taskCount: 6)
+ff420afdf180: new worker task (taskCount: 6)
+ff420a7cf180: cap 1: schedule()
+ff420a7cf180: giving up capability 1
+ff420a7cf180: freeing capability 1
+ff420b7ef180: woken up on capability 0
+ff420b7ef180: resuming capability 0
+ff420b7ef180: cap 0: running thread 7[""] (ThreadRunGHC)
+ff420b7ef180: cap 0: thread 7[""] stopped (yielding)
+ff420b7ef180: cap 0: 2 threads, 0 sparks, and 1 free capabilities, sharing...
+ff420b7ef180: cap 0: thread 8[""] migrating to cap 1
+ff420b7ef180: passing capability 1 to worker 0xff420a7cf180
+ff420b7ef180: cap 0: running thread 7[""] (ThreadRunGHC)
+ff420b7ef180: cap 0: thread 7[""] stopped (suspended while making a foreign call)
+ff420b7ef180: starting new worker on capability 0
+ff420a7cf180: woken up on capability 1
+ff420a7cf180: resuming capability 1
+ff420b7ef180: new task (taskCount: 7)
+ff420a7cf180: cap 1: running thread 8[""] (ThreadRunGHC)
+ff420a7cf180: cap 1: thread 8[""] stopped (suspended while making a foreign call)
+ff420a7cf180: starting new worker on capability 1
+ff420a7cf180: new task (taskCount: 8)
+ff420b7ef180: new worker task (taskCount: 8)
+ff420b7ef180: changing the number of Capabilities from 2 to 8
+ff420b7ef180: returning; I want capability 1
+ff420a7cf180: new worker task (taskCount: 8)
+ff420a7cf180: changing the number of Capabilities from 2 to 8
+ff420a7cf180: returning; I want capability 1
+ff4209fbf180: cap 0: schedule()
+ff4209fbf180: giving up capability 0
+ff4209fbf180: freeing capability 0
+ff42097af180: cap 1: schedule()
+ff42097af180: giving up capability 1
+ff42097af180: passing capability 1 to worker 0xff420a7cf180
+ff420a7cf180: resuming capability 1
+ff420a7cf180: grabbing all the capabilities (0/2)
+ff420a7cf180: returning; I want capability 0
+ff420a7cf180: resuming capability 0
+ff420a7cf180: grabbing all the capabilities (1/2)
+ff420a7cf180: cap 2: initialised
+ff420a7cf180: assigned cap 2 to capset 0
+ff420a7cf180: assigned cap 2 to capset 1
+ff420a7cf180: cap 3: initialised
+ff420a7cf180: assigned cap 3 to capset 0
+ff420a7cf180: assigned cap 3 to capset 1
+ff420a7cf180: cap 4: initialised
+ff420a7cf180: assigned cap 4 to capset 0
+ff420a7cf180: assigned cap 4 to capset 1
+ff420a7cf180: cap 5: initialised
+ff420a7cf180: assigned cap 5 to capset 0
+ff420a7cf180: assigned cap 5 to capset 1
+ff420a7cf180: cap 6: initialised
+ff420a7cf180: assigned cap 6 to capset 0
+ff420a7cf180: assigned cap 6 to capset 1
+ff420a7cf180: cap 7: initialised
+ff420a7cf180: assigned cap 7 to capset 0
+ff420a7cf180: assigned cap 7 to capset 1
+ff420a7cf180: allocated 6 more capabilities
+ff420a7cf180: freeing capability 0
+ff420a7cf180: cap 1: created thread 9[""]
+ff420a7cf180: new bound thread (9)
+ff420a7cf180: cap 1: schedule()
+ff420a7cf180: giving up capability 1
+ff420a7cf180: passing capability 1 to worker 0xff420b7ef180
+ff420b7ef180: resuming capability 1
+ff420b7ef180: grabbing all the capabilities (0/8)
+ff420b7ef180: returning; I want capability 0
+ff420b7ef180: resuming capability 0
+ff420b7ef180: grabbing all the capabilities (1/8)
+ff420b7ef180: grabbing all the capabilities (2/8)
+ff420b7ef180: returning; I want capability 2
+ff420b7ef180: resuming capability 2
+ff420b7ef180: grabbing all the capabilities (3/8)
+ff420b7ef180: returning; I want capability 3
+ff420b7ef180: resuming capability 3
+ff420b7ef180: grabbing all the capabilities (4/8)
+ff420b7ef180: returning; I want capability 4
+ff420b7ef180: resuming capability 4
+ff420b7ef180: grabbing all the capabilities (5/8)
+ff420b7ef180: returning; I want capability 5
+ff420b7ef180: resuming capability 5
+ff420b7ef180: grabbing all the capabilities (6/8)
+ff420b7ef180: returning; I want capability 6
+ff420b7ef180: resuming capability 6
+ff420b7ef180: grabbing all the capabilities (7/8)
+ff420b7ef180: returning; I want capability 7
+ff420b7ef180: resuming capability 7
+ff420b7ef180: freeing capability 0
+ff420b7ef180: cap 1: created thread 10[""]
+ff420b7ef180: new bound thread (10)
+ff420b7ef180: cap 1: schedule()
+ff420b7ef180: cap 1: 2 threads, 0 sparks, and 1 free capabilities, sharing...
+ff420b7ef180: cap 1: thread 9[""] migrating to cap 0
+ff420b7ef180: passing capability 0 to bound task 0xff420a7cf180
+ff420b7ef180: cap 1: running thread 10[""] (ThreadRunGHC)
+ff420b7ef180: cap 1: thread 10[""] stopped (stack overflow, size 108)
+ff420b7ef180: cap 1: allocating new stack chunk of size 32768 bytes
+ff420b7ef180: cap 1: running thread 10[""] (ThreadRunGHC)
+ff420b7ef180: cap 1: created thread 11[""]
+ff420b7ef180: cap 1: thread 11[""] migrating to cap 2
+ff420b7ef180: cap 1: waking up thread 11[""] on cap 2
+ff420b7ef180: cap 1: message: try wakeup thread 11 on cap 2
+ff420b7ef180: cap 1: thread 11 has label IOManager on cap 2
+ff420b7ef180: cap 1: created thread 12[""]
+ff420b7ef180: cap 1: thread 12[""] migrating to cap 3
+ff420b7ef180: cap 1: waking up thread 12[""] on cap 3
+ff420b7ef180: cap 1: message: try wakeup thread 12 on cap 3
+ff420b7ef180: cap 1: thread 12 has label IOManager on cap 3
+ff420b7ef180: cap 1: created thread 13[""]
+ff420b7ef180: cap 1: thread 13[""] migrating to cap 4
+ff420b7ef180: cap 1: waking up thread 13[""] on cap 4
+ff420b7ef180: cap 1: message: try wakeup thread 13 on cap 4
+ff420b7ef180: cap 1: thread 13 has label IOManager on cap 4
+ff420b7ef180: cap 1: created thread 14[""]
+ff420b7ef180: cap 1: thread 14[""] migrating to cap 5
+ff420b7ef180: cap 1: waking up thread 14[""] on cap 5
+ff420b7ef180: cap 1: message: try wakeup thread 14 on cap 5
+ff420b7ef180: cap 1: thread 14 has label IOManager on cap 5
+ff420b7ef180: cap 1: created thread 15[""]
+ff420b7ef180: cap 1: thread 15[""] migrating to cap 6
+ff420b7ef180: cap 1: waking up thread 15[""] on cap 6
+ff420b7ef180: cap 1: message: try wakeup thread 15 on cap 6
+ff420b7ef180: cap 1: thread 15 has label IOManager on cap 6
+ff420b7ef180: cap 1: created thread 16[""]
+ff420b7ef180: cap 1: thread 16[""] migrating to cap 7
+ff420b7ef180: cap 1: waking up thread 16[""] on cap 7
+ff420b7ef180: cap 1: message: try wakeup thread 16 on cap 7
+ff420b7ef180: cap 1: thread 16 has label IOManager on cap 7
+ff420b7ef180: cap 1: thread 10[""] stopped (finished)
+ff420b7ef180: bound thread (10) finished
+ff420b7ef180: freeing capability 1
+ff420b7ef180: task exiting
+ff420b7ef180: returning; I want capability 0
+ff420b7ef180: resuming capability 0
+ff420b7ef180: cap 0: running thread 7[""] (ThreadRunGHC)
+ff420b7ef180: cap 0: created thread 17[""]
+ff420b7ef180: cap 0: created thread 18[""]
+ff420b7ef180: cap 0: thread 18[""] migrating to cap 1
+ff420b7ef180: cap 0: waking up thread 18[""] on cap 1
+ff420b7ef180: passing capability 1 to worker 0xff42097af180
+ff420b7ef180: cap 0: message: try wakeup thread 18 on cap 1
+ff420b7ef180: cap 0: created thread 19[""]
+ff420b7ef180: cap 0: thread 19[""] migrating to cap 2
+ff420b7ef180: cap 0: waking up thread 19[""] on cap 2
+ff420b7ef180: cap 0: message: try wakeup thread 19 on cap 2
+ff420b7ef180: cap 0: created thread 20[""]
+ff420b7ef180: cap 0: thread 20[""] migrating to cap 3
+ff420b7ef180: cap 0: waking up thread 20[""] on cap 3
+ff420b7ef180: cap 0: message: try wakeup thread 20 on cap 3
+ff420b7ef180: cap 0: created thread 21[""]
+ff420b7ef180: cap 0: thread 21[""] migrating to cap 4
+ff420b7ef180: cap 0: waking up thread 21[""] on cap 4
+ff420b7ef180: cap 0: message: try wakeup thread 21 on cap 4
+ff420b7ef180: cap 0: created thread 22[""]
+ff420b7ef180: cap 0: thread 22[""] migrating to cap 5
+ff420b7ef180: cap 0: waking up thread 22[""] on cap 5
+ff420b7ef180: cap 0: message: try wakeup thread 22 on cap 5
+ff420b7ef180: cap 0: created thread 23[""]
+ff420b7ef180: cap 0: thread 23[""] migrating to cap 6
+ff420b7ef180: cap 0: waking up thread 23[""] on cap 6
+ff420b7ef180: cap 0: message: try wakeup thread 23 on cap 6
+ff420b7ef180: cap 0: created thread 24[""]
+ff420b7ef180: cap 0: thread 24[""] migrating to cap 7
+ff420b7ef180: cap 0: waking up thread 24[""] on cap 7
+ff420b7ef180: cap 0: message: try wakeup thread 24 on cap 7
+ff420b7ef180: cap 0: thread 7[""] stopped (blocked on an MVar)
+	thread    7 @ 0x420040ad98 is blocked on an MVar @ 0x42004100f0 (TSO_DIRTY)
+ff420b7ef180: passing capability 1 to worker 0xff42097af180
+ff420b7ef180: giving up capability 0
+ff420b7ef180: passing capability 0 to bound task 0xff420a7cf180
+ff42097af180: woken up on capability 1
+ff42097af180: resuming capability 1
+ff42097af180: cap 1: message: try wakeup thread 18
+ff42097af180: cap 1: waking up thread 18[""] on cap 1
+ff42097af180: cap 1: running thread 18[""] (ThreadRunGHC)
+ff42097af180: cap 1: thread 18[""] stopped (finished)
+ff42097af180: giving up capability 1
+ff42097af180: freeing capability 1
+ff420a7cf180: woken up on capability 0
+ff420a7cf180: resuming capability 0
+ff420a7cf180: cap 0: running thread 9[""] (ThreadRunGHC)
+ff420a7cf180: cap 0: thread 9[""] stopped (finished)
+ff420a7cf180: bound thread (9) finished
+ff420a7cf180: passing capability 0 to worker 0xff420b7ef180
+ff420a7cf180: task exiting
+ff420a7cf180: returning; I want capability 1
+ff420a7cf180: resuming capability 1
+ff420a7cf180: cap 1: running thread 8[""] (ThreadRunGHC)
+ff420a7cf180: cap 1: created thread 25[""]
+ff420a7cf180: cap 1: thread 25[""] migrating to cap 0
+ff420a7cf180: cap 1: waking up thread 25[""] on cap 0
+ff420a7cf180: passing capability 0 to worker 0xff420b7ef180
+ff420a7cf180: cap 1: message: try wakeup thread 25 on cap 0
+ff420a7cf180: cap 1: created thread 26[""]
+ff420a7cf180: cap 1: created thread 27[""]
+ff420a7cf180: cap 1: thread 27[""] migrating to cap 2
+ff420a7cf180: cap 1: waking up thread 27[""] on cap 2
+ff420a7cf180: cap 1: message: try wakeup thread 27 on cap 2
+ff420b7ef180: woken up on capability 0
+ff420b7ef180: resuming capability 0
+ff420b7ef180: cap 0: running thread 17[""] (ThreadRunGHC)
+ff420b7ef180: cap 0: waking up thread 7[""] on cap 0
+ff420b7ef180: cap 0: thread 17[""] stopped (finished)
+ff420b7ef180: cap 0: message: try wakeup thread 25
+ff420b7ef180: cap 0: waking up thread 25[""] on cap 0
+ff420b7ef180: cap 0: running thread 7[""] (ThreadRunGHC)
+ff420b7ef180: cap 0: thread 7[""] stopped (blocked on an MVar)
+	thread    7 @ 0x420040ad98 is blocked on an MVar @ 0x42004101f0 (TSO_DIRTY)
+ff420b7ef180: cap 0: running thread 25[""] (ThreadRunGHC)
+ff420b7ef180: cap 0: thread 25[""] stopped (finished)
+ff420b7ef180: giving up capability 0
+ff420b7ef180: freeing capability 0
+ff420a7cf180: cap 1: created thread 28[""]
+ff420a7cf180: cap 1: thread 28[""] migrating to cap 3
+ff420a7cf180: cap 1: waking up thread 28[""] on cap 3
+ff420a7cf180: cap 1: message: try wakeup thread 28 on cap 3
+ff420a7cf180: cap 1: created thread 29[""]
+ff420a7cf180: cap 1: thread 29[""] migrating to cap 4
+ff420a7cf180: cap 1: waking up thread 29[""] on cap 4
+ff420a7cf180: cap 1: message: try wakeup thread 29 on cap 4
+ff420a7cf180: cap 1: created thread 30[""]
+ff420a7cf180: cap 1: thread 30[""] migrating to cap 5
+ff420a7cf180: cap 1: waking up thread 30[""] on cap 5
+ff420a7cf180: cap 1: message: try wakeup thread 30 on cap 5
+ff420a7cf180: cap 1: created thread 31[""]
+ff420a7cf180: cap 1: thread 31[""] migrating to cap 6
+ff420a7cf180: cap 1: waking up thread 31[""] on cap 6
+ff420a7cf180: cap 1: message: try wakeup thread 31 on cap 6
+ff420a7cf180: cap 1: created thread 32[""]
+ff420a7cf180: cap 1: thread 32[""] migrating to cap 7
+ff420a7cf180: cap 1: waking up thread 32[""] on cap 7
+ff420a7cf180: cap 1: message: try wakeup thread 32 on cap 7
+ff420a7cf180: cap 1: thread 8[""] stopped (blocked on an MVar)
+	thread    8 @ 0x420040f378 is blocked on an MVar @ 0x4200917338 (TSO_DIRTY)
+ff420a7cf180: cap 1: running thread 26[""] (ThreadRunGHC)
+ff420a7cf180: cap 1: waking up thread 8[""] on cap 1
+ff420a7cf180: cap 1: thread 26[""] stopped (finished)
+ff420a7cf180: cap 1: running thread 8[""] (ThreadRunGHC)
+ff420a7cf180: cap 1: thread 8[""] stopped (blocked on an MVar)
+	thread    8 @ 0x420040f378 is blocked on an MVar @ 0x4200917368 (TSO_DIRTY)
+ff420a7cf180: giving up capability 1
+ff420a7cf180: freeing capability 1
+ff420bfff180: returning; I want capability 0
+ff420bfff180: resuming capability 0
+ff420bfff180: cap 0: running thread 3["TimerManager"] (ThreadRunGHC)
+ff420bfff180: cap 0: thread 3["TimerManager"] stopped (suspended while making a foreign call)
+ff420bfff180: passing capability 0 to worker 0xff420b7ef180
+ff420b7ef180: woken up on capability 0
+ff420b7ef180: resuming capability 0
+ff420b7ef180: deadlocked, forcing major GC...
+ff420b7ef180: asking for cap 1 to be idle
+ff420b7ef180: cap 0: requesting parallel GC
+ff420b7ef180: returning; I want capability 1
+ff420b7ef180: resuming capability 1
+ff420b7ef180: returning; I want capability 2
+ff420afdf180: returning; I want capability 1
+ff421101a180: returning; I want capability 0

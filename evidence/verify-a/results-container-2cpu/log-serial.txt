@@ -1,0 +1,13 @@
+run 25 BUSY-TIMEOUT cpu_ticks_2s=329 last=[]
+run 38 BUSY-TIMEOUT cpu_ticks_2s=324 last=[]
+run 43 BUSY-TIMEOUT cpu_ticks_2s=324 last=[]
+run 49 SLOW-OK
+run 70 SLOW-OK
+run 83 SLOW-OK
+run 94 BUSY-TIMEOUT cpu_ticks_2s=340 last=[]
+run 100 BUSY-TIMEOUT cpu_ticks_2s=343 last=[]
+run 110 BUSY-TIMEOUT cpu_ticks_2s=342 last=[]
+run 120 SLOW-OK
+run 147 BUSY-TIMEOUT cpu_ticks_2s=338 last=[]
+run 150 BUSY-TIMEOUT cpu_ticks_2s=242 last=[]
+RESULT serial bin=caprace mode=serial rounds=3 M=4 W=4 rts=[-N1] n=200 ok=192 idle_hang=0 busy_timeout=8 other=0

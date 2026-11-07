@@ -1,0 +1,6 @@
+.DS_Store
+.claude/
+# GitLab/GitHub API dumps and copies of GHC's own docs used while drafting;
+# not needed by readers of the issue (see publish-checklist.md)
+# raw/ was removed on 2026-11-08; kept here in case it is regenerated
+raw/

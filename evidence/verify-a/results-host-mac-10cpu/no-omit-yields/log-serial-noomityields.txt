@@ -1,0 +1,23 @@
+run 1 BUSY-TIMEOUT cpu_s_3s=4 last=[]
+run 3 BUSY-TIMEOUT cpu_s_3s=5 last=[]
+run 5 BUSY-TIMEOUT cpu_s_3s=4 last=[]
+run 8 BUSY-TIMEOUT cpu_s_3s=4 last=[]
+run 11 BUSY-TIMEOUT cpu_s_3s=4 last=[]
+run 12 SLOW-OK
+run 13 BUSY-TIMEOUT cpu_s_3s=6 last=[]
+run 20 BUSY-TIMEOUT cpu_s_3s=3 last=[]
+run 25 BUSY-TIMEOUT cpu_s_3s=5 last=[]
+run 28 SLOW-OK
+run 31 BUSY-TIMEOUT cpu_s_3s=5 last=[]
+run 32 BUSY-TIMEOUT cpu_s_3s=5 last=[]
+run 35 BUSY-TIMEOUT cpu_s_3s=5 last=[]
+run 39 SLOW-OK
+run 42 BUSY-TIMEOUT cpu_s_3s=5 last=[]
+run 44 BUSY-TIMEOUT cpu_s_3s=5 last=[]
+run 49 BUSY-TIMEOUT cpu_s_3s=5 last=[]
+run 54 BUSY-TIMEOUT cpu_s_3s=5 last=[]
+run 56 BUSY-TIMEOUT cpu_s_3s=5 last=[]
+run 57 BUSY-TIMEOUT cpu_s_3s=5 last=[]
+run 58 SLOW-OK
+run 59 BUSY-TIMEOUT cpu_s_3s=5 last=[]
+RESULT(host mac 10cpu) serial-noomityields mode=serial rounds=3 M=4 W=4 rts=[-N1] n=60 ok=42 idle_hang=0 busy_timeout=18 other=0

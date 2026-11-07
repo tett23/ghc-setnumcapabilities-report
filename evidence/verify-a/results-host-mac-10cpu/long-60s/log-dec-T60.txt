@@ -1,0 +1,8 @@
+run 4 BUSY-TIMEOUT cpu_s_3s=2 last=[]
+run 10 BUSY-TIMEOUT cpu_s_3s=3 last=[]
+run 14 BUSY-TIMEOUT cpu_s_3s=3 last=[]
+run 18 BUSY-TIMEOUT cpu_s_3s=3 last=[]
+run 20 BUSY-TIMEOUT cpu_s_3s=6 last=[]
+run 24 BUSY-TIMEOUT cpu_s_3s=6 last=[]
+run 27 BUSY-TIMEOUT cpu_s_3s=3 last=[]
+RESULT(host mac 10cpu) dec-T60 mode=dec rounds=3 M=4 W=4 rts=[-N1] n=30 ok=23 idle_hang=0 busy_timeout=7 other=0

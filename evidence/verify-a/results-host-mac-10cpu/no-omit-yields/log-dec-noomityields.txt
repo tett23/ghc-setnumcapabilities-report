@@ -1,0 +1,12 @@
+run 2 BUSY-TIMEOUT cpu_s_3s=3 last=[]
+run 5 BUSY-TIMEOUT cpu_s_3s=4 last=[]
+run 14 BUSY-TIMEOUT cpu_s_3s=3 last=[]
+run 16 BUSY-TIMEOUT cpu_s_3s=3 last=[]
+run 19 BUSY-TIMEOUT cpu_s_3s=3 last=[]
+run 25 BUSY-TIMEOUT cpu_s_3s=3 last=[]
+run 26 BUSY-TIMEOUT cpu_s_3s=3 last=[]
+run 34 BUSY-TIMEOUT cpu_s_3s=5 last=[]
+run 37 BUSY-TIMEOUT cpu_s_3s=3 last=[]
+run 55 BUSY-TIMEOUT cpu_s_3s=3 last=[]
+run 56 BUSY-TIMEOUT cpu_s_3s=6 last=[]
+RESULT(host mac 10cpu) dec-noomityields mode=dec rounds=3 M=4 W=4 rts=[-N1] n=60 ok=49 idle_hang=0 busy_timeout=11 other=0

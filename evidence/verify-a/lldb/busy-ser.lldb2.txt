@@ -1,0 +1,87 @@
+(lldb) process attach --pid 7947
+Process 7947 stopped
+* thread #1, queue = 'com.apple.main-thread', stop reason = signal SIGSTOP
+       frame #0: 0x0000000191cc450c libsystem_kernel.dylib`__psynch_cvwait + 8
+libsystem_kernel.dylib`__psynch_cvwait:
+->  0x191cc450c <+8>:  b.lo   0x191cc452c               ; <+40>
+    0x191cc4510 <+12>: pacibsp 
+    0x191cc4514 <+16>: stp    x29, x30, [sp, #-0x10]!
+    0x191cc4518 <+20>: mov    x29, sp
+Target 0: (caprace) stopped.
+Executable binary set to "/private/tmp/claude-501/-Users-tett23-repositories-src-github-com-tett23-golem--claude-worktrees-agent-acec54b0a5cc8a587/8bc4696d-626e-4e93-bc1b-d099b5427ae7/scratchpad/verify-a/host/caprace".
+Architecture set to: arm64-apple-macosx-.
+(lldb) thread backtrace all
+* thread #1, queue = 'com.apple.main-thread', stop reason = signal SIGSTOP
+   * frame #0: 0x0000000191cc450c libsystem_kernel.dylib`__psynch_cvwait + 8
+     frame #1: 0x0000000191d061d0 libsystem_pthread.dylib`_pthread_cond_wait + 980
+     frame #2: 0x000000010342dfec caprace`waitCondition + 8
+     frame #3: 0x00000001033f4c68 caprace`yieldCapability + 340
+     frame #4: 0x00000001034047e4 caprace`schedule + 640
+     frame #5: 0x0000000103404550 caprace`scheduleWaitThread + 152
+     frame #6: 0x0000000103401564 caprace`hs_main + 96
+     frame #7: 0x0000000102fb50f8 caprace`main + 140
+     frame #8: 0x000000019192fe80 dyld`start + 6688
+  thread #2, name = 'ghc_ticker'
+       frame #0: 0x0000000191cc450c libsystem_kernel.dylib`__psynch_cvwait + 8
+       frame #1: 0x0000000191d061d0 libsystem_pthread.dylib`_pthread_cond_wait + 980
+       frame #2: 0x000000010342dfec caprace`waitCondition + 8
+       frame #3: 0x000000010342d6fc caprace`itimer_thread_func + 168
+       frame #4: 0x0000000191d05d00 libsystem_pthread.dylib`_pthread_start + 136
+  thread #3, name = 'ghc_worker'
+       frame #0: 0x0000000191cc6fcc libsystem_kernel.dylib`kevent + 8
+       frame #1: 0x00000001032f8ab4 caprace`Lc5tr_info + 288
+       frame #2: 0x00000001032f8ab4 caprace`Lc5tr_info + 288
+  thread #4, name = 'ghc_worker'
+       frame #0: 0x0000000191cc9760 libsystem_kernel.dylib`poll + 8
+       frame #1: 0x0000000103307238 caprace`Lc412_info + 220
+       frame #2: 0x0000000103307238 caprace`Lc412_info + 220
+  thread #5, name = 'ghc_worker'
+       frame #0: 0x0000000191cc450c libsystem_kernel.dylib`__psynch_cvwait + 8
+       frame #1: 0x0000000191d061d0 libsystem_pthread.dylib`_pthread_cond_wait + 980
+       frame #2: 0x000000010342dfec caprace`waitCondition + 8
+       frame #3: 0x00000001033f4c68 caprace`yieldCapability + 340
+       frame #4: 0x00000001034047e4 caprace`schedule + 640
+       frame #5: 0x0000000103404550 caprace`scheduleWaitThread + 152
+       frame #6: 0x0000000103403fe8 caprace`setNumCapabilities + 520
+       frame #7: 0x0000000102fb213c caprace`Lc47p_info + 228
+  thread #6, name = 'ghc_worker'
+       frame #0: 0x0000000191cc450c libsystem_kernel.dylib`__psynch_cvwait + 8
+       frame #1: 0x0000000191d061d0 libsystem_pthread.dylib`_pthread_cond_wait + 980
+       frame #2: 0x000000010342dfec caprace`waitCondition + 8
+       frame #3: 0x00000001033f4c68 caprace`yieldCapability + 340
+       frame #4: 0x00000001034047e4 caprace`schedule + 640
+       frame #5: 0x0000000103405070 caprace`scheduleWorker + 24
+       frame #6: 0x0000000103409fc0 caprace`workerStart + 248
+       frame #7: 0x0000000191d05d00 libsystem_pthread.dylib`_pthread_start + 136
+  thread #7, name = 'ghc_worker'
+       frame #0: 0x0000000102fb0b98 caprace`Lc3XI_info + 136
+  thread #8, name = 'ghc_worker'
+       frame #0: 0x0000000191cc450c libsystem_kernel.dylib`__psynch_cvwait + 8
+       frame #1: 0x0000000191d061d0 libsystem_pthread.dylib`_pthread_cond_wait + 980
+       frame #2: 0x000000010342dfec caprace`waitCondition + 8
+       frame #3: 0x00000001033f4c68 caprace`yieldCapability + 340
+       frame #4: 0x00000001034047e4 caprace`schedule + 640
+       frame #5: 0x0000000103405070 caprace`scheduleWorker + 24
+       frame #6: 0x0000000103409fc0 caprace`workerStart + 248
+       frame #7: 0x0000000191d05d00 libsystem_pthread.dylib`_pthread_start + 136
+  thread #9, name = 'ghc_worker'
+       frame #0: 0x0000000191cc450c libsystem_kernel.dylib`__psynch_cvwait + 8
+       frame #1: 0x0000000191d061d0 libsystem_pthread.dylib`_pthread_cond_wait + 980
+       frame #2: 0x000000010342dfec caprace`waitCondition + 8
+       frame #3: 0x000000010341e1e0 caprace`gcWorkerThread + 516
+       frame #4: 0x00000001033f4b7c caprace`yieldCapability + 104
+       frame #5: 0x00000001034047e4 caprace`schedule + 640
+       frame #6: 0x0000000103405070 caprace`scheduleWorker + 24
+       frame #7: 0x0000000103409fc0 caprace`workerStart + 248
+       frame #8: 0x0000000191d05d00 libsystem_pthread.dylib`_pthread_start + 136
+  thread #10, name = 'ghc_worker'
+       frame #0: 0x0000000191cc450c libsystem_kernel.dylib`__psynch_cvwait + 8
+       frame #1: 0x0000000191d061d0 libsystem_pthread.dylib`_pthread_cond_wait + 980
+       frame #2: 0x000000010342dfec caprace`waitCondition + 8
+       frame #3: 0x00000001033f4c68 caprace`yieldCapability + 340
+       frame #4: 0x00000001034047e4 caprace`schedule + 640
+       frame #5: 0x0000000103405070 caprace`scheduleWorker + 24
+       frame #6: 0x0000000103409fc0 caprace`workerStart + 248
+       frame #7: 0x0000000191d05d00 libsystem_pthread.dylib`_pthread_start + 136
+(lldb) detach
+Process 7947 detached

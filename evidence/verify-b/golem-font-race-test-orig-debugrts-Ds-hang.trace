@@ -1,0 +1,2749 @@
+ecfbd7138020: created capset 0 of type 2
+ecfbd7138020: created capset 1 of type 3
+ecfbd7138020: cap 0: initialised
+ecfbd7138020: assigned cap 0 to capset 0
+ecfbd7138020: assigned cap 0 to capset 1
+ecfbd7138020: allocated 1 more capabilities
+ecfbd7138020: new task (taskCount: 1)
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: created thread 1[""]
+ecfbd7138020: new bound thread (1)
+ecfbd7138020: cap 0: schedule()
+ecfbd7138020: cap 0: running thread 1[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 1[""] stopped (stack overflow, size 108)
+ecfbd7138020: cap 0: allocating new stack chunk of size 32768 bytes
+ecfbd7138020: cap 0: running thread 1[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: created thread 2[""]
+ecfbd7138020: cap 0: thread 2 has label IOManager on cap 0
+ecfbd7138020: cap 0: thread 1[""] stopped (yielding)
+ecfbd7138020: giving up capability 0
+ecfbd7138020: starting new worker on capability 0
+ecfbd7138020: new task (taskCount: 2)
+ecfbd7138020: new worker task (taskCount: 2)
+ecfbd5e8a160: cap 0: schedule()
+ecfbd5e8a160: cap 0: running thread 2["IOManager on cap 0"] (ThreadRunGHC)
+ecfbd5e8a160: cap 0: thread 2["IOManager on cap 0"] stopped (yielding)
+ecfbd5e8a160: giving up capability 0
+ecfbd5e8a160: passing capability 0 to bound task 0xecfbd7138020
+ecfbd7138020: woken up on capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 1[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: created thread 3[""]
+ecfbd7138020: cap 0: thread 3 has label TimerManager
+ecfbd7138020: cap 0: thread 1[""] stopped (finished)
+ecfbd7138020: bound thread (1) finished
+ecfbd7138020: passing capability 0 to worker 0xecfbd5e8a160
+ecfbd7138020: task exiting
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: created thread 4[""]
+ecfbd7138020: new bound thread (4)
+ecfbd7138020: cap 0: schedule()
+ecfbd7138020: giving up capability 0
+ecfbd7138020: passing capability 0 to worker 0xecfbd5e8a160
+ecfbd5e8a160: woken up on capability 0
+ecfbd5e8a160: resuming capability 0
+ecfbd5e8a160: cap 0: running thread 2["IOManager on cap 0"] (ThreadRunGHC)
+ecfbd5e8a160: cap 0: thread 2["IOManager on cap 0"] stopped (suspended while making a foreign call)
+ecfbd5e8a160: starting new worker on capability 0
+ecfbd5e8a160: new task (taskCount: 3)
+ecfbd5e8a160: new worker task (taskCount: 3)
+ecfbd567a160: cap 0: schedule()
+ecfbd567a160: cap 0: running thread 3["TimerManager"] (ThreadRunGHC)
+ecfbd567a160: cap 0: thread 3["TimerManager"] stopped (suspended while making a foreign call)
+ecfbd567a160: passing capability 0 to bound task 0xecfbd7138020
+ecfbd7138020: woken up on capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (yielding)
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: starting new worker on capability 0
+ecfbd7138020: new task (taskCount: 4)
+ecfbd7138020: new worker task (taskCount: 4)
+ecfbd7138020: returning; I want capability 0
+ecfbd4e6a160: cap 0: schedule()
+ecfbd4e6a160: giving up capability 0
+ecfbd4e6a160: passing capability 0 to bound task 0xecfbd7138020
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: freeing capability 0
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: freeing capability 0
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (heap overflow)
+ecfbd7138020: cap 0: requesting parallel GC
+ecfbd7138020: 0 idle caps, 0 failed grabs
+all threads:
+threads on capability 0:
+	thread    4 @ 0x4200406d20 is not blocked (TSO_DIRTY)
+other threads:
+	thread    3 @ 0x42004068f0 ["TimerManager"] is blocked on an external call (TSO_DIRTY)
+	thread    2 @ 0x4200406498 ["IOManager on cap 0"] is blocked on an external call (TSO_DIRTY)
+ecfbd7138020: cap 0: starting GC
+ecfbd7138020: cap 0: GC working
+ecfbd7138020: cap 0: GC idle
+ecfbd7138020: cap 0: GC done
+ecfbd7138020: cap 0: GC idle
+ecfbd7138020: cap 0: GC done
+ecfbd7138020: cap 0: GC idle
+ecfbd7138020: cap 0: GC done
+ecfbd7138020: cap 0: created thread 5[""]
+ecfbd7138020: cap 0: all caps stopped for GC
+ecfbd7138020: cap 0: finished GC
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (stack overflow, size 108)
+ecfbd7138020: cap 0: allocating new stack chunk of size 32768 bytes
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: changing the number of Capabilities from 1 to 2
+ecfbd7138020: returning; I want capability 0
+ecfbd4e6a160: woken up on capability 0
+ecfbd4e6a160: capability 0 is owned by another task
+ecfbd7138020: resuming capability 0
+ecfbd7138020: grabbing all the capabilities (0/1)
+ecfbd7138020: cap 1: initialised
+ecfbd7138020: assigned cap 1 to capset 0
+ecfbd7138020: assigned cap 1 to capset 1
+ecfbd7138020: allocated 1 more capabilities
+ecfbd7138020: cap 0: created thread 6[""]
+ecfbd7138020: new bound thread (6)
+ecfbd7138020: cap 0: schedule()
+ecfbd7138020: cap 0: 2 threads, 0 sparks, and 1 free capabilities, sharing...
+ecfbd7138020: cap 0: thread 5[""] migrating to cap 1
+ecfbd7138020: starting new worker on capability 1
+ecfbd7138020: new task (taskCount: 5)
+ecfbd7138020: new worker task (taskCount: 5)
+ecfbd7138020: cap 0: running thread 6[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 6[""] stopped (stack overflow, size 108)
+ecfbd7138020: cap 0: allocating new stack chunk of size 32768 bytes
+ecfbd7138020: cap 0: running thread 6[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: created thread 7[""]
+ecfbd7138020: cap 0: thread 7[""] migrating to cap 1
+ecfbd7138020: cap 0: waking up thread 7[""] on cap 1
+ecfbd7138020: cap 0: message: try wakeup thread 7 on cap 1
+ecfbd7138020: cap 0: thread 7 has label IOManager on cap 1
+ecfbd7138020: cap 0: thread 6[""] stopped (finished)
+ecfbd7138020: bound thread (6) finished
+ecfbd7138020: freeing capability 0
+ecfbd7138020: task exiting
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbc7fff160: cap 1: schedule()
+ecfbc7fff160: cap 1: message: try wakeup thread 7
+ecfbc7fff160: cap 1: waking up thread 7["IOManager on cap 1"] on cap 1
+ecfbc7fff160: cap 1: running thread 5[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: created thread 8[""]
+ecfbd7138020: cap 0: created thread 9[""]
+ecfbc7fff160: cap 1: thread 5 has label weak finalizer thread
+ecfbc7fff160: cap 1: thread 5["weak finalizer thread"] stopped (finished)
+ecfbc7fff160: cap 1: running thread 7["IOManager on cap 1"] (ThreadRunGHC)
+ecfbc7fff160: cap 1: thread 7["IOManager on cap 1"] stopped (yielding)
+ecfbc7fff160: cap 1: running thread 7["IOManager on cap 1"] (ThreadRunGHC)
+ecfbc7fff160: cap 1: thread 7["IOManager on cap 1"] stopped (suspended while making a foreign call)
+ecfbc7fff160: starting new worker on capability 1
+ecfbc7fff160: new task (taskCount: 6)
+ecfbd7138020: cap 0: thread 4[""] stopped (yielding)
+ecfbd7138020: running C finalizers, 1 remaining
+ecfbd7138020: ran 1 C finalizers
+ecfbd7138020: giving up capability 0
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd4e6a160: woken up on capability 0
+ecfbd4e6a160: resuming capability 0
+ecfbd4e6a160: cap 0: running thread 8[""] (ThreadRunGHC)
+ecfbd4e6a160: cap 0: created thread 10[""]
+ecfbd4e6a160: cap 0: thread 10 has label tasty_test_execution_thread
+ecfbd4e6a160: cap 0: thread 8[""] stopped (blocked on STM)
+	thread    8 @ 0x4200319000 is blocked on an STM operation (TSO_DIRTY)
+ecfbd4e6a160: cap 0: running thread 9[""] (ThreadRunGHC)
+ecfbd4e6a160: cap 0: created thread 11[""]
+ecfbd4e6a160: cap 0: thread 9[""] stopped (yielding)
+ecfbd4e6a160: giving up capability 0
+ecfbd4e6a160: passing capability 0 to bound task 0xecfbd7138020
+ecfbd7138020: woken up on capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd4e6a160: woken up on capability 0
+ecfbd4e6a160: resuming capability 0
+ecfbd7138020: returning; I want capability 0
+ecfbd4e6a160: cap 0: running thread 10["tasty_test_execution_thread"] (ThreadRunGHC)
+ecfbd4e6a160: cap 0: thread 10["tasty_test_execution_thread"] stopped (yielding)
+ecfbd4e6a160: giving up capability 0
+ecfbd4e6a160: passing capability 0 to bound task 0xecfbd7138020
+ecfbc7fff160: new worker task (taskCount: 6)
+ecfbc77ef160: cap 1: schedule()
+ecfbc77ef160: giving up capability 1
+ecfbc77ef160: freeing capability 1
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+FreeType from many threads (golem-font ADR 0001; Medium)
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd4e6a160: woken up on capability 0
+ecfbd4e6a160: capability 0 is owned by another task
+ecfbd4e6a160: woken up on capability 0
+ecfbd4e6a160: capability 0 is owned by another task
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd4e6a160: woken up on capability 0
+ecfbd4e6a160: capability 0 is owned by another task
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd4e6a160: woken up on capability 0
+ecfbd4e6a160: resuming capability 0
+ecfbd4e6a160: cap 0: running thread 11[""] (ThreadRunGHC)
+ecfbd4e6a160: cap 0: thread 11[""] stopped (heap overflow)
+ecfbd4e6a160: cap 0: requesting parallel GC
+ecfbd4e6a160: 0 idle caps, 0 failed grabs
+ecfbd4e6a160: passing capability 1 to worker 0xecfbc77ef160
+ecfbc77ef160: woken up on capability 1
+ecfbc77ef160: resuming capability 1
+ecfbc77ef160: cap 1: starting GC
+all threads:
+threads on capability 0:
+	thread   11 @ 0x4200319ee8 is not blocked (TSO_DIRTY)
+	thread    9 @ 0x4200319400 is not blocked (TSO_DIRTY)
+	thread   10 @ 0x4200319840 ["tasty_test_execution_thread"] is not blocked (TSO_DIRTY)
+threads on capability 1:
+other threads:
+	thread    8 @ 0x4200319000 is blocked on an STM operation (TSO_DIRTY)
+	thread    7 @ 0x420030c938 ["IOManager on cap 1"] is blocked on an external call (TSO_DIRTY)
+	thread    2 @ 0x42004fe110 ["IOManager on cap 0"] is blocked on an external call
+	thread    3 @ 0x42004fe088 ["TimerManager"] is blocked on an external call
+	thread    4 @ 0x42004fe000 is blocked on an external call (TSO_DIRTY)
+ecfbd4e6a160: cap 0: starting GC
+ecfbd4e6a160: cap 0: GC working
+ecfbd4e6a160: cap 0: GC idle
+ecfbd4e6a160: cap 0: GC done
+ecfbc77ef160: cap 1: GC working
+ecfbc77ef160: cap 1: GC idle
+ecfbc77ef160: cap 1: GC done
+ecfbd4e6a160: cap 0: GC idle
+ecfbd4e6a160: cap 0: GC done
+ecfbd4e6a160: cap 0: GC idle
+ecfbd4e6a160: cap 0: GC done
+ecfbd4e6a160: cap 0: all caps stopped for GC
+ecfbd4e6a160: cap 0: finished GC
+ecfbc77ef160: cap 1: finished GC
+ecfbc77ef160: giving up capability 1
+ecfbc77ef160: freeing capability 1
+ecfbd4e6a160: cap 0: 3 threads, 0 sparks, and 1 free capabilities, sharing...
+ecfbd4e6a160: cap 0: thread 11[""] migrating to cap 1
+ecfbd4e6a160: passing capability 1 to worker 0xecfbc77ef160
+ecfbc77ef160: woken up on capability 1
+ecfbc77ef160: resuming capability 1
+ecfbc77ef160: cap 1: running thread 11[""] (ThreadRunGHC)
+ecfbc77ef160: cap 1: thread 11[""] stopped (yielding)
+ecfbc77ef160: cap 1: running thread 11[""] (ThreadRunGHC)
+ecfbd4e6a160: giving up capability 0
+ecfbd4e6a160: passing capability 0 to bound task 0xecfbd7138020
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd4e6a160: woken up on capability 0
+ecfbd4e6a160: capability 0 is owned by another task
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd4e6a160: woken up on capability 0
+ecfbd4e6a160: capability 0 is owned by another task
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd4e6a160: woken up on capability 0
+ecfbd4e6a160: capability 0 is owned by another task
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd4e6a160: woken up on capability 0
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd4e6a160: resuming capability 0
+ecfbd4e6a160: giving up capability 0
+ecfbd4e6a160: passing capability 0 to bound task 0xecfbd7138020
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd4e6a160: woken up on capability 0
+ecfbd4e6a160: capability 0 is owned by another task
+ecfbd7138020: cap 0: thread 4[""] stopped (suspended while making a foreign call)
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+  glyph metrics asked from eight threads at once are those asked in sequence:     ecfbd7138020: returning; I want capability 0
+ecfbd7138020: resuming capability 0
+ecfbd4e6a160: woken up on capability 0
+ecfbd4e6a160: capability 0 is owned by another task
+ecfbd7138020: cap 0: running thread 4[""] (ThreadRunGHC)
+ecfbd7138020: cap 0: thread 4[""] stopped (blocked on STM)
+	thread    4 @ 0x42005e46e0 is blocked on an STM operation (TSO_DIRTY)
+ecfbd7138020: giving up capability 0
+ecfbd7138020: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd4e6a160: woken up on capability 0
+ecfbd4e6a160: resuming capability 0
+ecfbd4e6a160: cap 0: running thread 9[""] (ThreadRunGHC)
+ecfbd4e6a160: cap 0: thread 11 has label tasty_test_execution_thread
+ecfbd4e6a160: cap 0: thread 9[""] stopped (blocked on STM)
+	thread    9 @ 0x42005eb378 is blocked on an STM operation (TSO_DIRTY)
+ecfbd4e6a160: cap 0: running thread 10["tasty_test_execution_thread"] (ThreadRunGHC)
+ecfbc77ef160: cap 1: thread 11["tasty_test_execution_thread"] stopped (heap overflow)
+ecfbc77ef160: cap 1: requesting parallel GC
+ecfbc77ef160: 0 idle caps, 0 failed grabs
+ecfbd4e6a160: cap 0: thread 10["tasty_test_execution_thread"] stopped (yielding)
+ecfbd4e6a160: cap 0: starting GC
+all threads:
+threads on capability 0:
+	thread   10 @ 0x42005e30b0 ["tasty_test_execution_thread"] is not blocked (TSO_DIRTY)
+threads on capability 1:
+	thread   11 @ 0x42005e3028 ["tasty_test_execution_thread"] is not blocked (TSO_DIRTY)
+other threads:
+	thread    7 @ 0x42005e33b8 ["IOManager on cap 1"] is blocked on an external call
+	thread    8 @ 0x42005ecd28 is blocked on an STM operation
+	thread    9 @ 0x42005eb378 is blocked on an STM operation (TSO_DIRTY)
+	thread    4 @ 0x42005e46e0 is blocked on an STM operation (TSO_DIRTY)
+	thread    3 @ 0x42005e4768 ["TimerManager"] is blocked on an external call
+	thread    2 @ 0x42005e47f0 ["IOManager on cap 0"] is blocked on an external call
+ecfbc77ef160: cap 1: starting GC
+ecfbc77ef160: cap 1: GC working
+ecfbd4e6a160: cap 0: GC working
+ecfbc77ef160: cap 1: GC idle
+ecfbd4e6a160: cap 0: GC idle
+ecfbd4e6a160: cap 0: GC done
+ecfbc77ef160: cap 1: GC done
+ecfbc77ef160: cap 1: GC idle
+ecfbc77ef160: cap 1: GC done
+ecfbc77ef160: cap 1: GC idle
+ecfbc77ef160: cap 1: GC done
+ecfbc77ef160: cap 1: created thread 12[""]
+ecfbc77ef160: cap 1: Memory Return (Current: 17) (Needed: 29) (Returned: 0)
+ecfbc77ef160: cap 1: all caps stopped for GC
+ecfbc77ef160: cap 1: finished GC
+ecfbc77ef160: cap 1: running thread 11["tasty_test_execution_thread"] (ThreadRunGHC)
+ecfbd4e6a160: cap 0: finished GC
+ecfbd4e6a160: cap 0: running thread 10["tasty_test_execution_thread"] (ThreadRunGHC)
+ecfbc77ef160: cap 1: thread 11["tasty_test_execution_thread"] stopped (yielding)
+ecfbc77ef160: cap 1: running thread 12[""] (ThreadRunGHC)
+ecfbc77ef160: cap 1: thread 12 has label weak finalizer thread
+ecfbc77ef160: cap 1: thread 12["weak finalizer thread"] stopped (finished)
+ecfbc77ef160: cap 1: running thread 11["tasty_test_execution_thread"] (ThreadRunGHC)
+ecfbc77ef160: cap 1: thread 11["tasty_test_execution_thread"] stopped (heap overflow)
+ecfbc77ef160: cap 1: requesting parallel GC
+ecfbc77ef160: 0 idle caps, 0 failed grabs
+ecfbd4e6a160: cap 0: thread 10["tasty_test_execution_thread"] stopped (yielding)
+ecfbd4e6a160: running C finalizers, 1 remaining
+ecfbd4e6a160: ran 1 C finalizers
+ecfbd4e6a160: cap 0: starting GC
+all threads:
+threads on capability 0:
+	thread   10 @ 0x42010f9e38 ["tasty_test_execution_thread"] is not blocked (TSO_DIRTY)
+threads on capability 1:
+	thread   11 @ 0x42010f2000 ["tasty_test_execution_thread"] is not blocked (TSO_DIRTY)
+other threads:
+	thread    2 @ 0x42010f5748 ["IOManager on cap 0"] is blocked on an external call
+	thread    3 @ 0x42010f25c8 ["TimerManager"] is blocked on an external call
+	thread    4 @ 0x42010f4450 is blocked on an STM operation (TSO_DIRTY)
+	thread    9 @ 0x42010f9320 is blocked on an STM operation (TSO_DIRTY)
+	thread    8 @ 0x42010f91b0 is blocked on an STM operation
+	thread    7 @ 0x42010f2088 ["IOManager on cap 1"] is blocked on an external call
+ecfbc77ef160: cap 1: starting GC
+ecfbd4e6a160: cap 0: GC working
+ecfbd4e6a160: cap 0: GC idle
+ecfbd4e6a160: cap 0: GC done
+ecfbc77ef160: cap 1: GC working
+ecfbc77ef160: cap 1: GC idle
+ecfbc77ef160: cap 1: GC done
+ecfbc77ef160: cap 1: GC idle
+ecfbc77ef160: cap 1: GC done
+ecfbc77ef160: cap 1: all caps stopped for GC
+ecfbc77ef160: cap 1: finished GC
+ecfbd4e6a160: cap 0: finished GC
+ecfbd4e6a160: cap 0: running thread 10["tasty_test_execution_thread"] (ThreadRunGHC)
+ecfbc77ef160: cap 1: running thread 11["tasty_test_execution_thread"] (ThreadRunGHC)
+ecfbd4e6a160: cap 0: thread 10["tasty_test_execution_thread"] stopped (heap overflow)
+ecfbd4e6a160: cap 0: requesting parallel GC
+ecfbd4e6a160: 0 idle caps, 0 failed grabs
+ecfbc77ef160: cap 1: thread 11["tasty_test_execution_thread"] stopped (yielding)
+ecfbc77ef160: cap 1: starting GC
+all threads:
+threads on capability 0:
+	thread   10 @ 0x42010f9e38 ["tasty_test_execution_thread"] is not blocked (TSO_DIRTY)
+threads on capability 1:
+	thread   11 @ 0x42010f2000 ["tasty_test_execution_thread"] is not blocked (TSO_DIRTY)
+other threads:
+	thread    2 @ 0x42010f5748 ["IOManager on cap 0"] is blocked on an external call
+	thread    3 @ 0x42010f25c8 ["TimerManager"] is blocked on an external call
+	thread    4 @ 0x42010f4450 is blocked on an STM operation
+	thread    9 @ 0x42010f9320 is blocked on an STM operation
+	thread    8 @ 0x42010f91b0 is blocked on an STM operation
+	thread    7 @ 0x42010f2088 ["IOManager on cap 1"] is blocked on an external call
+ecfbd4e6a160: cap 0: starting GC
+ecfbc77ef160: cap 1: GC working
+ecfbc77ef160: cap 1: GC idle
+ecfbc77ef160: cap 1: GC done
+ecfbd4e6a160: cap 0: GC working
+ecfbd4e6a160: cap 0: GC idle
+ecfbd4e6a160: cap 0: GC done
+ecfbd4e6a160: cap 0: GC idle
+ecfbd4e6a160: cap 0: GC done
+ecfbd4e6a160: cap 0: all caps stopped for GC
+ecfbd4e6a160: cap 0: finished GC
+ecfbd4e6a160: cap 0: running thread 10["tasty_test_execution_thread"] (ThreadRunGHC)
+ecfbc77ef160: cap 1: finished GC
+ecfbc77ef160: cap 1: running thread 11["tasty_test_execution_thread"] (ThreadRunGHC)
+ecfbc77ef160: cap 1: thread 11["tasty_test_execution_thread"] stopped (heap overflow)
+ecfbc77ef160: cap 1: requesting parallel GC
+ecfbc77ef160: 0 idle caps, 0 failed grabs
+ecfbd4e6a160: cap 0: thread 10["tasty_test_execution_thread"] stopped (yielding)
+ecfbd4e6a160: cap 0: starting GC
+all threads:
+threads on capability 0:
+	thread   10 @ 0x42010f9e38 ["tasty_test_execution_thread"] is not blocked (TSO_DIRTY)
+threads on capability 1:
+	thread   11 @ 0x42010f2000 ["tasty_test_execution_thread"] is not blocked (TSO_DIRTY)
+other threads:
+	thread    2 @ 0x42010f5748 ["IOManager on cap 0"] is blocked on an external call
+	thread    3 @ 0x42010f25c8 ["TimerManager"] is blocked on an external call
+	thread    4 @ 0x42010f4450 is blocked on an STM operation
+	thread    9 @ 0x42010f9320 is blocked on an STM operation
+	thread    8 @ 0x42010f91b0 is blocked on an STM operation
+	thread    7 @ 0x42010f2088 ["IOManager on cap 1"] is blocked on an external call
+ecfbc77ef160: cap 1: starting GC
+ecfbd4e6a160: cap 0: GC working
+ecfbd4e6a160: cap 0: GC idle
+ecfbd4e6a160: cap 0: GC done
+ecfbc77ef160: cap 1: GC working
+ecfbc77ef160: cap 1: GC idle
+ecfbc77ef160: cap 1: GC done
+ecfbc77ef160: cap 1: GC idle
+ecfbc77ef160: cap 1: GC done
+ecfbc77ef160: cap 1: all caps stopped for GC
+ecfbc77ef160: cap 1: finished GC
+ecfbd4e6a160: cap 0: finished GC
+ecfbd4e6a160: cap 0: running thread 10["tasty_test_execution_thread"] (ThreadRunGHC)
+ecfbd4e6a160: cap 0: thread 10["tasty_test_execution_thread"] stopped (yielding)
+ecfbd4e6a160: cap 0: running thread 10["tasty_test_execution_thread"] (ThreadRunGHC)
+ecfbc77ef160: cap 1: running thread 11["tasty_test_execution_thread"] (ThreadRunGHC)
+ecfbc77ef160: cap 1: thread 11["tasty_test_execution_thread"] stopped (yielding)
+ecfbc77ef160: cap 1: running thread 11["tasty_test_execution_thread"] (ThreadRunGHC)
+ecfbd4e6a160: cap 0: thread 10["tasty_test_execution_thread"] stopped (heap overflow)
+ecfbd4e6a160: cap 0: requesting parallel GC
+ecfbd4e6a160: 0 idle caps, 0 failed grabs
+ecfbc77ef160: cap 1: thread 11["tasty_test_execution_thread"] stopped (yielding)
+ecfbc77ef160: cap 1: starting GC
+all threads:
+threads on capability 0:
+	thread   10 @ 0x42010f9e38 ["tasty_test_execution_thread"] is not blocked (TSO_DIRTY)
+threads on capability 1:
+	thread   11 @ 0x42010f2000 ["tasty_test_execution_thread"] is not blocked (TSO_DIRTY)
+other threads:
+	thread    2 @ 0x42010f5748 ["IOManager on cap 0"] is blocked on an external call
+	thread    3 @ 0x42010f25c8 ["TimerManager"] is blocked on an external call
+	thread    4 @ 0x42010f4450 is blocked on an STM operation
+	thread    9 @ 0x42010f9320 is blocked on an STM operation
+	thread    8 @ 0x42010f91b0 is blocked on an STM operation
+	thread    7 @ 0x42010f2088 ["IOManager on cap 1"] is blocked on an external call
+ecfbd4e6a160: cap 0: starting GC
+ecfbd4e6a160: cap 0: GC working
+ecfbc77ef160: cap 1: GC working
+ecfbd4e6a160: cap 0: GC idle
+ecfbd4e6a160: cap 0: GC done
+ecfbc77ef160: cap 1: GC idle
+ecfbc77ef160: cap 1: GC done
+ecfbd4e6a160: cap 0: GC idle
+ecfbd4e6a160: cap 0: GC done
+ecfbd4e6a160: cap 0: all caps stopped for GC
+ecfbd4e6a160: cap 0: finished GC
+ecfbd4e6a160: cap 0: running thread 10["tasty_test_execution_thread"] (ThreadRunGHC)
+ecfbc77ef160: cap 1: finished GC
+ecfbc77ef160: cap 1: running thread 11["tasty_test_execution_thread"] (ThreadRunGHC)
+ecfbd4e6a160: cap 0: thread 10["tasty_test_execution_thread"] stopped (heap overflow)
+ecfbd4e6a160: cap 0: requesting parallel GC
+ecfbd4e6a160: 0 idle caps, 0 failed grabs
+ecfbc77ef160: cap 1: thread 11["tasty_test_execution_thread"] stopped (yielding)
+ecfbc77ef160: cap 1: starting GC
+all threads:
+threads on capability 0:
+	thread   10 @ 0x42010f9e38 ["tasty_test_execution_thread"] is not blocked (TSO_DIRTY)
+threads on capability 1:
+	thread   11 @ 0x42010f2000 ["tasty_test_execution_thread"] is not blocked (TSO_DIRTY)
+other threads:
+	thread    2 @ 0x42010f5748 ["IOManager on cap 0"] is blocked on an external call
+	thread    3 @ 0x42010f25c8 ["TimerManager"] is blocked on an external call
+	thread    4 @ 0x42010f4450 is blocked on an STM operation
+	thread    9 @ 0x42010f9320 is blocked on an STM operation
+	thread    8 @ 0x42010f91b0 is blocked on an STM operation
+	thread    7 @ 0x42010f2088 ["IOManager on cap 1"] is blocked on an external call
+ecfbd4e6a160: cap 0: starting GC
+ecfbc77ef160: cap 1: GC working
+ecfbd4e6a160: cap 0: GC working
+ecfbc77ef160: cap 1: GC idle
+ecfbc77ef160: cap 1: GC done
+ecfbd4e6a160: cap 0: GC idle
+ecfbd4e6a160: cap 0: GC done
+ecfbd4e6a160: cap 0: GC idle
+ecfbd4e6a160: cap 0: GC done
+ecfbd4e6a160: cap 0: all caps stopped for GC
+ecfbd4e6a160: cap 0: finished GC
+ecfbc77ef160: cap 1: finished GC
+ecfbc77ef160: cap 1: running thread 11["tasty_test_execution_thread"] (ThreadRunGHC)
+ecfbc77ef160: cap 1: thread 11["tasty_test_execution_thread"] stopped (yielding)
+ecfbc77ef160: cap 1: running thread 11["tasty_test_execution_thread"] (ThreadRunGHC)
+ecfbd4e6a160: cap 0: running thread 10["tasty_test_execution_thread"] (ThreadRunGHC)
+ecfbd4e6a160: cap 0: thread 10["tasty_test_execution_thread"] stopped (yielding)
+ecfbd4e6a160: cap 0: running thread 10["tasty_test_execution_thread"] (ThreadRunGHC)
+ecfbc77ef160: cap 1: thread 11["tasty_test_execution_thread"] stopped (heap overflow)
+ecfbc77ef160: cap 1: requesting parallel GC
+ecfbc77ef160: 0 idle caps, 0 failed grabs
+ecfbd4e6a160: cap 0: thread 10["tasty_test_execution_thread"] stopped (yielding)
+ecfbd4e6a160: cap 0: starting GC
+all threads:
+threads on capability 0:
+	thread   10 @ 0x42010f9e38 ["tasty_test_execution_thread"] is not blocked (TSO_DIRTY)
+threads on capability 1:
+	thread   11 @ 0x42010f2000 ["tasty_test_execution_thread"] is not blocked (TSO_DIRTY)
+other threads:
+	thread    2 @ 0x42010f5748 ["IOManager on cap 0"] is blocked on an external call
+	thread    3 @ 0x42010f25c8 ["TimerManager"] is blocked on an external call
+	thread    4 @ 0x42010f4450 is blocked on an STM operation
+	thread    9 @ 0x42010f9320 is blocked on an STM operation
+	thread    8 @ 0x42010f91b0 is blocked on an STM operation
+	thread    7 @ 0x42010f2088 ["IOManager on cap 1"] is blocked on an external call
+ecfbc77ef160: cap 1: starting GC
+ecfbd4e6a160: cap 0: GC working
+ecfbc77ef160: cap 1: GC working
+ecfbd4e6a160: cap 0: GC idle
+ecfbd4e6a160: cap 0: GC done
+ecfbc77ef160: cap 1: GC idle
+ecfbc77ef160: cap 1: GC done
+ecfbc77ef160: cap 1: GC idle
+ecfbc77ef160: cap 1: GC done
+ecfbc77ef160: cap 1: all caps stopped for GC
+ecfbc77ef160: cap 1: finished GC
+ecfbc77ef160: cap 1: running thread 11["tasty_test_execution_thread"] (ThreadRunGHC)
+ecfbc77ef160: cap 1: thread 11["tasty_test_execution_thread"] stopped (yielding)
+ecfbc77ef160: cap 1: running thread 11["tasty_test_execution_thread"] (ThreadRunGHC)
+ecfbd4e6a160: cap 0: finished GC
+ecfbd4e6a160: cap 0: running thread 10["tasty_test_execution_thread"] (ThreadRunGHC)
+ecfbd4e6a160: cap 0: thread 10["tasty_test_execution_thread"] stopped (yielding)
+ecfbd4e6a160: cap 0: running thread 10["tasty_test_execution_thread"] (ThreadRunGHC)
+ecfbc77ef160: cap 1: thread 11["tasty_test_execution_thread"] stopped (heap overflow)
+ecfbc77ef160: cap 1: requesting parallel GC
+ecfbc77ef160: 0 idle caps, 0 failed grabs
+ecfbd4e6a160: cap 0: thread 10["tasty_test_execution_thread"] stopped (yielding)
+ecfbd4e6a160: cap 0: starting GC
+all threads:
+threads on capability 0:
+	thread   10 @ 0x42010f9e38 ["tasty_test_execution_thread"] is not blocked (TSO_DIRTY)
+threads on capability 1:
+	thread   11 @ 0x42010f2000 ["tasty_test_execution_thread"] is not blocked (TSO_DIRTY)
+other threads:
+	thread    2 @ 0x42010f5748 ["IOManager on cap 0"] is blocked on an external call
+	thread    3 @ 0x42010f25c8 ["TimerManager"] is blocked on an external call
+	thread    4 @ 0x42010f4450 is blocked on an STM operation
+	thread    9 @ 0x42010f9320 is blocked on an STM operation
+	thread    8 @ 0x42010f91b0 is blocked on an STM operation
+	thread    7 @ 0x42010f2088 ["IOManager on cap 1"] is blocked on an external call
+ecfbc77ef160: cap 1: starting GC
+ecfbc77ef160: cap 1: GC working
+ecfbd4e6a160: cap 0: GC working
+ecfbd4e6a160: cap 0: GC idle
+ecfbc77ef160: cap 1: GC idle
+ecfbc77ef160: cap 1: GC done
+ecfbd4e6a160: cap 0: GC done
+ecfbc77ef160: cap 1: GC idle
+ecfbc77ef160: cap 1: GC done
+ecfbc77ef160: cap 1: GC idle
+ecfbc77ef160: cap 1: GC done
+ecfbc77ef160: cap 1: Memory Return (Current: 26) (Needed: 33) (Returned: 0)
+ecfbc77ef160: cap 1: all caps stopped for GC
+ecfbc77ef160: cap 1: finished GC
+ecfbc77ef160: cap 1: running thread 11["tasty_test_execution_thread"] (ThreadRunGHC)
+ecfbd4e6a160: cap 0: finished GC
+ecfbd4e6a160: cap 0: running thread 10["tasty_test_execution_thread"] (ThreadRunGHC)
+ecfbc77ef160: cap 1: thread 11["tasty_test_execution_thread"] stopped (yielding)
+ecfbc77ef160: cap 1: running thread 11["tasty_test_execution_thread"] (ThreadRunGHC)
+ecfbc77ef160: cap 1: thread 11["tasty_test_execution_thread"] stopped (heap overflow)
+ecfbc77ef160: cap 1: requesting parallel GC
+ecfbc77ef160: 0 idle caps, 0 failed grabs
+ecfbd4e6a160: cap 0: thread 10["tasty_test_execution_thread"] stopped (yielding)
+ecfbd4e6a160: cap 0: starting GC
+all threads:
+threads on capability 0:
+	thread   10 @ 0x420172a000 ["tasty_test_execution_thread"] is not blocked (TSO_DIRTY)
+threads on capability 1:
+	thread   11 @ 0x420172b000 ["tasty_test_execution_thread"] is not blocked (TSO_DIRTY)
+other threads:
+	thread    7 @ 0x420172b088 ["IOManager on cap 1"] is blocked on an external call
+	thread    8 @ 0x4201711ab8 is blocked on an STM operation
+	thread    9 @ 0x420172f270 is blocked on an STM operation
+	thread    4 @ 0x4201712620 is blocked on an STM operation
+	thread    3 @ 0x420172a088 ["TimerManager"] is blocked on an external call
+	thread    2 @ 0x420172a110 ["IOManager on cap 0"] is blocked on an external call
+ecfbc77ef160: cap 1: starting GC
+ecfbc77ef160: cap 1: GC working
+ecfbd4e6a160: cap 0: GC working
+ecfbc77ef160: cap 1: GC idle
+ecfbc77ef160: cap 1: GC done
+ecfbd4e6a160: cap 0: GC idle
+ecfbd4e6a160: cap 0: GC done
+ecfbc77ef160: cap 1: GC idle
+ecfbc77ef160: cap 1: GC done
+ecfbc77ef160: cap 1: all caps stopped for GC
+ecfbc77ef160: cap 1: finished GC
+ecfbc77ef160: cap 1: running thread 11["tasty_test_execution_thread"] (ThreadRunGHC)
+ecfbd4e6a160: cap 0: finished GC
+ecfbd4e6a160: cap 0: running thread 10["tasty_test_execution_thread"] (ThreadRunGHC)
+ecfbc77ef160: cap 1: thread 11["tasty_test_execution_thread"] stopped (heap overflow)
+ecfbc77ef160: cap 1: requesting parallel GC
+ecfbc77ef160: 0 idle caps, 0 failed grabs
+ecfbd4e6a160: cap 0: thread 10["tasty_test_execution_thread"] stopped (yielding)
+ecfbd4e6a160: cap 0: starting GC
+all threads:
+threads on capability 0:
+	thread   10 @ 0x420172a000 ["tasty_test_execution_thread"] is not blocked (TSO_DIRTY)
+threads on capability 1:
+	thread   11 @ 0x420172b000 ["tasty_test_execution_thread"] is not blocked (TSO_DIRTY)
+other threads:
+	thread    7 @ 0x420172b088 ["IOManager on cap 1"] is blocked on an external call
+	thread    8 @ 0x4201711ab8 is blocked on an STM operation
+	thread    9 @ 0x420172f270 is blocked on an STM operation
+	thread    4 @ 0x4201712620 is blocked on an STM operation
+	thread    3 @ 0x420172a088 ["TimerManager"] is blocked on an external call
+	thread    2 @ 0x420172a110 ["IOManager on cap 0"] is blocked on an external call
+ecfbc77ef160: cap 1: starting GC
+ecfbc77ef160: cap 1: GC working
+ecfbd4e6a160: cap 0: GC working
+ecfbc77ef160: cap 1: GC idle
+ecfbc77ef160: cap 1: GC done
+ecfbd4e6a160: cap 0: GC idle
+ecfbd4e6a160: cap 0: GC done
+ecfbc77ef160: cap 1: GC idle
+ecfbc77ef160: cap 1: GC done
+ecfbc77ef160: cap 1: all caps stopped for GC
+ecfbc77ef160: cap 1: finished GC
+ecfbc77ef160: cap 1: running thread 11["tasty_test_execution_thread"] (ThreadRunGHC)
+ecfbd4e6a160: cap 0: finished GC
+ecfbd4e6a160: cap 0: running thread 10["tasty_test_execution_thread"] (ThreadRunGHC)
+ecfbd4e6a160: cap 0: thread 10["tasty_test_execution_thread"] stopped (heap overflow)
+ecfbd4e6a160: cap 0: requesting parallel GC
+ecfbd4e6a160: 0 idle caps, 0 failed grabs
+ecfbc77ef160: cap 1: thread 11["tasty_test_execution_thread"] stopped (yielding)
+ecfbc77ef160: cap 1: starting GC
+all threads:
+threads on capability 0:
+	thread   10 @ 0x420172a000 ["tasty_test_execution_thread"] is not blocked (TSO_DIRTY)
+threads on capability 1:
+	thread   11 @ 0x420172b000 ["tasty_test_execution_thread"] is not blocked (TSO_DIRTY)
+other threads:
+	thread    7 @ 0x420172b088 ["IOManager on cap 1"] is blocked on an external call
+	thread    8 @ 0x4201711ab8 is blocked on an STM operation
+	thread    9 @ 0x420172f270 is blocked on an STM operation
+	thread    4 @ 0x4201712620 is blocked on an STM operation
+	thread    3 @ 0x420172a088 ["TimerManager"] is blocked on an external call
+	thread    2 @ 0x420172a110 ["IOManager on cap 0"] is blocked on an external call
+ecfbd4e6a160: cap 0: starting GC
+ecfbd4e6a160: cap 0: GC working
+ecfbc77ef160: cap 1: GC working
+ecfbc77ef160: cap 1: GC idle
+ecfbc77ef160: cap 1: GC done
+ecfbd4e6a160: cap 0: GC idle
+ecfbd4e6a160: cap 0: GC done
+ecfbd4e6a160: cap 0: GC idle
+ecfbd4e6a160: cap 0: GC done
+ecfbd4e6a160: cap 0: all caps stopped for GC
+ecfbd4e6a160: cap 0: finished GC
+ecfbc77ef160: cap 1: finished GC
+ecfbc77ef160: cap 1: running thread 11["tasty_test_execution_thread"] (ThreadRunGHC)
+ecfbd4e6a160: cap 0: running thread 10["tasty_test_execution_thread"] (ThreadRunGHC)
+ecfbd4e6a160: cap 0: thread 10["tasty_test_execution_thread"] stopped (yielding)
+ecfbd4e6a160: cap 0: running thread 10["tasty_test_execution_thread"] (ThreadRunGHC)
+ecfbd4e6a160: cap 0: thread 10["tasty_test_execution_thread"] stopped (heap overflow)
+ecfbd4e6a160: cap 0: requesting parallel GC
+ecfbd4e6a160: 0 idle caps, 0 failed grabs
+ecfbc77ef160: cap 1: thread 11["tasty_test_execution_thread"] stopped (yielding)
+ecfbc77ef160: cap 1: starting GC
+all threads:
+threads on capability 0:
+	thread   10 @ 0x420172a000 ["tasty_test_execution_thread"] is not blocked (TSO_DIRTY)
+threads on capability 1:
+	thread   11 @ 0x420172b000 ["tasty_test_execution_thread"] is not blocked (TSO_DIRTY)
+other threads:
+	thread    7 @ 0x420172b088 ["IOManager on cap 1"] is blocked on an external call
+	thread    8 @ 0x4201711ab8 is blocked on an STM operation
+	thread    9 @ 0x420172f270 is blocked on an STM operation
+	thread    4 @ 0x4201712620 is blocked on an STM operation
+	thread    3 @ 0x420172a088 ["TimerManager"] is blocked on an external call
+	thread    2 @ 0x420172a110 ["IOManager on cap 0"] is blocked on an external call
+ecfbd4e6a160: cap 0: starting GC
+ecfbc77ef160: cap 1: GC working
+ecfbc77ef160: cap 1: GC idle
+ecfbc77ef160: cap 1: GC done
+ecfbd4e6a160: cap 0: GC working
+ecfbd4e6a160: cap 0: GC idle
+ecfbd4e6a160: cap 0: GC done
+ecfbd4e6a160: cap 0: GC idle
+ecfbd4e6a160: cap 0: GC done
+ecfbd4e6a160: cap 0: all caps stopped for GC
+ecfbd4e6a160: cap 0: finished GC
+ecfbd4e6a160: cap 0: running thread 10["tasty_test_execution_thread"] (ThreadRunGHC)
+ecfbc77ef160: cap 1: finished GC
+ecfbc77ef160: cap 1: running thread 11["tasty_test_execution_thread"] (ThreadRunGHC)
+ecfbd4e6a160: cap 0: thread 10["tasty_test_execution_thread"] stopped (yielding)
+ecfbd4e6a160: cap 0: running thread 10["tasty_test_execution_thread"] (ThreadRunGHC)
+ecfbd4e6a160: cap 0: thread 10["tasty_test_execution_thread"] stopped (heap overflow)
+ecfbd4e6a160: cap 0: requesting parallel GC
+ecfbd4e6a160: 0 idle caps, 0 failed grabs
+ecfbc77ef160: cap 1: thread 11["tasty_test_execution_thread"] stopped (yielding)
+ecfbc77ef160: cap 1: starting GC
+all threads:
+threads on capability 0:
+	thread   10 @ 0x420172a000 ["tasty_test_execution_thread"] is not blocked (TSO_DIRTY)
+threads on capability 1:
+	thread   11 @ 0x420172b000 ["tasty_test_execution_thread"] is not blocked (TSO_DIRTY)
+other threads:
+	thread    7 @ 0x420172b088 ["IOManager on cap 1"] is blocked on an external call
+	thread    8 @ 0x4201711ab8 is blocked on an STM operation
+	thread    9 @ 0x420172f270 is blocked on an STM operation
+	thread    4 @ 0x4201712620 is blocked on an STM operation
+	thread    3 @ 0x420172a088 ["TimerManager"] is blocked on an external call
+	thread    2 @ 0x420172a110 ["IOManager on cap 0"] is blocked on an external call
+ecfbd4e6a160: cap 0: starting GC
+ecfbc77ef160: cap 1: GC working
+ecfbd4e6a160: cap 0: GC working
+ecfbc77ef160: cap 1: GC idle
+ecfbc77ef160: cap 1: GC done
+ecfbd4e6a160: cap 0: GC idle
+ecfbd4e6a160: cap 0: GC done
+ecfbd4e6a160: cap 0: GC idle
+ecfbd4e6a160: cap 0: GC done
+ecfbd4e6a160: cap 0: all caps stopped for GC
+ecfbd4e6a160: cap 0: finished GC
+ecfbc77ef160: cap 1: finished GC
+ecfbc77ef160: cap 1: running thread 11["tasty_test_execution_thread"] (ThreadRunGHC)
+ecfbd4e6a160: cap 0: running thread 10["tasty_test_execution_thread"] (ThreadRunGHC)
+ecfbc77ef160: cap 1: thread 11["tasty_test_execution_thread"] stopped (heap overflow)
+ecfbc77ef160: cap 1: requesting parallel GC
+ecfbc77ef160: 0 idle caps, 0 failed grabs
+ecfbd4e6a160: cap 0: thread 10["tasty_test_execution_thread"] stopped (yielding)
+ecfbd4e6a160: cap 0: starting GC
+all threads:
+threads on capability 0:
+	thread   10 @ 0x420172a000 ["tasty_test_execution_thread"] is not blocked (TSO_DIRTY)
+threads on capability 1:
+	thread   11 @ 0x420172b000 ["tasty_test_execution_thread"] is not blocked (TSO_DIRTY)
+other threads:
+	thread    7 @ 0x420172b088 ["IOManager on cap 1"] is blocked on an external call
+	thread    8 @ 0x4201711ab8 is blocked on an STM operation
+	thread    9 @ 0x420172f270 is blocked on an STM operation
+	thread    4 @ 0x4201712620 is blocked on an STM operation
+	thread    3 @ 0x420172a088 ["TimerManager"] is blocked on an external call
+	thread    2 @ 0x420172a110 ["IOManager on cap 0"] is blocked on an external call
+ecfbc77ef160: cap 1: starting GC
+ecfbc77ef160: cap 1: GC working
+ecfbd4e6a160: cap 0: GC working
+ecfbd4e6a160: cap 0: GC idle
+ecfbd4e6a160: cap 0: GC done
+ecfbc77ef160: cap 1: GC idle
+ecfbc77ef160: cap 1: GC done
+ecfbc77ef160: cap 1: GC idle
+ecfbc77ef160: cap 1: GC done
+ecfbc77ef160: cap 1: all caps stopped for GC
+ecfbc77ef160: cap 1: finished GC
+ecfbc77ef160: cap 1: running thread 11["tasty_test_execution_thread"] (ThreadRunGHC)
+ecfbd4e6a160: cap 0: finished GC
+ecfbd4e6a160: cap 0: running thread 10["tasty_test_execution_thread"] (ThreadRunGHC)
+ecfbd4e6a160: cap 0: thread 10["tasty_test_execution_thread"] stopped (yielding)
+ecfbd4e6a160: cap 0: running thread 10["tasty_test_execution_thread"] (ThreadRunGHC)
+ecfbc77ef160: cap 1: thread 11["tasty_test_execution_thread"] stopped (yielding)
+ecfbc77ef160: cap 1: running thread 11["tasty_test_execution_thread"] (ThreadRunGHC)
+ecfbc77ef160: cap 1: thread 11["tasty_test_execution_thread"] stopped (heap overflow)
+ecfbc77ef160: cap 1: requesting parallel GC
+ecfbc77ef160: 0 idle caps, 0 failed grabs
+ecfbd4e6a160: cap 0: thread 10["tasty_test_execution_thread"] stopped (yielding)
+ecfbd4e6a160: cap 0: starting GC
+all threads:
+threads on capability 0:
+	thread   10 @ 0x420172a000 ["tasty_test_execution_thread"] is not blocked (TSO_DIRTY)
+threads on capability 1:
+	thread   11 @ 0x420172b000 ["tasty_test_execution_thread"] is not blocked (TSO_DIRTY)
+other threads:
+	thread    7 @ 0x420172b088 ["IOManager on cap 1"] is blocked on an external call
+	thread    8 @ 0x4201711ab8 is blocked on an STM operation
+	thread    9 @ 0x420172f270 is blocked on an STM operation
+	thread    4 @ 0x4201712620 is blocked on an STM operation
+	thread    3 @ 0x420172a088 ["TimerManager"] is blocked on an external call
+	thread    2 @ 0x420172a110 ["IOManager on cap 0"] is blocked on an external call
+ecfbc77ef160: cap 1: starting GC
+ecfbd4e6a160: cap 0: GC working
+ecfbc77ef160: cap 1: GC working
+ecfbd4e6a160: cap 0: GC idle
+ecfbc77ef160: cap 1: GC idle
+ecfbc77ef160: cap 1: GC done
+ecfbd4e6a160: cap 0: GC done
+ecfbc77ef160: cap 1: GC idle
+ecfbc77ef160: cap 1: GC done
+ecfbc77ef160: cap 1: GC idle
+ecfbc77ef160: cap 1: GC done
+ecfbc77ef160: cap 1: Memory Return (Current: 29) (Needed: 38) (Returned: 0)
+ecfbc77ef160: cap 1: all caps stopped for GC
+ecfbc77ef160: cap 1: finished GC
+ecfbc77ef160: cap 1: running thread 11["tasty_test_execution_thread"] (ThreadRunGHC)
+ecfbd4e6a160: cap 0: finished GC
+ecfbd4e6a160: cap 0: running thread 10["tasty_test_execution_thread"] (ThreadRunGHC)
+ecfbc77ef160: cap 1: thread 11["tasty_test_execution_thread"] stopped (heap overflow)
+ecfbc77ef160: cap 1: requesting parallel GC
+ecfbc77ef160: 0 idle caps, 0 failed grabs
+ecfbd4e6a160: cap 0: thread 10["tasty_test_execution_thread"] stopped (yielding)
+ecfbd4e6a160: cap 0: starting GC
+all threads:
+threads on capability 0:
+	thread   10 @ 0x4201ab4000 ["tasty_test_execution_thread"] is not blocked (TSO_DIRTY)
+threads on capability 1:
+	thread   11 @ 0x4201ab5000 ["tasty_test_execution_thread"] is not blocked (TSO_DIRTY)
+other threads:
+	thread    2 @ 0x4201ab4110 ["IOManager on cap 0"] is blocked on an external call
+	thread    3 @ 0x4201ab4088 ["TimerManager"] is blocked on an external call
+	thread    4 @ 0x4200449848 is blocked on an STM operation
+	thread    9 @ 0x4201ab9300 is blocked on an STM operation
+	thread    8 @ 0x4200448ab0 is blocked on an STM operation
+	thread    7 @ 0x4201ab5088 ["IOManager on cap 1"] is blocked on an external call
+ecfbc77ef160: cap 1: starting GC
+ecfbd4e6a160: cap 0: GC working
+ecfbd4e6a160: cap 0: GC idle
+ecfbd4e6a160: cap 0: GC done
+ecfbc77ef160: cap 1: GC working
+ecfbc77ef160: cap 1: GC idle
+ecfbc77ef160: cap 1: GC done
+ecfbc77ef160: cap 1: GC idle
+ecfbc77ef160: cap 1: GC done
+ecfbc77ef160: cap 1: all caps stopped for GC
+ecfbc77ef160: cap 1: finished GC
+ecfbc77ef160: cap 1: running thread 11["tasty_test_execution_thread"] (ThreadRunGHC)
+ecfbd4e6a160: cap 0: finished GC
+ecfbd4e6a160: cap 0: running thread 10["tasty_test_execution_thread"] (ThreadRunGHC)
+ecfbd4e6a160: cap 0: thread 10["tasty_test_execution_thread"] stopped (yielding)
+ecfbd4e6a160: cap 0: running thread 10["tasty_test_execution_thread"] (ThreadRunGHC)
+ecfbc77ef160: cap 1: thread 11["tasty_test_execution_thread"] stopped (yielding)
+ecfbc77ef160: cap 1: running thread 11["tasty_test_execution_thread"] (ThreadRunGHC)
+ecfbc77ef160: cap 1: thread 11["tasty_test_execution_thread"] stopped (heap overflow)
+ecfbc77ef160: cap 1: requesting parallel GC
+ecfbc77ef160: 0 idle caps, 0 failed grabs
+ecfbd4e6a160: cap 0: thread 10["tasty_test_execution_thread"] stopped (yielding)
+ecfbd4e6a160: cap 0: starting GC
+all threads:
+threads on capability 0:
+	thread   10 @ 0x4201ab4000 ["tasty_test_execution_thread"] is not blocked (TSO_DIRTY)
+threads on capability 1:
+	thread   11 @ 0x4201ab5000 ["tasty_test_execution_thread"] is not blocked (TSO_DIRTY)
+other threads:
+	thread    2 @ 0x4201ab4110 ["IOManager on cap 0"] is blocked on an external call
+	thread    3 @ 0x4201ab4088 ["TimerManager"] is blocked on an external call
+	thread    4 @ 0x4200449848 is blocked on an STM operation
+	thread    9 @ 0x4201ab9300 is blocked on an STM operation
+	thread    8 @ 0x4200448ab0 is blocked on an STM operation
+	thread    7 @ 0x4201ab5088 ["IOManager on cap 1"] is blocked on an external call
+ecfbc77ef160: cap 1: starting GC
+ecfbd4e6a160: cap 0: GC working
+ecfbd4e6a160: cap 0: GC idle
+ecfbd4e6a160: cap 0: GC done
+ecfbc77ef160: cap 1: GC working
+ecfbc77ef160: cap 1: GC idle
+ecfbc77ef160: cap 1: GC done
+ecfbc77ef160: cap 1: GC idle
+ecfbc77ef160: cap 1: GC done
+ecfbc77ef160: cap 1: all caps stopped for GC
+ecfbc77ef160: cap 1: finished GC
+ecfbd4e6a160: cap 0: finished GC
+ecfbd4e6a160: cap 0: running thread 10["tasty_test_execution_thread"] (ThreadRunGHC)
+ecfbc77ef160: cap 1: running thread 11["tasty_test_execution_thread"] (ThreadRunGHC)
+ecfbd4e6a160: cap 0: thread 10["tasty_test_execution_thread"] stopped (heap overflow)
+ecfbd4e6a160: cap 0: requesting parallel GC
+ecfbd4e6a160: 0 idle caps, 0 failed grabs
+ecfbc77ef160: cap 1: thread 11["tasty_test_execution_thread"] stopped (yielding)
+ecfbc77ef160: cap 1: starting GC
+all threads:
+threads on capability 0:
+	thread   10 @ 0x4201ab4000 ["tasty_test_execution_thread"] is not blocked (TSO_DIRTY)
+threads on capability 1:
+	thread   11 @ 0x4201ab5000 ["tasty_test_execution_thread"] is not blocked (TSO_DIRTY)
+other threads:
+	thread    2 @ 0x4201ab4110 ["IOManager on cap 0"] is blocked on an external call
+	thread    3 @ 0x4201ab4088 ["TimerManager"] is blocked on an external call
+	thread    4 @ 0x4200449848 is blocked on an STM operation
+	thread    9 @ 0x4201ab9300 is blocked on an STM operation
+	thread    8 @ 0x4200448ab0 is blocked on an STM operation
+	thread    7 @ 0x4201ab5088 ["IOManager on cap 1"] is blocked on an external call
+ecfbd4e6a160: cap 0: starting GC
+ecfbd4e6a160: cap 0: GC working
+ecfbc77ef160: cap 1: GC working
+ecfbc77ef160: cap 1: GC idle
+ecfbc77ef160: cap 1: GC done
+ecfbd4e6a160: cap 0: GC idle
+ecfbd4e6a160: cap 0: GC done
+ecfbd4e6a160: cap 0: GC idle
+ecfbd4e6a160: cap 0: GC done
+ecfbd4e6a160: cap 0: all caps stopped for GC
+ecfbd4e6a160: cap 0: finished GC
+ecfbc77ef160: cap 1: finished GC
+ecfbc77ef160: cap 1: running thread 11["tasty_test_execution_thread"] (ThreadRunGHC)
+ecfbd4e6a160: cap 0: running thread 10["tasty_test_execution_thread"] (ThreadRunGHC)
+ecfbc77ef160: cap 1: thread 11["tasty_test_execution_thread"] stopped (yielding)
+ecfbc77ef160: cap 1: running thread 11["tasty_test_execution_thread"] (ThreadRunGHC)
+ecfbc77ef160: cap 1: thread 11["tasty_test_execution_thread"] stopped (heap overflow)
+ecfbc77ef160: cap 1: requesting parallel GC
+ecfbc77ef160: 0 idle caps, 0 failed grabs
+ecfbd4e6a160: cap 0: thread 10["tasty_test_execution_thread"] stopped (yielding)
+ecfbd4e6a160: cap 0: starting GC
+all threads:
+threads on capability 0:
+	thread   10 @ 0x4201ab4000 ["tasty_test_execution_thread"] is not blocked (TSO_DIRTY)
+threads on capability 1:
+	thread   11 @ 0x4201ab5000 ["tasty_test_execution_thread"] is not blocked (TSO_DIRTY)
+other threads:
+	thread    2 @ 0x4201ab4110 ["IOManager on cap 0"] is blocked on an external call
+	thread    3 @ 0x4201ab4088 ["TimerManager"] is blocked on an external call
+	thread    4 @ 0x4200449848 is blocked on an STM operation
+	thread    9 @ 0x4201ab9300 is blocked on an STM operation
+	thread    8 @ 0x4200448ab0 is blocked on an STM operation
+	thread    7 @ 0x4201ab5088 ["IOManager on cap 1"] is blocked on an external call
+ecfbc77ef160: cap 1: starting GC
+ecfbd4e6a160: cap 0: GC working
+ecfbc77ef160: cap 1: GC working
+ecfbc77ef160: cap 1: GC idle
+ecfbc77ef160: cap 1: GC done
+ecfbd4e6a160: cap 0: GC idle
+ecfbd4e6a160: cap 0: GC done
+ecfbc77ef160: cap 1: GC idle
+ecfbc77ef160: cap 1: GC done
+ecfbc77ef160: cap 1: all caps stopped for GC
+ecfbc77ef160: cap 1: finished GC
+ecfbd4e6a160: cap 0: finished GC
+ecfbd4e6a160: cap 0: running thread 10["tasty_test_execution_thread"] (ThreadRunGHC)
+ecfbd4e6a160: cap 0: thread 10["tasty_test_execution_thread"] stopped (heap overflow)
+ecfbd4e6a160: cap 0: requesting parallel GC
+ecfbd4e6a160: 0 idle caps, 0 failed grabs
+ecfbc77ef160: cap 1: starting GC
+all threads:
+threads on capability 0:
+	thread   10 @ 0x4201ab4000 ["tasty_test_execution_thread"] is not blocked (TSO_DIRTY)
+threads on capability 1:
+	thread   11 @ 0x4201ab5000 ["tasty_test_execution_thread"] is not blocked
+other threads:
+	thread    2 @ 0x4201ab4110 ["IOManager on cap 0"] is blocked on an external call
+	thread    3 @ 0x4201ab4088 ["TimerManager"] is blocked on an external call
+	thread    4 @ 0x4200449848 is blocked on an STM operation
+	thread    9 @ 0x4201ab9300 is blocked on an STM operation
+	thread    8 @ 0x4200448ab0 is blocked on an STM operation
+	thread    7 @ 0x4201ab5088 ["IOManager on cap 1"] is blocked on an external call
+ecfbd4e6a160: cap 0: starting GC
+ecfbc77ef160: cap 1: GC working
+ecfbc77ef160: cap 1: GC idle
+ecfbc77ef160: cap 1: GC done
+ecfbd4e6a160: cap 0: GC working
+ecfbd4e6a160: cap 0: GC idle
+ecfbd4e6a160: cap 0: GC done
+ecfbd4e6a160: cap 0: GC idle
+ecfbd4e6a160: cap 0: GC done
+ecfbd4e6a160: cap 0: all caps stopped for GC
+ecfbd4e6a160: cap 0: finished GC
+ecfbc77ef160: cap 1: finished GC
+ecfbc77ef160: cap 1: running thread 11["tasty_test_execution_thread"] (ThreadRunGHC)
+ecfbd4e6a160: cap 0: running thread 10["tasty_test_execution_thread"] (ThreadRunGHC)
+ecfbc77ef160: cap 1: thread 11["tasty_test_execution_thread"] stopped (yielding)
+ecfbc77ef160: cap 1: running thread 11["tasty_test_execution_thread"] (ThreadRunGHC)
+ecfbc77ef160: cap 1: thread 11["tasty_test_execution_thread"] stopped (heap overflow)
+ecfbc77ef160: cap 1: requesting parallel GC
+ecfbc77ef160: 0 idle caps, 0 failed grabs
+ecfbd4e6a160: cap 0: thread 10["tasty_test_execution_thread"] stopped (yielding)
+ecfbd4e6a160: cap 0: starting GC
+all threads:
+threads on capability 0:
+	thread   10 @ 0x4201ab4000 ["tasty_test_execution_thread"] is not blocked (TSO_DIRTY)
+threads on capability 1:
+	thread   11 @ 0x4201ab5000 ["tasty_test_execution_thread"] is not blocked (TSO_DIRTY)
+other threads:
+	thread    2 @ 0x4201ab4110 ["IOManager on cap 0"] is blocked on an external call
+	thread    3 @ 0x4201ab4088 ["TimerManager"] is blocked on an external call
+	thread    4 @ 0x4200449848 is blocked on an STM operation
+	thread    9 @ 0x4201ab9300 is blocked on an STM operation
+	thread    8 @ 0x4200448ab0 is blocked on an STM operation
+	thread    7 @ 0x4201ab5088 ["IOManager on cap 1"] is blocked on an external call
+ecfbc77ef160: cap 1: starting GC
+ecfbc77ef160: cap 1: GC working
+ecfbd4e6a160: cap 0: GC working
+ecfbd4e6a160: cap 0: GC idle
+ecfbd4e6a160: cap 0: GC done
+ecfbc77ef160: cap 1: GC idle
+ecfbc77ef160: cap 1: GC done
+ecfbc77ef160: cap 1: GC idle
+ecfbc77ef160: cap 1: GC done
+ecfbc77ef160: cap 1: all caps stopped for GC
+ecfbc77ef160: cap 1: finished GC
+ecfbc77ef160: cap 1: running thread 11["tasty_test_execution_thread"] (ThreadRunGHC)
+ecfbd4e6a160: cap 0: finished GC
+ecfbd4e6a160: cap 0: running thread 10["tasty_test_execution_thread"] (ThreadRunGHC)
+ecfbc77ef160: cap 1: thread 11["tasty_test_execution_thread"] stopped (heap overflow)
+ecfbc77ef160: cap 1: requesting parallel GC
+ecfbc77ef160: 0 idle caps, 0 failed grabs
+ecfbd4e6a160: cap 0: thread 10["tasty_test_execution_thread"] stopped (yielding)
+ecfbd4e6a160: cap 0: starting GC
+all threads:
+threads on capability 0:
+	thread   10 @ 0x4201ab4000 ["tasty_test_execution_thread"] is not blocked (TSO_DIRTY)
+threads on capability 1:
+	thread   11 @ 0x4201ab5000 ["tasty_test_execution_thread"] is not blocked (TSO_DIRTY)
+other threads:
+	thread    2 @ 0x4201ab4110 ["IOManager on cap 0"] is blocked on an external call
+	thread    3 @ 0x4201ab4088 ["TimerManager"] is blocked on an external call
+	thread    4 @ 0x4200449848 is blocked on an STM operation
+	thread    9 @ 0x4201ab9300 is blocked on an STM operation
+	thread    8 @ 0x4200448ab0 is blocked on an STM operation
+	thread    7 @ 0x4201ab5088 ["IOManager on cap 1"] is blocked on an external call
+ecfbc77ef160: cap 1: starting GC
+ecfbd4e6a160: cap 0: GC working
+ecfbc77ef160: cap 1: GC working
+ecfbc77ef160: cap 1: GC idle
+ecfbc77ef160: cap 1: GC done
+ecfbd4e6a160: cap 0: GC idle
+ecfbd4e6a160: cap 0: GC done
+ecfbc77ef160: cap 1: GC idle
+ecfbc77ef160: cap 1: GC done
+ecfbc77ef160: cap 1: GC idle
+ecfbc77ef160: cap 1: GC done
+ecfbc77ef160: cap 1: Memory Return (Current: 31) (Needed: 41) (Returned: 0)
+ecfbc77ef160: cap 1: all caps stopped for GC
+ecfbc77ef160: cap 1: finished GC
+ecfbc77ef160: cap 1: running thread 11["tasty_test_execution_thread"] (ThreadRunGHC)
+ecfbc77ef160: cap 1: thread 11["tasty_test_execution_thread"] stopped (yielding)
+ecfbc77ef160: cap 1: running thread 11["tasty_test_execution_thread"] (ThreadRunGHC)
+ecfbd4e6a160: cap 0: finished GC
+ecfbd4e6a160: cap 0: running thread 10["tasty_test_execution_thread"] (ThreadRunGHC)
+ecfbd4e6a160: cap 0: thread 10["tasty_test_execution_thread"] stopped (yielding)
+ecfbd4e6a160: cap 0: running thread 10["tasty_test_execution_thread"] (ThreadRunGHC)
+ecfbc77ef160: cap 1: thread 11["tasty_test_execution_thread"] stopped (heap overflow)
+ecfbc77ef160: cap 1: requesting parallel GC
+ecfbc77ef160: 0 idle caps, 0 failed grabs
+ecfbd4e6a160: cap 0: thread 10["tasty_test_execution_thread"] stopped (yielding)
+ecfbd4e6a160: cap 0: starting GC
+all threads:
+threads on capability 0:
+	thread   10 @ 0x4201733000 ["tasty_test_execution_thread"] is not blocked (TSO_DIRTY)
+threads on capability 1:
+	thread   11 @ 0x4200467000 ["tasty_test_execution_thread"] is not blocked (TSO_DIRTY)
+other threads:
+	thread    7 @ 0x4200467088 ["IOManager on cap 1"] is blocked on an external call
+	thread    8 @ 0x420105cab0 is blocked on an STM operation
+	thread    9 @ 0x4201321300 is blocked on an STM operation
+	thread    4 @ 0x420105d8b8 is blocked on an STM operation
+	thread    3 @ 0x4201733088 ["TimerManager"] is blocked on an external call
+	thread    2 @ 0x4201733110 ["IOManager on cap 0"] is blocked on an external call
+ecfbc77ef160: cap 1: starting GC
+ecfbd4e6a160: cap 0: GC working
+ecfbd4e6a160: cap 0: GC idle
+ecfbd4e6a160: cap 0: GC done
+ecfbc77ef160: cap 1: GC working
+ecfbc77ef160: cap 1: GC idle
+ecfbc77ef160: cap 1: GC done
+ecfbc77ef160: cap 1: GC idle
+ecfbc77ef160: cap 1: GC done
+ecfbc77ef160: cap 1: all caps stopped for GC
+ecfbc77ef160: cap 1: finished GC
+ecfbc77ef160: cap 1: running thread 11["tasty_test_execution_thread"] (ThreadRunGHC)
+ecfbd4e6a160: cap 0: finished GC
+ecfbd4e6a160: cap 0: running thread 10["tasty_test_execution_thread"] (ThreadRunGHC)
+ecfbd4e6a160: cap 0: thread 10["tasty_test_execution_thread"] stopped (heap overflow)
+ecfbd4e6a160: cap 0: requesting parallel GC
+ecfbd4e6a160: 0 idle caps, 0 failed grabs
+ecfbc77ef160: cap 1: thread 11["tasty_test_execution_thread"] stopped (yielding)
+ecfbc77ef160: cap 1: starting GC
+all threads:
+threads on capability 0:
+	thread   10 @ 0x4201733000 ["tasty_test_execution_thread"] is not blocked (TSO_DIRTY)
+threads on capability 1:
+	thread   11 @ 0x4200467000 ["tasty_test_execution_thread"] is not blocked (TSO_DIRTY)
+other threads:
+	thread    7 @ 0x4200467088 ["IOManager on cap 1"] is blocked on an external call
+	thread    8 @ 0x420105cab0 is blocked on an STM operation
+	thread    9 @ 0x4201321300 is blocked on an STM operation
+	thread    4 @ 0x420105d8b8 is blocked on an STM operation
+	thread    3 @ 0x4201733088 ["TimerManager"] is blocked on an external call
+	thread    2 @ 0x4201733110 ["IOManager on cap 0"] is blocked on an external call
+ecfbd4e6a160: cap 0: starting GC
+ecfbc77ef160: cap 1: GC working
+ecfbc77ef160: cap 1: GC idle
+ecfbc77ef160: cap 1: GC done
+ecfbd4e6a160: cap 0: GC working
+ecfbd4e6a160: cap 0: GC idle
+ecfbd4e6a160: cap 0: GC done
+ecfbd4e6a160: cap 0: GC idle
+ecfbd4e6a160: cap 0: GC done
+ecfbd4e6a160: cap 0: all caps stopped for GC
+ecfbd4e6a160: cap 0: finished GC
+ecfbd4e6a160: cap 0: running thread 10["tasty_test_execution_thread"] (ThreadRunGHC)
+ecfbc77ef160: cap 1: finished GC
+ecfbc77ef160: cap 1: running thread 11["tasty_test_execution_thread"] (ThreadRunGHC)
+ecfbd4e6a160: cap 0: thread 10["tasty_test_execution_thread"] stopped (heap overflow)
+ecfbd4e6a160: cap 0: requesting parallel GC
+ecfbd4e6a160: 0 idle caps, 0 failed grabs
+ecfbc77ef160: cap 1: thread 11["tasty_test_execution_thread"] stopped (yielding)
+ecfbc77ef160: cap 1: starting GC
+all threads:
+threads on capability 0:
+	thread   10 @ 0x4201733000 ["tasty_test_execution_thread"] is not blocked (TSO_DIRTY)
+threads on capability 1:
+	thread   11 @ 0x4200467000 ["tasty_test_execution_thread"] is not blocked (TSO_DIRTY)
+other threads:
+	thread    7 @ 0x4200467088 ["IOManager on cap 1"] is blocked on an external call
+	thread    8 @ 0x420105cab0 is blocked on an STM operation
+	thread    9 @ 0x4201321300 is blocked on an STM operation
+	thread    4 @ 0x420105d8b8 is blocked on an STM operation
+	thread    3 @ 0x4201733088 ["TimerManager"] is blocked on an external call
+	thread    2 @ 0x4201733110 ["IOManager on cap 0"] is blocked on an external call
+ecfbd4e6a160: cap 0: starting GC
+ecfbc77ef160: cap 1: GC working
+ecfbc77ef160: cap 1: GC idle
+ecfbc77ef160: cap 1: GC done
+ecfbd4e6a160: cap 0: GC working
+ecfbd4e6a160: cap 0: GC idle
+ecfbd4e6a160: cap 0: GC done
+ecfbd4e6a160: cap 0: GC idle
+ecfbd4e6a160: cap 0: GC done
+ecfbd4e6a160: cap 0: all caps stopped for GC
+ecfbd4e6a160: cap 0: finished GC
+ecfbc77ef160: cap 1: finished GC
+ecfbc77ef160: cap 1: running thread 11["tasty_test_execution_thread"] (ThreadRunGHC)
+ecfbd4e6a160: cap 0: running thread 10["tasty_test_execution_thread"] (ThreadRunGHC)
+ecfbd4e6a160: cap 0: thread 10["tasty_test_execution_thread"] stopped (yielding)
+ecfbd4e6a160: cap 0: running thread 10["tasty_test_execution_thread"] (ThreadRunGHC)
+ecfbc77ef160: cap 1: thread 11["tasty_test_execution_thread"] stopped (yielding)
+ecfbc77ef160: cap 1: running thread 11["tasty_test_execution_thread"] (ThreadRunGHC)
+ecfbd4e6a160: cap 0: thread 10["tasty_test_execution_thread"] stopped (heap overflow)
+ecfbd4e6a160: cap 0: requesting parallel GC
+ecfbd4e6a160: 0 idle caps, 0 failed grabs
+ecfbc77ef160: cap 1: thread 11["tasty_test_execution_thread"] stopped (yielding)
+ecfbc77ef160: cap 1: starting GC
+all threads:
+threads on capability 0:
+	thread   10 @ 0x4201733000 ["tasty_test_execution_thread"] is not blocked (TSO_DIRTY)
+threads on capability 1:
+	thread   11 @ 0x4200467000 ["tasty_test_execution_thread"] is not blocked (TSO_DIRTY)
+other threads:
+	thread    7 @ 0x4200467088 ["IOManager on cap 1"] is blocked on an external call
+	thread    8 @ 0x420105cab0 is blocked on an STM operation
+	thread    9 @ 0x4201321300 is blocked on an STM operation
+	thread    4 @ 0x420105d8b8 is blocked on an STM operation
+	thread    3 @ 0x4201733088 ["TimerManager"] is blocked on an external call
+	thread    2 @ 0x4201733110 ["IOManager on cap 0"] is blocked on an external call
+ecfbd4e6a160: cap 0: starting GC
+ecfbc77ef160: cap 1: GC working
+ecfbc77ef160: cap 1: GC idle
+ecfbc77ef160: cap 1: GC done
+ecfbd4e6a160: cap 0: GC working
+ecfbd4e6a160: cap 0: GC idle
+ecfbd4e6a160: cap 0: GC done
+ecfbd4e6a160: cap 0: GC idle
+ecfbd4e6a160: cap 0: GC done
+ecfbd4e6a160: cap 0: all caps stopped for GC
+ecfbd4e6a160: cap 0: finished GC
+ecfbd4e6a160: cap 0: running thread 10["tasty_test_execution_thread"] (ThreadRunGHC)
+ecfbc77ef160: cap 1: finished GC
+ecfbc77ef160: cap 1: running thread 11["tasty_test_execution_thread"] (ThreadRunGHC)
+ecfbc77ef160: cap 1: thread 11["tasty_test_execution_thread"] stopped (heap overflow)
+ecfbc77ef160: cap 1: requesting parallel GC
+ecfbc77ef160: 0 idle caps, 0 failed grabs
+ecfbd4e6a160: cap 0: thread 10["tasty_test_execution_thread"] stopped (yielding)
+ecfbd4e6a160: cap 0: starting GC
+all threads:
+threads on capability 0:
+	thread   10 @ 0x4201733000 ["tasty_test_execution_thread"] is not blocked (TSO_DIRTY)
+threads on capability 1:
+	thread   11 @ 0x4200467000 ["tasty_test_execution_thread"] is not blocked (TSO_DIRTY)
+other threads:
+	thread    7 @ 0x4200467088 ["IOManager on cap 1"] is blocked on an external call
+	thread    8 @ 0x420105cab0 is blocked on an STM operation
+	thread    9 @ 0x4201321300 is blocked on an STM operation
+	thread    4 @ 0x420105d8b8 is blocked on an STM operation
+	thread    3 @ 0x4201733088 ["TimerManager"] is blocked on an external call
+	thread    2 @ 0x4201733110 ["IOManager on cap 0"] is blocked on an external call
+ecfbc77ef160: cap 1: starting GC
+ecfbd4e6a160: cap 0: GC working
+ecfbc77ef160: cap 1: GC working
+ecfbd4e6a160: cap 0: GC idle
+ecfbd4e6a160: cap 0: GC done
+ecfbc77ef160: cap 1: GC idle
+ecfbc77ef160: cap 1: GC done
+ecfbc77ef160: cap 1: GC idle
+ecfbc77ef160: cap 1: GC done
+ecfbc77ef160: cap 1: all caps stopped for GC
+ecfbc77ef160: cap 1: finished GC
+ecfbc77ef160: cap 1: running thread 11["tasty_test_execution_thread"] (ThreadRunGHC)
+ecfbc77ef160: cap 1: thread 11["tasty_test_execution_thread"] stopped (yielding)
+ecfbc77ef160: cap 1: running thread 11["tasty_test_execution_thread"] (ThreadRunGHC)
+ecfbd4e6a160: cap 0: finished GC
+ecfbd4e6a160: cap 0: running thread 10["tasty_test_execution_thread"] (ThreadRunGHC)
+ecfbd4e6a160: cap 0: thread 10["tasty_test_execution_thread"] stopped (yielding)
+ecfbd4e6a160: cap 0: running thread 10["tasty_test_execution_thread"] (ThreadRunGHC)
+ecfbc77ef160: cap 1: thread 11["tasty_test_execution_thread"] stopped (heap overflow)
+ecfbc77ef160: cap 1: requesting parallel GC
+ecfbc77ef160: 0 idle caps, 0 failed grabs
+ecfbd4e6a160: cap 0: thread 10["tasty_test_execution_thread"] stopped (yielding)
+ecfbd4e6a160: cap 0: starting GC
+all threads:
+threads on capability 0:
+	thread   10 @ 0x4201733000 ["tasty_test_execution_thread"] is not blocked (TSO_DIRTY)
+threads on capability 1:
+	thread   11 @ 0x4200467000 ["tasty_test_execution_thread"] is not blocked (TSO_DIRTY)
+other threads:
+	thread    7 @ 0x4200467088 ["IOManager on cap 1"] is blocked on an external call
+	thread    8 @ 0x420105cab0 is blocked on an STM operation
+	thread    9 @ 0x4201321300 is blocked on an STM operation
+	thread    4 @ 0x420105d8b8 is blocked on an STM operation
+	thread    3 @ 0x4201733088 ["TimerManager"] is blocked on an external call
+	thread    2 @ 0x4201733110 ["IOManager on cap 0"] is blocked on an external call
+ecfbc77ef160: cap 1: starting GC
+ecfbd4e6a160: cap 0: GC working
+ecfbc77ef160: cap 1: GC working
+ecfbd4e6a160: cap 0: GC idle
+ecfbd4e6a160: cap 0: GC done
+ecfbc77ef160: cap 1: GC idle
+ecfbc77ef160: cap 1: GC done
+ecfbc77ef160: cap 1: GC idle
+ecfbc77ef160: cap 1: GC done
+ecfbc77ef160: cap 1: all caps stopped for GC
+ecfbc77ef160: cap 1: finished GC
+ecfbd4e6a160: cap 0: finished GC
+ecfbd4e6a160: cap 0: running thread 10["tasty_test_execution_thread"] (ThreadRunGHC)
+ecfbc77ef160: cap 1: running thread 11["tasty_test_execution_thread"] (ThreadRunGHC)
+ecfbd4e6a160: cap 0: thread 10["tasty_test_execution_thread"] stopped (heap overflow)
+ecfbd4e6a160: cap 0: requesting parallel GC
+ecfbd4e6a160: 0 idle caps, 0 failed grabs
+ecfbc77ef160: cap 1: thread 11["tasty_test_execution_thread"] stopped (yielding)
+ecfbc77ef160: cap 1: starting GC
+all threads:
+threads on capability 0:
+	thread   10 @ 0x4201733000 ["tasty_test_execution_thread"] is not blocked (TSO_DIRTY)
+threads on capability 1:
+	thread   11 @ 0x4200467000 ["tasty_test_execution_thread"] is not blocked (TSO_DIRTY)
+other threads:
+	thread    7 @ 0x4200467088 ["IOManager on cap 1"] is blocked on an external call
+	thread    8 @ 0x420105cab0 is blocked on an STM operation
+	thread    9 @ 0x4201321300 is blocked on an STM operation
+	thread    4 @ 0x420105d8b8 is blocked on an STM operation
+	thread    3 @ 0x4201733088 ["TimerManager"] is blocked on an external call
+	thread    2 @ 0x4201733110 ["IOManager on cap 0"] is blocked on an external call
+ecfbd4e6a160: cap 0: starting GC
+ecfbd4e6a160: cap 0: GC working
+ecfbc77ef160: cap 1: GC working
+ecfbc77ef160: cap 1: GC idle
+ecfbc77ef160: cap 1: GC done
+ecfbd4e6a160: cap 0: GC idle
+ecfbd4e6a160: cap 0: GC done
+ecfbd4e6a160: cap 0: GC idle
+ecfbd4e6a160: cap 0: GC done
+ecfbd4e6a160: cap 0: all caps stopped for GC
+ecfbd4e6a160: cap 0: finished GC
+ecfbc77ef160: cap 1: finished GC
+ecfbc77ef160: cap 1: running thread 11["tasty_test_execution_thread"] (ThreadRunGHC)
+ecfbc77ef160: cap 1: thread 11["tasty_test_execution_thread"] stopped (yielding)
+ecfbc77ef160: cap 1: running thread 11["tasty_test_execution_thread"] (ThreadRunGHC)
+ecfbd4e6a160: cap 0: running thread 10["tasty_test_execution_thread"] (ThreadRunGHC)
+ecfbd4e6a160: cap 0: thread 10["tasty_test_execution_thread"] stopped (yielding)
+ecfbd4e6a160: cap 0: running thread 10["tasty_test_execution_thread"] (ThreadRunGHC)
+ecfbc77ef160: cap 1: thread 11["tasty_test_execution_thread"] stopped (heap overflow)
+ecfbc77ef160: cap 1: requesting parallel GC
+ecfbc77ef160: 0 idle caps, 0 failed grabs
+ecfbd4e6a160: cap 0: thread 10["tasty_test_execution_thread"] stopped (yielding)
+ecfbd4e6a160: cap 0: starting GC
+all threads:
+threads on capability 0:
+	thread   10 @ 0x4201733000 ["tasty_test_execution_thread"] is not blocked (TSO_DIRTY)
+threads on capability 1:
+	thread   11 @ 0x4200467000 ["tasty_test_execution_thread"] is not blocked (TSO_DIRTY)
+other threads:
+	thread    7 @ 0x4200467088 ["IOManager on cap 1"] is blocked on an external call
+	thread    8 @ 0x420105cab0 is blocked on an STM operation
+	thread    9 @ 0x4201321300 is blocked on an STM operation
+	thread    4 @ 0x420105d8b8 is blocked on an STM operation
+	thread    3 @ 0x4201733088 ["TimerManager"] is blocked on an external call
+	thread    2 @ 0x4201733110 ["IOManager on cap 0"] is blocked on an external call
+ecfbc77ef160: cap 1: starting GC
+ecfbd4e6a160: cap 0: GC working
+ecfbc77ef160: cap 1: GC working
+ecfbd4e6a160: cap 0: GC idle
+ecfbd4e6a160: cap 0: GC done
+ecfbc77ef160: cap 1: GC idle
+ecfbc77ef160: cap 1: GC done
+ecfbc77ef160: cap 1: GC idle
+ecfbc77ef160: cap 1: GC done
+ecfbc77ef160: cap 1: all caps stopped for GC
+ecfbc77ef160: cap 1: finished GC
+ecfbd4e6a160: cap 0: finished GC
+ecfbd4e6a160: cap 0: running thread 10["tasty_test_execution_thread"] (ThreadRunGHC)
+ecfbd4e6a160: cap 0: thread 10["tasty_test_execution_thread"] stopped (yielding)
+ecfbd4e6a160: cap 0: running thread 10["tasty_test_execution_thread"] (ThreadRunGHC)
+ecfbc77ef160: cap 1: running thread 11["tasty_test_execution_thread"] (ThreadRunGHC)
+ecfbc77ef160: cap 1: thread 11["tasty_test_execution_thread"] stopped (yielding)
+ecfbc77ef160: cap 1: running thread 11["tasty_test_execution_thread"] (ThreadRunGHC)
+ecfbd4e6a160: cap 0: thread 10["tasty_test_execution_thread"] stopped (heap overflow)
+ecfbd4e6a160: cap 0: requesting parallel GC
+ecfbd4e6a160: 0 idle caps, 0 failed grabs
+ecfbc77ef160: cap 1: thread 11["tasty_test_execution_thread"] stopped (yielding)
+ecfbc77ef160: cap 1: starting GC
+all threads:
+threads on capability 0:
+	thread   10 @ 0x4201733000 ["tasty_test_execution_thread"] is not blocked (TSO_DIRTY)
+threads on capability 1:
+	thread   11 @ 0x4200467000 ["tasty_test_execution_thread"] is not blocked (TSO_DIRTY)
+other threads:
+	thread    7 @ 0x4200467088 ["IOManager on cap 1"] is blocked on an external call
+	thread    8 @ 0x420105cab0 is blocked on an STM operation
+	thread    9 @ 0x4201321300 is blocked on an STM operation
+	thread    4 @ 0x420105d8b8 is blocked on an STM operation
+	thread    3 @ 0x4201733088 ["TimerManager"] is blocked on an external call
+	thread    2 @ 0x4201733110 ["IOManager on cap 0"] is blocked on an external call
+ecfbd4e6a160: cap 0: starting GC
+ecfbc77ef160: cap 1: GC working
+ecfbd4e6a160: cap 0: GC working
+ecfbc77ef160: cap 1: GC idle
+ecfbc77ef160: cap 1: GC done
+ecfbd4e6a160: cap 0: GC idle
+ecfbd4e6a160: cap 0: GC done
+ecfbd4e6a160: cap 0: GC idle
+ecfbd4e6a160: cap 0: GC done
+ecfbd4e6a160: cap 0: GC idle
+ecfbd4e6a160: cap 0: GC done
+ecfbd4e6a160: cap 0: Memory Return (Current: 35) (Needed: 47) (Returned: 0)
+ecfbd4e6a160: cap 0: all caps stopped for GC
+ecfbd4e6a160: cap 0: finished GC
+ecfbc77ef160: cap 1: finished GC
+ecfbc77ef160: cap 1: running thread 11["tasty_test_execution_thread"] (ThreadRunGHC)
+ecfbd4e6a160: cap 0: running thread 10["tasty_test_execution_thread"] (ThreadRunGHC)
+ecfbd4e6a160: cap 0: thread 10["tasty_test_execution_thread"] stopped (yielding)
+ecfbd4e6a160: cap 0: running thread 10["tasty_test_execution_thread"] (ThreadRunGHC)
+ecfbd4e6a160: cap 0: thread 10["tasty_test_execution_thread"] stopped (heap overflow)
+ecfbd4e6a160: cap 0: requesting parallel GC
+ecfbd4e6a160: 0 idle caps, 0 failed grabs
+ecfbc77ef160: cap 1: thread 11["tasty_test_execution_thread"] stopped (yielding)
+ecfbc77ef160: cap 1: starting GC
+all threads:
+threads on capability 0:
+	thread   10 @ 0x4201a8d000 ["tasty_test_execution_thread"] is not blocked (TSO_DIRTY)
+threads on capability 1:
+	thread   11 @ 0x4201a8e000 ["tasty_test_execution_thread"] is not blocked (TSO_DIRTY)
+other threads:
+	thread    2 @ 0x4201a8d110 ["IOManager on cap 0"] is blocked on an external call
+	thread    3 @ 0x4201a8d088 ["TimerManager"] is blocked on an external call
+	thread    4 @ 0x42018d07b8 is blocked on an STM operation
+	thread    9 @ 0x42019c4600 is blocked on an STM operation
+	thread    8 @ 0x42018d3000 is blocked on an STM operation
+	thread    7 @ 0x4201a8e088 ["IOManager on cap 1"] is blocked on an external call
+ecfbd4e6a160: cap 0: starting GC
+ecfbc77ef160: cap 1: GC working
+ecfbc77ef160: cap 1: GC idle
+ecfbc77ef160: cap 1: GC done
+ecfbd4e6a160: cap 0: GC working
+ecfbd4e6a160: cap 0: GC idle
+ecfbd4e6a160: cap 0: GC done
+ecfbd4e6a160: cap 0: GC idle
+ecfbd4e6a160: cap 0: GC done
+ecfbd4e6a160: cap 0: all caps stopped for GC
+ecfbd4e6a160: cap 0: finished GC
+ecfbc77ef160: cap 1: finished GC
+ecfbc77ef160: cap 1: running thread 11["tasty_test_execution_thread"] (ThreadRunGHC)
+ecfbd4e6a160: cap 0: running thread 10["tasty_test_execution_thread"] (ThreadRunGHC)
+ecfbc77ef160: cap 1: thread 11["tasty_test_execution_thread"] stopped (heap overflow)
+ecfbc77ef160: cap 1: requesting parallel GC
+ecfbc77ef160: 0 idle caps, 0 failed grabs
+ecfbd4e6a160: cap 0: thread 10["tasty_test_execution_thread"] stopped (yielding)
+ecfbd4e6a160: cap 0: starting GC
+all threads:
+threads on capability 0:
+	thread   10 @ 0x4201a8d000 ["tasty_test_execution_thread"] is not blocked (TSO_DIRTY)
+threads on capability 1:
+	thread   11 @ 0x4201a8e000 ["tasty_test_execution_thread"] is not blocked (TSO_DIRTY)
+other threads:
+	thread    2 @ 0x4201a8d110 ["IOManager on cap 0"] is blocked on an external call
+	thread    3 @ 0x4201a8d088 ["TimerManager"] is blocked on an external call
+	thread    4 @ 0x42018d07b8 is blocked on an STM operation
+	thread    9 @ 0x42019c4600 is blocked on an STM operation
+	thread    8 @ 0x42018d3000 is blocked on an STM operation
+	thread    7 @ 0x4201a8e088 ["IOManager on cap 1"] is blocked on an external call
+ecfbc77ef160: cap 1: starting GC
+ecfbd4e6a160: cap 0: GC working
+ecfbd4e6a160: cap 0: GC idle
+ecfbd4e6a160: cap 0: GC done
+ecfbc77ef160: cap 1: GC working
+ecfbc77ef160: cap 1: GC idle
+ecfbc77ef160: cap 1: GC done
+ecfbc77ef160: cap 1: GC idle
+ecfbc77ef160: cap 1: GC done
+ecfbc77ef160: cap 1: all caps stopped for GC
+ecfbc77ef160: cap 1: finished GC
+ecfbd4e6a160: cap 0: finished GC
+ecfbd4e6a160: cap 0: running thread 10["tasty_test_execution_thread"] (ThreadRunGHC)
+ecfbc77ef160: cap 1: running thread 11["tasty_test_execution_thread"] (ThreadRunGHC)
+ecfbd4e6a160: cap 0: thread 10["tasty_test_execution_thread"] stopped (heap overflow)
+ecfbd4e6a160: cap 0: requesting parallel GC
+ecfbd4e6a160: 0 idle caps, 0 failed grabs
+ecfbc77ef160: cap 1: thread 11["tasty_test_execution_thread"] stopped (yielding)
+ecfbc77ef160: cap 1: starting GC
+all threads:
+threads on capability 0:
+	thread   10 @ 0x4201a8d000 ["tasty_test_execution_thread"] is not blocked (TSO_DIRTY)
+threads on capability 1:
+	thread   11 @ 0x4201a8e000 ["tasty_test_execution_thread"] is not blocked (TSO_DIRTY)
+other threads:
+	thread    2 @ 0x4201a8d110 ["IOManager on cap 0"] is blocked on an external call
+	thread    3 @ 0x4201a8d088 ["TimerManager"] is blocked on an external call
+	thread    4 @ 0x42018d07b8 is blocked on an STM operation
+	thread    9 @ 0x42019c4600 is blocked on an STM operation
+	thread    8 @ 0x42018d3000 is blocked on an STM operation
+	thread    7 @ 0x4201a8e088 ["IOManager on cap 1"] is blocked on an external call
+ecfbd4e6a160: cap 0: starting GC
+ecfbc77ef160: cap 1: GC working
+ecfbc77ef160: cap 1: GC idle
+ecfbc77ef160: cap 1: GC done
+ecfbd4e6a160: cap 0: GC working
+ecfbd4e6a160: cap 0: GC idle
+ecfbd4e6a160: cap 0: GC done
+ecfbd4e6a160: cap 0: GC idle
+ecfbd4e6a160: cap 0: GC done
+ecfbd4e6a160: cap 0: all caps stopped for GC
+ecfbd4e6a160: cap 0: finished GC
+ecfbd4e6a160: cap 0: running thread 10["tasty_test_execution_thread"] (ThreadRunGHC)
+ecfbc77ef160: cap 1: finished GC
+ecfbc77ef160: cap 1: running thread 11["tasty_test_execution_thread"] (ThreadRunGHC)
+ecfbd4e6a160: cap 0: thread 10["tasty_test_execution_thread"] stopped (suspended while making a foreign call)
+ecfbd4e6a160: starting new worker on capability 0
+ecfbd4e6a160: new task (taskCount: 7)
+ecfbd4e6a160: new worker task (taskCount: 7)
+ecfbd4e6a160: changing the number of Capabilities from 2 to 8
+ecfbd4e6a160: returning; I want capability 1
+ecfbc77ef160: cap 1: thread 11["tasty_test_execution_thread"] stopped (suspended while making a foreign call)
+ecfbc77ef160: passing capability 1 to worker 0xecfbd4e6a160
+ecfbd4e6a160: resuming capability 1
+ecfbd4e6a160: grabbing all the capabilities (0/2)
+ecfbd4e6a160: returning; I want capability 0
+ecfbc77ef160: changing the number of Capabilities from 2 to 8
+ecfbc77ef160: returning; I want capability 1
+ecfbc6fdf160: cap 0: schedule()
+ecfbc6fdf160: giving up capability 0
+ecfbc6fdf160: passing capability 0 to worker 0xecfbd4e6a160
+ecfbd4e6a160: resuming capability 0
+ecfbd4e6a160: grabbing all the capabilities (1/2)
+ecfbd4e6a160: cap 2: initialised
+ecfbd4e6a160: assigned cap 2 to capset 0
+ecfbd4e6a160: assigned cap 2 to capset 1
+ecfbd4e6a160: cap 3: initialised
+ecfbd4e6a160: assigned cap 3 to capset 0
+ecfbd4e6a160: assigned cap 3 to capset 1
+ecfbd4e6a160: cap 4: initialised
+ecfbd4e6a160: assigned cap 4 to capset 0
+ecfbd4e6a160: assigned cap 4 to capset 1
+ecfbd4e6a160: cap 5: initialised
+ecfbd4e6a160: assigned cap 5 to capset 0
+ecfbd4e6a160: assigned cap 5 to capset 1
+ecfbd4e6a160: cap 6: initialised
+ecfbd4e6a160: assigned cap 6 to capset 0
+ecfbd4e6a160: assigned cap 6 to capset 1
+ecfbd4e6a160: cap 7: initialised
+ecfbd4e6a160: assigned cap 7 to capset 0
+ecfbd4e6a160: assigned cap 7 to capset 1
+ecfbd4e6a160: allocated 6 more capabilities
+ecfbd4e6a160: freeing capability 0
+ecfbd4e6a160: cap 1: created thread 13[""]
+ecfbd4e6a160: new bound thread (13)
+ecfbd4e6a160: cap 1: schedule()
+ecfbd4e6a160: giving up capability 1
+ecfbd4e6a160: passing capability 1 to worker 0xecfbc77ef160
+ecfbc77ef160: resuming capability 1
+ecfbc77ef160: grabbing all the capabilities (0/8)
+ecfbc77ef160: returning; I want capability 0
+ecfbc77ef160: resuming capability 0
+ecfbc77ef160: grabbing all the capabilities (1/8)
+ecfbc77ef160: grabbing all the capabilities (2/8)
+ecfbc77ef160: returning; I want capability 2
+ecfbc77ef160: resuming capability 2
+ecfbc77ef160: grabbing all the capabilities (3/8)
+ecfbc77ef160: returning; I want capability 3
+ecfbc77ef160: resuming capability 3
+ecfbc77ef160: grabbing all the capabilities (4/8)
+ecfbc77ef160: returning; I want capability 4
+ecfbc77ef160: resuming capability 4
+ecfbc77ef160: grabbing all the capabilities (5/8)
+ecfbc77ef160: returning; I want capability 5
+ecfbc77ef160: resuming capability 5
+ecfbc77ef160: grabbing all the capabilities (6/8)
+ecfbc77ef160: returning; I want capability 6
+ecfbc77ef160: resuming capability 6
+ecfbc77ef160: grabbing all the capabilities (7/8)
+ecfbc77ef160: returning; I want capability 7
+ecfbc77ef160: resuming capability 7
+ecfbc77ef160: freeing capability 0
+ecfbc77ef160: cap 1: created thread 14[""]
+ecfbc77ef160: new bound thread (14)
+ecfbc77ef160: cap 1: schedule()
+ecfbc77ef160: cap 1: 2 threads, 0 sparks, and 1 free capabilities, sharing...
+ecfbc77ef160: cap 1: thread 13[""] migrating to cap 0
+ecfbc77ef160: passing capability 0 to bound task 0xecfbd4e6a160
+ecfbc77ef160: cap 1: running thread 14[""] (ThreadRunGHC)
+ecfbc77ef160: cap 1: thread 14[""] stopped (stack overflow, size 108)
+ecfbc77ef160: cap 1: allocating new stack chunk of size 32768 bytes
+ecfbc77ef160: cap 1: running thread 14[""] (ThreadRunGHC)
+ecfbc77ef160: cap 1: created thread 15[""]
+ecfbc77ef160: cap 1: thread 15[""] migrating to cap 2
+ecfbc77ef160: cap 1: waking up thread 15[""] on cap 2
+ecfbc77ef160: cap 1: message: try wakeup thread 15 on cap 2
+ecfbc77ef160: cap 1: thread 15 has label IOManager on cap 2
+ecfbc77ef160: cap 1: created thread 16[""]
+ecfbc77ef160: cap 1: thread 16[""] migrating to cap 3
+ecfbc77ef160: cap 1: waking up thread 16[""] on cap 3
+ecfbc77ef160: cap 1: message: try wakeup thread 16 on cap 3
+ecfbc77ef160: cap 1: thread 16 has label IOManager on cap 3
+ecfbc77ef160: cap 1: created thread 17[""]
+ecfbc77ef160: cap 1: thread 17[""] migrating to cap 4
+ecfbc77ef160: cap 1: waking up thread 17[""] on cap 4
+ecfbc77ef160: cap 1: message: try wakeup thread 17 on cap 4
+ecfbc77ef160: cap 1: thread 17 has label IOManager on cap 4
+ecfbc77ef160: cap 1: created thread 18[""]
+ecfbc77ef160: cap 1: thread 18[""] migrating to cap 5
+ecfbc77ef160: cap 1: waking up thread 18[""] on cap 5
+ecfbc77ef160: cap 1: message: try wakeup thread 18 on cap 5
+ecfbc77ef160: cap 1: thread 18 has label IOManager on cap 5
+ecfbc77ef160: cap 1: created thread 19[""]
+ecfbc77ef160: cap 1: thread 19[""] migrating to cap 6
+ecfbc77ef160: cap 1: waking up thread 19[""] on cap 6
+ecfbc77ef160: cap 1: message: try wakeup thread 19 on cap 6
+ecfbc77ef160: cap 1: thread 19 has label IOManager on cap 6
+ecfbc77ef160: cap 1: created thread 20[""]
+ecfbc77ef160: cap 1: thread 20[""] migrating to cap 7
+ecfbc77ef160: cap 1: waking up thread 20[""] on cap 7
+ecfbc77ef160: cap 1: message: try wakeup thread 20 on cap 7
+ecfbc77ef160: cap 1: thread 20 has label IOManager on cap 7
+ecfbc77ef160: cap 1: thread 14[""] stopped (finished)
+ecfbc77ef160: bound thread (14) finished
+ecfbc77ef160: starting new worker on capability 1
+ecfbc77ef160: new task (taskCount: 8)
+ecfbc77ef160: new worker task (taskCount: 8)
+ecfbc77ef160: task exiting
+ecfbc77ef160: returning; I want capability 1
+ecfbd4e6a160: woken up on capability 0
+ecfbd4e6a160: resuming capability 0
+ecfbd4e6a160: cap 0: running thread 13[""] (ThreadRunGHC)
+ecfbd4e6a160: cap 0: thread 13[""] stopped (finished)
+ecfbd4e6a160: bound thread (13) finished
+ecfbd4e6a160: freeing capability 0
+ecfbd4e6a160: task exiting
+ecfbd4e6a160: returning; I want capability 0
+ecfbd4e6a160: resuming capability 0
+ecfbd4e6a160: cap 0: running thread 10["tasty_test_execution_thread"] (ThreadRunGHC)
+ecfbd4e6a160: cap 0: created thread 21[""]
+ecfbd4e6a160: cap 0: created thread 22[""]
+ecfbd4e6a160: cap 0: thread 22[""] migrating to cap 1
+ecfbd4e6a160: cap 0: waking up thread 22[""] on cap 1
+ecfbd4e6a160: cap 0: message: try wakeup thread 22 on cap 1
+ecfbd4e6a160: cap 0: created thread 23[""]
+ecfbd4e6a160: cap 0: thread 23[""] migrating to cap 2
+ecfbd4e6a160: cap 0: waking up thread 23[""] on cap 2
+ecfbd4e6a160: cap 0: message: try wakeup thread 23 on cap 2
+ecfbd4e6a160: cap 0: created thread 24[""]
+ecfbd4e6a160: cap 0: thread 24[""] migrating to cap 3
+ecfbd4e6a160: cap 0: waking up thread 24[""] on cap 3
+ecfbd4e6a160: cap 0: message: try wakeup thread 24 on cap 3
+ecfbd4e6a160: cap 0: created thread 25[""]
+ecfbd4e6a160: cap 0: thread 25[""] migrating to cap 4
+ecfbd4e6a160: cap 0: waking up thread 25[""] on cap 4
+ecfbd4e6a160: cap 0: message: try wakeup thread 25 on cap 4
+ecfbd4e6a160: cap 0: created thread 26[""]
+ecfbd4e6a160: cap 0: thread 26[""] migrating to cap 5
+ecfbd4e6a160: cap 0: waking up thread 26[""] on cap 5
+ecfbd4e6a160: cap 0: message: try wakeup thread 26 on cap 5
+ecfbd4e6a160: cap 0: created thread 27[""]
+ecfbd4e6a160: cap 0: thread 27[""] migrating to cap 6
+ecfbd4e6a160: cap 0: waking up thread 27[""] on cap 6
+ecfbd4e6a160: cap 0: message: try wakeup thread 27 on cap 6
+ecfbd4e6a160: cap 0: created thread 28[""]
+ecfbd4e6a160: cap 0: thread 28[""] migrating to cap 7
+ecfbd4e6a160: cap 0: waking up thread 28[""] on cap 7
+ecfbd4e6a160: cap 0: message: try wakeup thread 28 on cap 7
+ecfbd4e6a160: cap 0: thread 10["tasty_test_execution_thread"] stopped (blocked on an MVar)
+	thread   10 @ 0x4201a8d000 ["tasty_test_execution_thread"] is blocked on an MVar @ 0x42003bd840 (TSO_DIRTY)
+ecfbd4e6a160: cap 0: running thread 21[""] (ThreadRunGHC)
+ecfbd4e6a160: cap 0: thread 21[""] stopped (yielding)
+ecfbd4e6a160: cap 0: running thread 21[""] (ThreadRunGHC)
+ecfbc67cf160: cap 1: schedule()
+ecfbc67cf160: cap 1: message: try wakeup thread 22
+ecfbc67cf160: cap 1: waking up thread 22[""] on cap 1
+ecfbc67cf160: giving up capability 1
+ecfbc67cf160: passing capability 1 to worker 0xecfbc77ef160
+ecfbc77ef160: resuming capability 1
+ecfbc77ef160: cap 1: running thread 11["tasty_test_execution_thread"] (ThreadRunGHC)
+ecfbc77ef160: cap 1: created thread 29[""]
+ecfbc77ef160: cap 1: thread 29[""] migrating to cap 0
+ecfbc77ef160: cap 1: waking up thread 29[""] on cap 0
+ecfbc77ef160: cap 1: message: try wakeup thread 29 on cap 0
+ecfbc77ef160: cap 1: created thread 30[""]
+ecfbc77ef160: cap 1: created thread 31[""]
+ecfbc77ef160: cap 1: thread 31[""] migrating to cap 2
+ecfbc77ef160: cap 1: waking up thread 31[""] on cap 2
+ecfbc77ef160: cap 1: message: try wakeup thread 31 on cap 2
+ecfbc77ef160: cap 1: created thread 32[""]
+ecfbc77ef160: cap 1: thread 32[""] migrating to cap 3
+ecfbc77ef160: cap 1: waking up thread 32[""] on cap 3
+ecfbc77ef160: cap 1: message: try wakeup thread 32 on cap 3
+ecfbc77ef160: cap 1: thread 11["tasty_test_execution_thread"] stopped (yielding)
+ecfbc77ef160: cap 1: running thread 22[""] (ThreadRunGHC)
+ecfbd4e6a160: cap 0: thread 21[""] stopped (yielding)
+ecfbd4e6a160: cap 0: message: try wakeup thread 29
+ecfbd4e6a160: cap 0: waking up thread 29[""] on cap 0
+ecfbd4e6a160: cap 0: running thread 21[""] (ThreadRunGHC)
+ecfbc77ef160: cap 1: thread 22[""] stopped (yielding)
+ecfbc77ef160: cap 1: running thread 30[""] (ThreadRunGHC)
+ecfbc77ef160: cap 1: thread 30[""] stopped (blocked on an atomic MVar read)
+	thread   30 @ 0x4200cbdcf0 is blocked on atomic MVar read @ 0x4200cbfd38 (TSO_DIRTY)
+ecfbc77ef160: cap 1: running thread 11["tasty_test_execution_thread"] (ThreadRunGHC)
+ecfbc77ef160: cap 1: created thread 33[""]
+ecfbc77ef160: cap 1: thread 33[""] migrating to cap 4
+ecfbc77ef160: cap 1: waking up thread 33[""] on cap 4
+ecfbc77ef160: cap 1: message: try wakeup thread 33 on cap 4
+ecfbc77ef160: cap 1: created thread 34[""]
+ecfbc77ef160: cap 1: thread 34[""] migrating to cap 5
+ecfbc77ef160: cap 1: waking up thread 34[""] on cap 5
+ecfbc77ef160: cap 1: message: try wakeup thread 34 on cap 5
+ecfbc77ef160: cap 1: created thread 35[""]
+ecfbc77ef160: cap 1: thread 35[""] migrating to cap 6
+ecfbc77ef160: cap 1: waking up thread 35[""] on cap 6
+ecfbc77ef160: cap 1: message: try wakeup thread 35 on cap 6
+ecfbc77ef160: cap 1: created thread 36[""]
+ecfbc77ef160: cap 1: thread 36[""] migrating to cap 7
+ecfbc77ef160: cap 1: waking up thread 36[""] on cap 7
+ecfbc77ef160: cap 1: message: try wakeup thread 36 on cap 7
+ecfbc77ef160: cap 1: waking up thread 30[""] on cap 1
+ecfbc77ef160: cap 1: thread 11["tasty_test_execution_thread"] stopped (blocked on an MVar)
+	thread   11 @ 0x4201a8e000 ["tasty_test_execution_thread"] is blocked on an MVar @ 0x4200cbfdc8 (TSO_DIRTY)
+ecfbc77ef160: cap 1: running thread 22[""] (ThreadRunGHC)
+ecfbc77ef160: cap 1: thread 22[""] stopped (heap overflow)
+ecfbc77ef160: cap 1: requesting parallel GC
+ecfbc77ef160: returning; I want capability 0
+ecfbd4e6a160: cap 0: thread 21[""] stopped (yielding)
+ecfbd4e6a160: giving up capability 0
+ecfbd4e6a160: passing capability 0 to worker 0xecfbc77ef160
+ecfbc77ef160: resuming capability 0
+ecfbc77ef160: returning; I want capability 2
+ecfbd567a160: returning; I want capability 0

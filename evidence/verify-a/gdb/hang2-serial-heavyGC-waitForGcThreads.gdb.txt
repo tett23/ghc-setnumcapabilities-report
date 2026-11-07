@@ -1,0 +1,126 @@
+0x0000f4d32896f228 in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+n_capabilities=2 enabled_capabilities=2
+$1 = (PendingSync * volatile) 0xf4d325c2f5c0
+$2 = {type = SYNC_GC_PAR, idle = 0xf4d310000e00, task = 0xf4d310000e20}
+pending_sync->task id(os thread)=269187708830080
+cap 0: running_task=0xf4d310000e20 returning_tasks_hd=0x33df2a80 n_returning_tasks=2 disabled=0
+    task os_id=269187708830080 stopped=0 task->cap=0xb88100 (cap no 0) incall=0xf4d308000bc0
+cap 1: running_task=(nil) returning_tasks_hd=(nil) n_returning_tasks=0 disabled=0
+  Id   Target Id                                        Frame 
+* 1    Thread 0xf4d328c1f420 (LWP 1194) "caprace-debug" 0x0000f4d32896f228 in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+  2    Thread 0xf4d324c14180 (LWP 1203) "ghc_worker"    0x0000f4d32896f228 in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+  3    Thread 0xf4d325424180 (LWP 1202) "ghc_worker"    0x0000f4d32896f228 in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+  4    Thread 0xf4d325c34180 (LWP 1201) "ghc_worker"    0x0000f4d32896f228 in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+  5    Thread 0xf4d326444180 (LWP 1200) "ghc_worker"    0x0000f4d32896f228 in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+  6    Thread 0xf4d326c54180 (LWP 1199) "ghc_worker"    0x0000f4d32896f228 in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+  7    Thread 0xf4d327464180 (LWP 1198) "ghc_worker"    0x0000f4d32896f228 in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+  8    Thread 0xf4d327c74180 (LWP 1197) "ghc_worker"    0x0000f4d32896f22c in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+  9    Thread 0xf4d3284dd180 (LWP 1196) "ghc_ticker"    0x0000f4d32896f228 in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+
+Thread 9 (Thread 0xf4d3284dd180 (LWP 1196) "ghc_ticker"):
+#0  0x0000f4d32896f228 in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+#1  0x0000f4d3289628b8 in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+#2  0x0000f4d328962c50 [PAC] in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+#3  0x0000f4d32896564c [PAC] in pthread_cond_wait () from /lib/aarch64-linux-gnu/libc.so.6
+#4  0x000000000086b0f8 [PAC] in waitCondition (pCond=0xb8a370 <start_cond>, pMut=0xb8a3a0 <mutex>) at rts/posix/OSThreads.c:143
+#5  0x0000000000869f28 in itimer_thread_func (_handle_tick=0x83e428 <handle_tick>) at rts/posix/ticker/TimerFd.c:147
+#6  0x000000000086b348 in start_thread (param=0x33dd4610) at rts/posix/OSThreads.c:218
+#7  0x0000f4d3289661d8 in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+#8  0x0000f4d3289ce15c [PAC] in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+
+Thread 8 (Thread 0xf4d327c74180 (LWP 1197) "ghc_worker"):
+#0  0x0000f4d32896f22c in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+#1  0x0000f4d3289628b8 in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+#2  0x0000f4d3289628fc [PAC] in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+#3  0x0000f4d3289ce424 [PAC] in epoll_pwait () from /lib/aarch64-linux-gnu/libc.so.6
+#4  0x000000000073ce14 [PAC] in ghczminternal_GHCziInternalziEventziEPoll_new10_info ()
+#5  0x004500000073ce14 in ?? ()
+Backtrace stopped: previous frame identical to this frame (corrupt stack?)
+
+Thread 7 (Thread 0xf4d327464180 (LWP 1198) "ghc_worker"):
+#0  0x0000f4d32896f228 in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+#1  0x0000f4d3289628b8 in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+#2  0x0000f4d3289628fc [PAC] in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+#3  0x0000f4d3289c38a0 [PAC] in poll () from /lib/aarch64-linux-gnu/libc.so.6
+#4  0x000000000074aa34 [PAC] in ?? ()
+Backtrace stopped: previous frame identical to this frame (corrupt stack?)
+
+Thread 6 (Thread 0xf4d326c54180 (LWP 1199) "ghc_worker"):
+#0  0x0000f4d32896f228 in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+#1  0x0000f4d3289628b8 in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+#2  0x0000f4d328962c50 [PAC] in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+#3  0x0000f4d32896564c [PAC] in pthread_cond_wait () from /lib/aarch64-linux-gnu/libc.so.6
+#4  0x000000000086b0f8 [PAC] in waitCondition (pCond=0x33df2a90, pMut=0x33df2ac0) at rts/posix/OSThreads.c:143
+#5  0x0000000000815084 in waitForReturnCapability (task=0x33df2a80) at rts/Capability.c:794
+#6  0x000000000081549c in waitForCapability (pCap=0xf4d326c4f658, task=0x33df2a80) at rts/Capability.c:921
+#7  0x000000000083044c in resumeThread (task_=0x33df2a80) at rts/Schedule.c:2557
+#8  0x00000000004087a0 in frame_dummy ()
+Backtrace stopped: previous frame identical to this frame (corrupt stack?)
+
+Thread 5 (Thread 0xf4d326444180 (LWP 1200) "ghc_worker"):
+#0  0x0000f4d32896f228 in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+#1  0x0000f4d3289628b8 in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+#2  0x0000f4d328962c50 [PAC] in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+#3  0x0000f4d32896564c [PAC] in pthread_cond_wait () from /lib/aarch64-linux-gnu/libc.so.6
+#4  0x000000000086b0f8 [PAC] in waitCondition (pCond=0xf4d310000bd0, pMut=0xf4d310000c00) at rts/posix/OSThreads.c:143
+#5  0x0000000000814d5c in waitForWorkerCapability (task=0xf4d310000bc0) at rts/Capability.c:723
+#6  0x00000000008158e0 in yieldCapability (pCap=0xf4d32643f510, task=0xf4d310000bc0, gcAllowed=false) at rts/Capability.c:1027
+#7  0x000000000082d54c in scheduleYield (pcap=0xf4d32643f558, task=0xf4d310000bc0) at rts/Schedule.c:706
+#8  0x000000000082c588 in schedule (initialCapability=0xb88100 <MainCapability>, task=0xf4d310000bc0) at rts/Schedule.c:311
+#9  0x000000000083072c in scheduleWaitThread (tso=0x420040a378, ret=0x0, pcap=0xf4d32643f650) at rts/Schedule.c:2678
+#10 0x000000000081f308 in rts_evalIO (cap=0xf4d32643f650, p=0xa463e8, ret=0x0) at rts/RtsAPI.c:474
+#11 0x0000000000830004 in setNumCapabilities (new_n_capabilities=2) at rts/Schedule.c:2380
+
+Thread 4 (Thread 0xf4d325c34180 (LWP 1201) "ghc_worker"):
+#0  0x0000f4d32896f228 in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+#1  0x0000f4d3289628b8 in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+#2  0x0000f4d328962c50 [PAC] in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+#3  0x0000f4d328965854 [PAC] in pthread_cond_timedwait () from /lib/aarch64-linux-gnu/libc.so.6
+#4  0x000000000086b278 [PAC] in timedWaitCondition (pCond=0xb89e80 <gc_entry_arrived_cv>, pMut=0xb89e48 <gc_entry_mutex>, timeout=1000000) at rts/posix/OSThreads.c:165
+#5  0x000000000084be60 in waitForGcThreads (cap=0xb88100 <MainCapability>, idle_cap=0xf4d310000e00) at rts/sm/GC.c:1527
+#6  0x000000000082f114 in scheduleDoGC (pcap=0xf4d325c2f660, task=0xf4d310000e20, force_major=true, is_overflow_gc=false, deadlock_detect=false, nonconcurrent=false) at rts/Schedule.c:1823
+#7  0x0000000000831130 in performGC_ (force_major=true, nonconcurrent=false) at rts/Schedule.c:2851
+#8  0x000000000083117c in performMajorGC () at rts/Schedule.c:2865
+#9  0x0000000000408788 in frame_dummy ()
+Backtrace stopped: previous frame identical to this frame (corrupt stack?)
+
+Thread 3 (Thread 0xf4d325424180 (LWP 1202) "ghc_worker"):
+#0  0x0000f4d32896f228 in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+#1  0x0000f4d3289628b8 in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+#2  0x0000f4d328962c50 [PAC] in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+#3  0x0000f4d32896564c [PAC] in pthread_cond_wait () from /lib/aarch64-linux-gnu/libc.so.6
+#4  0x000000000086b0f8 [PAC] in waitCondition (pCond=0xf4d314012460, pMut=0xf4d314012490) at rts/posix/OSThreads.c:143
+#5  0x0000000000814d5c in waitForWorkerCapability (task=0xf4d314012450) at rts/Capability.c:723
+#6  0x00000000008158e0 in yieldCapability (pCap=0xf4d3254237b0, task=0xf4d314012450, gcAllowed=true) at rts/Capability.c:1027
+#7  0x000000000082d54c in scheduleYield (pcap=0xf4d3254237f8, task=0xf4d314012450) at rts/Schedule.c:706
+#8  0x000000000082c588 in schedule (initialCapability=0xf4d314000c40, task=0xf4d314012450) at rts/Schedule.c:311
+#9  0x0000000000830b78 in scheduleWorker (cap=0xf4d314000c40, task=0xf4d314012450) at rts/Schedule.c:2695
+#10 0x000000000083985c in workerStart (task=0xf4d314012450) at rts/Task.c:444
+#11 0x000000000086b348 in start_thread (param=0x33de4b60) at rts/posix/OSThreads.c:218
+
+Thread 2 (Thread 0xf4d324c14180 (LWP 1203) "ghc_worker"):
+#0  0x0000f4d32896f228 in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+#1  0x0000f4d3289628b8 in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+#2  0x0000f4d328962c50 [PAC] in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+#3  0x0000f4d32896564c [PAC] in pthread_cond_wait () from /lib/aarch64-linux-gnu/libc.so.6
+#4  0x000000000086b0f8 [PAC] in waitCondition (pCond=0xf4d310001060, pMut=0xf4d310001090) at rts/posix/OSThreads.c:143
+#5  0x0000000000815084 in waitForReturnCapability (task=0xf4d310001050) at rts/Capability.c:794
+#6  0x000000000081549c in waitForCapability (pCap=0xf4d324c0f658, task=0xf4d310001050) at rts/Capability.c:921
+#7  0x000000000083044c in resumeThread (task_=0xf4d310001050) at rts/Schedule.c:2557
+#8  0x00000000004087a0 in frame_dummy ()
+Backtrace stopped: previous frame identical to this frame (corrupt stack?)
+
+Thread 1 (Thread 0xf4d328c1f420 (LWP 1194) "caprace-debug"):
+#0  0x0000f4d32896f228 in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+#1  0x0000f4d3289628b8 in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+#2  0x0000f4d328962c50 [PAC] in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+#3  0x0000f4d32896564c [PAC] in pthread_cond_wait () from /lib/aarch64-linux-gnu/libc.so.6
+#4  0x000000000086b0f8 [PAC] in waitCondition (pCond=0x33df2720, pMut=0x33df2750) at rts/posix/OSThreads.c:143
+#5  0x0000000000814d5c in waitForWorkerCapability (task=0x33df2710) at rts/Capability.c:723
+#6  0x00000000008158e0 in yieldCapability (pCap=0xffffc2568480, task=0x33df2710, gcAllowed=true) at rts/Capability.c:1027
+#7  0x000000000082d54c in scheduleYield (pcap=0xffffc25684c8, task=0x33df2710) at rts/Schedule.c:706
+#8  0x000000000082c588 in schedule (initialCapability=0xb88100 <MainCapability>, task=0x33df2710) at rts/Schedule.c:311
+#9  0x000000000083072c in scheduleWaitThread (tso=0x4200406d20, ret=0x0, pcap=0xffffc2568650) at rts/Schedule.c:2678
+#10 0x000000000081f6c4 in rts_evalLazyIO (cap=0xffffc2568650, p=0xa40d40, ret=0x0) at rts/RtsAPI.c:564
+#11 0x0000000000825dcc in hs_main (argc=5, argv=0xffffc25688d8, main_closure=0xa40d40, rts_config=...) at rts/RtsMain.c:72
+[Inferior 1 (process 1194) detached]

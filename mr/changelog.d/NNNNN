@@ -1,0 +1,12 @@
+section: rts
+synopsis: Fix a deadlock when several threads call ``setNumCapabilities`` at the same time
+issues: #NNNNN
+mrs: !MMMMM
+description: {
+``setNumCapabilities`` read the number of capabilities before it stopped the
+world and released only that many afterwards.  When another call grew the
+capability array in between, the capabilities it had added stayed owned by a
+task that had already returned, and the next garbage collection (or any later
+stop-the-world operation) waited for them forever.  The counts are now read
+after the world is stopped, so every acquired capability is released.
+}

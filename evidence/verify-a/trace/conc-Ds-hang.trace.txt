@@ -1,0 +1,625 @@
+fb9515578420: created capset 0 of type 2
+fb9515578420: created capset 1 of type 3
+fb9515578420: cap 0: initialised
+fb9515578420: assigned cap 0 to capset 0
+fb9515578420: assigned cap 0 to capset 1
+fb9515578420: allocated 1 more capabilities
+fb9515578420: new task (taskCount: 1)
+fb9515578420: returning; I want capability 0
+fb9515578420: resuming capability 0
+fb9515578420: cap 0: created thread 1[""]
+fb9515578420: new bound thread (1)
+fb9515578420: cap 0: schedule()
+fb9515578420: cap 0: running thread 1[""] (ThreadRunGHC)
+fb9515578420: cap 0: thread 1[""] stopped (stack overflow, size 108)
+fb9515578420: cap 0: allocating new stack chunk of size 32768 bytes
+fb9515578420: cap 0: running thread 1[""] (ThreadRunGHC)
+fb9515578420: cap 0: created thread 2[""]
+fb9515578420: cap 0: thread 2 has label IOManager on cap 0
+fb9515578420: cap 0: thread 1[""] stopped (yielding)
+fb9515578420: giving up capability 0
+fb9515578420: starting new worker on capability 0
+fb9515578420: new task (taskCount: 2)
+fb9515578420: new worker task (taskCount: 2)
+fb950ffff180: cap 0: schedule()
+fb950ffff180: cap 0: running thread 2["IOManager on cap 0"] (ThreadRunGHC)
+fb950ffff180: cap 0: thread 2["IOManager on cap 0"] stopped (yielding)
+fb950ffff180: giving up capability 0
+fb950ffff180: passing capability 0 to bound task 0xfb9515578420
+fb9515578420: woken up on capability 0
+fb9515578420: resuming capability 0
+fb9515578420: cap 0: running thread 1[""] (ThreadRunGHC)
+fb9515578420: cap 0: created thread 3[""]
+fb9515578420: cap 0: thread 3 has label TimerManager
+fb9515578420: cap 0: thread 1[""] stopped (finished)
+fb9515578420: bound thread (1) finished
+fb9515578420: passing capability 0 to worker 0xfb950ffff180
+fb950ffff180: woken up on capability 0
+fb9515578420: task exiting
+fb950ffff180: resuming capability 0
+fb950ffff180: cap 0: running thread 2["IOManager on cap 0"] (ThreadRunGHC)
+fb950ffff180: cap 0: thread 2["IOManager on cap 0"] stopped (suspended while making a foreign call)
+fb950ffff180: starting new worker on capability 0
+fb950ffff180: new task (taskCount: 3)
+fb950ffff180: new worker task (taskCount: 3)
+fb9515578420: returning; I want capability 0
+fb950f7ef180: cap 0: schedule()
+fb950f7ef180: giving up capability 0
+fb950f7ef180: passing capability 0 to worker 0xfb9515578420
+fb9515578420: resuming capability 0
+fb9515578420: cap 0: created thread 4[""]
+fb9515578420: new bound thread (4)
+fb9515578420: cap 0: schedule()
+fb9515578420: giving up capability 0
+fb9515578420: passing capability 0 to worker 0xfb950f7ef180
+fb950f7ef180: woken up on capability 0
+fb950f7ef180: resuming capability 0
+fb950f7ef180: cap 0: running thread 3["TimerManager"] (ThreadRunGHC)
+fb950f7ef180: cap 0: thread 3["TimerManager"] stopped (suspended while making a foreign call)
+fb950f7ef180: passing capability 0 to bound task 0xfb9515578420
+fb9515578420: woken up on capability 0
+fb9515578420: resuming capability 0
+fb9515578420: cap 0: running thread 4[""] (ThreadRunGHC)
+fb9515578420: cap 0: thread 4[""] stopped (yielding)
+fb9515578420: cap 0: running thread 4[""] (ThreadRunGHC)
+fb9515578420: cap 0: created thread 5[""]
+fb9515578420: cap 0: thread 4[""] stopped (yielding)
+fb9515578420: giving up capability 0
+fb9515578420: starting new worker on capability 0
+fb9515578420: new task (taskCount: 4)
+fb9515578420: new worker task (taskCount: 4)
+fb950efdf180: cap 0: schedule()
+fb950efdf180: cap 0: running thread 5[""] (ThreadRunGHC)
+fb950efdf180: cap 0: thread 5[""] stopped (suspended while making a foreign call)
+fb950efdf180: passing capability 0 to bound task 0xfb9515578420
+fb950efdf180: returning; I want capability 0
+fb950efdf180: resuming capability 0
+fb950efdf180: cap 0: requesting parallel GC
+fb950efdf180: 0 idle caps, 0 failed grabs
+all threads:
+threads on capability 0:
+	thread    4 @ 0x4200406d20 is not blocked (TSO_DIRTY)
+other threads:
+	thread    5 @ 0x420040a458 is blocked on an external call (TSO_DIRTY)
+	thread    3 @ 0x42004068f0 ["TimerManager"] is blocked on an external call (TSO_DIRTY)
+	thread    2 @ 0x4200406498 ["IOManager on cap 0"] is blocked on an external call (TSO_DIRTY)
+fb950efdf180: cap 0: starting GC
+fb9515578420: woken up on capability 0
+fb9515578420: capability 0 is owned by another task
+fb950efdf180: cap 0: GC working
+fb950efdf180: cap 0: GC idle
+fb950efdf180: cap 0: GC done
+fb950efdf180: cap 0: GC idle
+fb950efdf180: cap 0: GC done
+fb950efdf180: cap 0: GC idle
+fb950efdf180: cap 0: GC done
+fb950efdf180: cap 0: Memory Return (Current: 6) (Needed: 8) (Returned: 0)
+fb950efdf180: cap 0: all caps stopped for GC
+fb950efdf180: cap 0: finished GC
+fb950efdf180: passing capability 0 to bound task 0xfb9515578420
+fb950efdf180: task exiting
+fb950efdf180: returning; I want capability 0
+fb950efdf180: resuming capability 0
+fb950efdf180: cap 0: running thread 5[""] (ThreadRunGHC)
+fb950efdf180: cap 0: thread 5[""] stopped (yielding)
+fb950efdf180: cap 0: running thread 5[""] (ThreadRunGHC)
+fb9515578420: woken up on capability 0
+fb9515578420: capability 0 is owned by another task
+fb950efdf180: cap 0: thread 5[""] stopped (suspended while making a foreign call)
+fb950efdf180: passing capability 0 to bound task 0xfb9515578420
+fb950efdf180: returning; I want capability 0
+fb950efdf180: resuming capability 0
+fb950efdf180: cap 0: requesting parallel GC
+fb950efdf180: 0 idle caps, 0 failed grabs
+all threads:
+threads on capability 0:
+	thread    4 @ 0x42004fe000 is not blocked (TSO_DIRTY)
+other threads:
+	thread    2 @ 0x42004fe198 ["IOManager on cap 0"] is blocked on an external call
+	thread    3 @ 0x42004fe110 ["TimerManager"] is blocked on an external call
+	thread    5 @ 0x42004fe088 is blocked on an external call (TSO_DIRTY)
+fb950efdf180: cap 0: starting GC
+fb950efdf180: cap 0: GC working
+fb9515578420: woken up on capability 0
+fb9515578420: capability 0 is owned by another task
+fb950efdf180: cap 0: GC idle
+fb950efdf180: cap 0: GC done
+fb950efdf180: cap 0: GC idle
+fb950efdf180: cap 0: GC done
+fb950efdf180: cap 0: GC idle
+fb950efdf180: cap 0: GC done
+fb950efdf180: cap 0: Memory Return (Current: 6) (Needed: 8) (Returned: 0)
+fb950efdf180: cap 0: all caps stopped for GC
+fb950efdf180: cap 0: finished GC
+fb950efdf180: passing capability 0 to bound task 0xfb9515578420
+fb950efdf180: task exiting
+fb950efdf180: returning; I want capability 0
+fb950efdf180: resuming capability 0
+fb950efdf180: cap 0: running thread 5[""] (ThreadRunGHC)
+fb9515578420: woken up on capability 0
+fb9515578420: capability 0 is owned by another task
+fb950efdf180: cap 0: thread 5[""] stopped (yielding)
+fb950efdf180: cap 0: running thread 5[""] (ThreadRunGHC)
+fb950efdf180: cap 0: thread 5[""] stopped (suspended while making a foreign call)
+fb950efdf180: passing capability 0 to bound task 0xfb9515578420
+fb950efdf180: returning; I want capability 0
+fb950efdf180: resuming capability 0
+fb9515578420: woken up on capability 0
+fb9515578420: capability 0 is owned by another task
+fb950efdf180: cap 0: requesting parallel GC
+fb950efdf180: 0 idle caps, 0 failed grabs
+all threads:
+threads on capability 0:
+	thread    4 @ 0x42005e7000 is not blocked (TSO_DIRTY)
+other threads:
+	thread    5 @ 0x42005e7088 is blocked on an external call (TSO_DIRTY)
+	thread    3 @ 0x42005e7110 ["TimerManager"] is blocked on an external call
+	thread    2 @ 0x42005e7198 ["IOManager on cap 0"] is blocked on an external call
+fb950efdf180: cap 0: starting GC
+fb950efdf180: cap 0: GC working
+fb950efdf180: cap 0: GC idle
+fb950efdf180: cap 0: GC done
+fb950efdf180: cap 0: GC idle
+fb950efdf180: cap 0: GC done
+fb950efdf180: cap 0: GC idle
+fb950efdf180: cap 0: GC done
+fb950efdf180: cap 0: Memory Return (Current: 6) (Needed: 8) (Returned: 0)
+fb950efdf180: cap 0: all caps stopped for GC
+fb950efdf180: cap 0: finished GC
+fb950efdf180: passing capability 0 to bound task 0xfb9515578420
+fb950efdf180: task exiting
+fb950efdf180: returning; I want capability 0
+fb950efdf180: resuming capability 0
+fb950efdf180: cap 0: running thread 5[""] (ThreadRunGHC)
+fb9515578420: woken up on capability 0
+fb9515578420: capability 0 is owned by another task
+fb950efdf180: cap 0: thread 5[""] stopped (yielding)
+fb950efdf180: cap 0: running thread 5[""] (ThreadRunGHC)
+fb950efdf180: cap 0: thread 5[""] stopped (suspended while making a foreign call)
+fb950efdf180: passing capability 0 to bound task 0xfb9515578420
+fb950efdf180: returning; I want capability 0
+fb950efdf180: resuming capability 0
+fb950efdf180: cap 0: requesting parallel GC
+fb950efdf180: 0 idle caps, 0 failed grabs
+all threads:
+threads on capability 0:
+	thread    4 @ 0x42005ec000 is not blocked (TSO_DIRTY)
+other threads:
+	thread    2 @ 0x42005ec198 ["IOManager on cap 0"] is blocked on an external call
+	thread    3 @ 0x42005ec110 ["TimerManager"] is blocked on an external call
+	thread    5 @ 0x42005ec088 is blocked on an external call (TSO_DIRTY)
+fb950efdf180: cap 0: starting GC
+fb950efdf180: cap 0: GC working
+fb9515578420: woken up on capability 0
+fb9515578420: capability 0 is owned by another task
+fb950efdf180: cap 0: GC idle
+fb950efdf180: cap 0: GC done
+fb950efdf180: cap 0: GC idle
+fb950efdf180: cap 0: GC done
+fb950efdf180: cap 0: GC idle
+fb950efdf180: cap 0: GC done
+fb950efdf180: cap 0: Memory Return (Current: 6) (Needed: 7) (Returned: 0)
+fb950efdf180: cap 0: all caps stopped for GC
+fb950efdf180: cap 0: finished GC
+fb950efdf180: passing capability 0 to bound task 0xfb9515578420
+fb950efdf180: task exiting
+fb950efdf180: returning; I want capability 0
+fb950efdf180: resuming capability 0
+fb950efdf180: cap 0: running thread 5[""] (ThreadRunGHC)
+fb9515578420: woken up on capability 0
+fb9515578420: capability 0 is owned by another task
+fb950efdf180: cap 0: thread 5[""] stopped (yielding)
+fb950efdf180: cap 0: running thread 5[""] (ThreadRunGHC)
+fb950efdf180: cap 0: thread 5[""] stopped (suspended while making a foreign call)
+fb950efdf180: passing capability 0 to bound task 0xfb9515578420
+fb950efdf180: returning; I want capability 0
+fb950efdf180: resuming capability 0
+fb950efdf180: cap 0: requesting parallel GC
+fb950efdf180: 0 idle caps, 0 failed grabs
+all threads:
+threads on capability 0:
+	thread    4 @ 0x42005f1000 is not blocked (TSO_DIRTY)
+other threads:
+	thread    5 @ 0x42005f1088 is blocked on an external call (TSO_DIRTY)
+	thread    3 @ 0x42005f1110 ["TimerManager"] is blocked on an external call
+	thread    2 @ 0x42005f1198 ["IOManager on cap 0"] is blocked on an external call
+fb950efdf180: cap 0: starting GC
+fb9515578420: woken up on capability 0
+fb9515578420: capability 0 is owned by another task
+fb950efdf180: cap 0: GC working
+fb950efdf180: cap 0: GC idle
+fb950efdf180: cap 0: GC done
+fb950efdf180: cap 0: GC idle
+fb950efdf180: cap 0: GC done
+fb950efdf180: cap 0: GC idle
+fb950efdf180: cap 0: GC done
+fb950efdf180: cap 0: Memory Return (Current: 6) (Needed: 7) (Returned: 0)
+fb950efdf180: cap 0: all caps stopped for GC
+fb950efdf180: cap 0: finished GC
+fb950efdf180: passing capability 0 to bound task 0xfb9515578420
+fb950efdf180: task exiting
+fb950efdf180: returning; I want capability 0
+fb950efdf180: resuming capability 0
+fb950efdf180: cap 0: running thread 5[""] (ThreadRunGHC)
+fb9515578420: woken up on capability 0
+fb9515578420: capability 0 is owned by another task
+fb950efdf180: cap 0: thread 5[""] stopped (yielding)
+fb950efdf180: cap 0: running thread 5[""] (ThreadRunGHC)
+fb950efdf180: cap 0: thread 5[""] stopped (suspended while making a foreign call)
+fb950efdf180: passing capability 0 to bound task 0xfb9515578420
+fb950efdf180: returning; I want capability 0
+fb950efdf180: resuming capability 0
+fb950efdf180: cap 0: requesting parallel GC
+fb950efdf180: 0 idle caps, 0 failed grabs
+all threads:
+threads on capability 0:
+	thread    4 @ 0x42005e9000 is not blocked (TSO_DIRTY)
+other threads:
+	thread    2 @ 0x42005e9198 ["IOManager on cap 0"] is blocked on an external call
+	thread    3 @ 0x42005e9110 ["TimerManager"] is blocked on an external call
+	thread    5 @ 0x42005e9088 is blocked on an external call (TSO_DIRTY)
+fb950efdf180: cap 0: starting GC
+fb950efdf180: cap 0: GC working
+fb9515578420: woken up on capability 0
+fb9515578420: capability 0 is owned by another task
+fb950efdf180: cap 0: GC idle
+fb950efdf180: cap 0: GC done
+fb950efdf180: cap 0: GC idle
+fb950efdf180: cap 0: GC done
+fb950efdf180: cap 0: GC idle
+fb950efdf180: cap 0: GC done
+fb950efdf180: cap 0: Memory Return (Current: 6) (Needed: 7) (Returned: 0)
+fb950efdf180: cap 0: all caps stopped for GC
+fb950efdf180: cap 0: finished GC
+fb950efdf180: passing capability 0 to bound task 0xfb9515578420
+fb950efdf180: task exiting
+fb950efdf180: returning; I want capability 0
+fb950efdf180: resuming capability 0
+fb950efdf180: cap 0: running thread 5[""] (ThreadRunGHC)
+fb9515578420: woken up on capability 0
+fb9515578420: capability 0 is owned by another task
+fb950efdf180: cap 0: thread 5[""] stopped (yielding)
+fb950efdf180: cap 0: running thread 5[""] (ThreadRunGHC)
+fb950efdf180: cap 0: thread 5[""] stopped (suspended while making a foreign call)
+fb950efdf180: passing capability 0 to bound task 0xfb9515578420
+fb950efdf180: returning; I want capability 0
+fb950efdf180: resuming capability 0
+fb950efdf180: cap 0: requesting parallel GC
+fb950efdf180: 0 idle caps, 0 failed grabs
+all threads:
+threads on capability 0:
+	thread    4 @ 0x42005ee000 is not blocked (TSO_DIRTY)
+other threads:
+	thread    5 @ 0x42005ee088 is blocked on an external call (TSO_DIRTY)
+	thread    3 @ 0x42005ee110 ["TimerManager"] is blocked on an external call
+	thread    2 @ 0x42005ee198 ["IOManager on cap 0"] is blocked on an external call
+fb950efdf180: cap 0: starting GC
+fb9515578420: woken up on capability 0
+fb9515578420: capability 0 is owned by another task
+fb950efdf180: cap 0: GC working
+fb950efdf180: cap 0: GC idle
+fb950efdf180: cap 0: GC done
+fb950efdf180: cap 0: GC idle
+fb950efdf180: cap 0: GC done
+fb950efdf180: cap 0: GC idle
+fb950efdf180: cap 0: GC done
+fb950efdf180: cap 0: Memory Return (Current: 6) (Needed: 7) (Returned: 0)
+fb950efdf180: cap 0: all caps stopped for GC
+fb950efdf180: cap 0: finished GC
+fb950efdf180: passing capability 0 to bound task 0xfb9515578420
+fb950efdf180: task exiting
+fb950efdf180: returning; I want capability 0
+fb950efdf180: resuming capability 0
+fb950efdf180: cap 0: running thread 5[""] (ThreadRunGHC)
+fb9515578420: woken up on capability 0
+fb9515578420: capability 0 is owned by another task
+fb950efdf180: cap 0: thread 5[""] stopped (yielding)
+fb950efdf180: cap 0: running thread 5[""] (ThreadRunGHC)
+fb950efdf180: cap 0: thread 5[""] stopped (suspended while making a foreign call)
+fb950efdf180: passing capability 0 to bound task 0xfb9515578420
+fb950efdf180: returning; I want capability 0
+fb950efdf180: resuming capability 0
+fb950efdf180: cap 0: requesting parallel GC
+fb950efdf180: 0 idle caps, 0 failed grabs
+all threads:
+threads on capability 0:
+	thread    4 @ 0x42004ff000 is not blocked (TSO_DIRTY)
+other threads:
+	thread    2 @ 0x42004ff198 ["IOManager on cap 0"] is blocked on an external call
+	thread    3 @ 0x42004ff110 ["TimerManager"] is blocked on an external call
+	thread    5 @ 0x42004ff088 is blocked on an external callfb9515578420: woken up on capability 0
+fb9515578420: capability 0 is owned by another task
+ (TSO_DIRTY)
+fb950efdf180: cap 0: starting GC
+fb950efdf180: cap 0: GC working
+fb950efdf180: cap 0: GC idle
+fb950efdf180: cap 0: GC done
+fb950efdf180: cap 0: GC idle
+fb950efdf180: cap 0: GC done
+fb950efdf180: cap 0: GC idle
+fb950efdf180: cap 0: GC done
+fb950efdf180: cap 0: Memory Return (Current: 6) (Needed: 7) (Returned: 0)
+fb950efdf180: cap 0: all caps stopped for GC
+fb950efdf180: cap 0: finished GC
+fb950efdf180: passing capability 0 to bound task 0xfb9515578420
+fb950efdf180: task exiting
+fb950efdf180: returning; I want capability 0
+fb950efdf180: resuming capability 0
+fb950efdf180: cap 0: running thread 5[""] (ThreadRunGHC)
+fb9515578420: woken up on capability 0
+fb9515578420: capability 0 is owned by another task
+fb950efdf180: cap 0: thread 5[""] stopped (yielding)
+fb950efdf180: cap 0: running thread 5[""] (ThreadRunGHC)
+fb950efdf180: cap 0: thread 5[""] stopped (suspended while making a foreign call)
+fb950efdf180: passing capability 0 to bound task 0xfb9515578420
+fb950efdf180: returning; I want capability 0
+fb950efdf180: resuming capability 0
+fb950efdf180: cap 0: requesting parallel GC
+fb950efdf180: 0 idle caps, 0 failed grabs
+all threads:
+threads on capability 0:
+	thread    4 @ 0x42005eb000 is not blocked (TSO_DIRTY)
+other threads:
+	thread    5 @ 0x42005eb088 is blocked on an external call (TSO_DIRTY)
+	thread    3 @ 0x42005eb110 ["TimerManager"] is blocked on an external call
+	thread    2 @ 0x42005eb198 ["IOManager on cap 0"] is blocked on an external call
+fb950efdf180: cap 0: starting GC
+fb950efdf180: cap 0: GC working
+fb9515578420: woken up on capability 0
+fb9515578420: capability 0 is owned by another task
+fb950efdf180: cap 0: GC idle
+fb950efdf180: cap 0: GC done
+fb950efdf180: cap 0: GC idle
+fb950efdf180: cap 0: GC done
+fb950efdf180: cap 0: GC idle
+fb950efdf180: cap 0: GC done
+fb950efdf180: cap 0: Memory Return (Current: 6) (Needed: 7) (Returned: 0)
+fb950efdf180: cap 0: all caps stopped for GC
+fb950efdf180: cap 0: finished GC
+fb950efdf180: passing capability 0 to bound task 0xfb9515578420
+fb950efdf180: task exiting
+fb950efdf180: returning; I want capability 0
+fb950efdf180: resuming capability 0
+fb950efdf180: cap 0: running thread 5[""] (ThreadRunGHC)
+fb950efdf180: cap 0: thread 5[""] stopped (yielding)
+fb950efdf180: cap 0: running thread 5[""] (ThreadRunGHC)
+fb9515578420: woken up on capability 0
+fb9515578420: capability 0 is owned by another task
+fb950efdf180: cap 0: thread 5[""] stopped (suspended while making a foreign call)
+fb950efdf180: passing capability 0 to bound task 0xfb9515578420
+fb950efdf180: returning; I want capability 0
+fb950efdf180: resuming capability 0
+fb950efdf180: cap 0: requesting parallel GC
+fb950efdf180: 0 idle caps, 0 failed grabs
+all threads:
+threads on capability 0:
+	thread    4 @ 0x42005ef000 is not blocked (TSO_DIRTY)
+other threads:
+	thread    2 @ 0x42005ef198 ["IOManager on cap 0"] is blocked on an external call
+	thread    3 @ 0x42005ef110 ["TimerManager"] is blocked on an external call
+	thread    5 @ 0x42005ef088 is blocked on an external call (TSO_DIRTY)
+fb950efdf180: cap 0: starting GC
+fb950efdf180: cap 0: GC working
+fb9515578420: woken up on capability 0
+fb9515578420: capability 0 is owned by another task
+fb950efdf180: cap 0: GC idle
+fb950efdf180: cap 0: GC done
+fb950efdf180: cap 0: GC idle
+fb950efdf180: cap 0: GC done
+fb950efdf180: cap 0: GC idle
+fb950efdf180: cap 0: GC done
+fb950efdf180: cap 0: Memory Return (Current: 6) (Needed: 7) (Returned: 0)
+fb950efdf180: cap 0: all caps stopped for GC
+fb950efdf180: cap 0: finished GC
+fb950efdf180: passing capability 0 to bound task 0xfb9515578420
+fb950efdf180: task exiting
+fb950efdf180: returning; I want capability 0
+fb950efdf180: resuming capability 0
+fb950efdf180: cap 0: running thread 5[""] (ThreadRunGHC)
+fb9515578420: woken up on capability 0
+fb9515578420: capability 0 is owned by another task
+fb950efdf180: cap 0: thread 5[""] stopped (yielding)
+fb950efdf180: cap 0: running thread 5[""] (ThreadRunGHC)
+fb950efdf180: cap 0: thread 5[""] stopped (yielding)
+fb950efdf180: giving up capability 0
+fb950efdf180: passing capability 0 to bound task 0xfb9515578420
+fb9515578420: woken up on capability 0
+fb9515578420: resuming capability 0
+fb9515578420: cap 0: running thread 4[""] (ThreadRunGHC)
+fb9515578420: cap 0: created thread 6[""]
+fb9515578420: cap 0: created thread 7[""]
+fb9515578420: cap 0: created thread 8[""]
+fb9515578420: cap 0: thread 4[""] stopped (blocked on an MVar)
+	thread    4 @ 0x42005e8000 is blocked on an MVar @ 0x42005eb4b8 (TSO_DIRTY)
+fb9515578420: giving up capability 0
+fb9515578420: passing capability 0 to worker 0xfb950efdf180
+fb950efdf180: woken up on capability 0
+fb950efdf180: resuming capability 0
+fb950efdf180: cap 0: running thread 5[""] (ThreadRunGHC)
+fb950efdf180: cap 0: thread 5[""] stopped (yielding)
+fb950efdf180: cap 0: running thread 6[""] (ThreadRunGHC)
+fb950efdf180: cap 0: thread 6[""] stopped (suspended while making a foreign call)
+fb950efdf180: starting new worker on capability 0
+fb950efdf180: new task (taskCount: 5)
+fb950efdf180: new worker task (taskCount: 5)
+fb950efdf180: changing the number of Capabilities from 1 to 2
+fb950efdf180: returning; I want capability 0
+fb950e7cf180: cap 0: schedule()
+fb950e7cf180: giving up capability 0
+fb950e7cf180: passing capability 0 to worker 0xfb950efdf180
+fb950efdf180: resuming capability 0
+fb950efdf180: grabbing all the capabilities (0/1)
+fb950efdf180: cap 1: initialised
+fb950efdf180: assigned cap 1 to capset 0
+fb950efdf180: assigned cap 1 to capset 1
+fb950efdf180: allocated 1 more capabilities
+fb950efdf180: cap 0: created thread 9[""]
+fb950efdf180: new bound thread (9)
+fb950efdf180: cap 0: schedule()
+fb950efdf180: cap 0: 4 threads, 0 sparks, and 1 free capabilities, sharing...
+fb950efdf180: cap 0: thread 7[""] migrating to cap 1
+fb950efdf180: cap 0: thread 8[""] migrating to cap 1
+fb950efdf180: starting new worker on capability 1
+fb950efdf180: new task (taskCount: 6)
+fb950efdf180: new worker task (taskCount: 6)
+fb950efdf180: giving up capability 0
+fb950efdf180: passing capability 0 to worker 0xfb950e7cf180
+fb950e7cf180: woken up on capability 0
+fb950e7cf180: resuming capability 0
+fb950e7cf180: cap 0: running thread 5[""] (ThreadRunGHC)
+fb950dfbf180: cap 1: schedule()
+fb950dfbf180: cap 1: running thread 7[""] (ThreadRunGHC)
+fb950dfbf180: cap 1: thread 7[""] stopped (suspended while making a foreign call)
+fb950dfbf180: starting new worker on capability 1
+fb950dfbf180: new task (taskCount: 7)
+fb950e7cf180: cap 0: thread 5[""] stopped (suspended while making a foreign call)
+fb950e7cf180: passing capability 0 to bound task 0xfb950efdf180
+fb950e7cf180: returning; I want capability 0
+fb950e7cf180: resuming capability 0
+fb950e7cf180: cap 0: requesting parallel GC
+fb950dfbf180: new worker task (taskCount: 7)
+fb950dfbf180: changing the number of Capabilities from 2 to 3
+fb950dfbf180: returning; I want capability 0
+fb950e7cf180: 0 idle caps, 0 failed grabs
+fb950efdf180: woken up on capability 0
+fb950efdf180: capability 0 is owned by another task
+fb950d7af180: cap 1: schedule()
+fb950d7af180: cap 1: starting GC
+all threads:
+threads on capability 0:
+	thread    9 @ 0x420040b000 is not blocked (TSO_DIRTY)
+threads on capability 1:
+	thread    8 @ 0x4200408bc8 is not blocked (TSO_DIRTY)
+other threads:
+	thread    7 @ 0x42004087c8 is blocked on an external call (TSO_DIRTY)
+	thread    6 @ 0x42004083c8 is blocked on an external call (TSO_DIRTY)
+	thread    5 @ 0x42005e8088 is blocked on an external call (TSO_DIRTY)
+	thread    4 @ 0x42005e8000 is blocked on an MVar @ 0x42005eb4b8 (TSO_DIRTY)
+	thread    3 @ 0x42005e8110 ["TimerManager"] is blocked on an external call
+	thread    2 @ 0x42005e8198 ["IOManager on cap 0"] is blocked on an external call
+fb950e7cf180: cap 0: starting GC
+fb950e7cf180: cap 0: GC working
+fb950d7af180: cap 1: GC working
+fb950d7af180: cap 1: GC idle
+fb950e7cf180: cap 0: GC idle
+fb950e7cf180: cap 0: GC done
+fb950d7af180: cap 1: GC done
+fb950e7cf180: cap 0: GC idle
+fb950e7cf180: cap 0: GC done
+fb950e7cf180: cap 0: GC idle
+fb950e7cf180: cap 0: GC done
+fb950e7cf180: cap 0: Memory Return (Current: 10) (Needed: 11) (Returned: 0)
+fb950e7cf180: cap 0: all caps stopped for GC
+fb950e7cf180: cap 0: finished GC
+fb950e7cf180: passing capability 0 to worker 0xfb950dfbf180
+fb950e7cf180: task exiting
+fb950e7cf180: returning; I want capability 0
+fb950e7cf180: resuming capability 0
+fb950e7cf180: cap 0: running thread 5[""] (ThreadRunGHC)
+fb950d7af180: cap 1: finished GC
+fb950d7af180: cap 1: running thread 8[""] (ThreadRunGHC)
+fb950d7af180: cap 1: thread 8[""] stopped (suspended while making a foreign call)
+fb950d7af180: starting new worker on capability 1
+fb950d7af180: new task (taskCount: 8)
+fb950d7af180: new worker task (taskCount: 8)
+fb950e7cf180: cap 0: thread 5[""] stopped (yielding)
+fb950e7cf180: giving up capability 0
+fb950e7cf180: passing capability 0 to worker 0xfb950dfbf180
+fb950dfbf180: resuming capability 0
+fb950dfbf180: grabbing all the capabilities (0/2)
+fb950dfbf180: grabbing all the capabilities (1/2)
+fb950cf9f180: cap 1: schedule()
+fb950cf9f180: giving up capability 1
+fb950cf9f180: sync pending, freeing capability 1
+fb950dfbf180: returning; I want capability 1
+fb950dfbf180: resuming capability 1
+fb950d7af180: changing the number of Capabilities from 2 to 4
+fb950dfbf180: cap 2: initialised
+fb950dfbf180: assigned cap 2 to capset 0
+fb950dfbf180: assigned cap 2 to capset 1
+fb950dfbf180: allocated 1 more capabilities
+fb950d7af180: returning; I want capability 0
+fb950dfbf180: freeing capability 1
+fb950dfbf180: cap 0: created thread 10[""]
+fb950dfbf180: new bound thread (10)
+fb950dfbf180: cap 0: schedule()
+fb950dfbf180: cap 0: 3 threads, 0 sparks, and 2 free capabilities, sharing...
+fb950dfbf180: cap 0: thread 5[""] migrating to cap 1
+fb950dfbf180: cap 0: thread 9[""] migrating to cap 2
+fb950dfbf180: passing capability 1 to worker 0xfb950cf9f180
+fb950dfbf180: passing capability 2 to bound task 0xfb950efdf180
+fb950dfbf180: giving up capability 0
+fb950dfbf180: passing capability 0 to worker 0xfb950d7af180
+fb950efdf180: woken up on capability 2
+fb950efdf180: resuming capability 2
+fb950efdf180: cap 2: running thread 9[""] (ThreadRunGHC)
+fb950cf9f180: woken up on capability 1
+fb950cf9f180: resuming capability 1
+fb950cf9f180: cap 1: running thread 5[""] (ThreadRunGHC)
+fb950efdf180: cap 2: thread 9[""] stopped (stack overflow, size 108)
+fb950efdf180: cap 2: allocating new stack chunk of size 32768 bytes
+fb950efdf180: cap 2: running thread 9[""] (ThreadRunGHC)
+fb950efdf180: cap 2: created thread 11[""]
+fb950efdf180: cap 2: thread 11[""] migrating to cap 1
+fb950efdf180: cap 2: waking up thread 11[""] on cap 1
+fb950efdf180: cap 2: message: try wakeup thread 11 on cap 1
+fb950efdf180: cap 2: thread 11 has label IOManager on cap 1
+fb950cf9f180: cap 1: thread 5[""] stopped (yielding)
+fb950cf9f180: cap 1: message: try wakeup thread 11
+fb950cf9f180: cap 1: waking up thread 11["IOManager on cap 1"] on cap 1
+fb950cf9f180: passing capability 0 to worker 0xfb950d7af180
+fb950efdf180: cap 2: created thread 12[""]
+fb950efdf180: cap 2: thread 9[""] stopped (yielding)
+fb950efdf180: passing capability 0 to worker 0xfb950d7af180
+fb950efdf180: giving up capability 2
+fb950efdf180: starting new worker on capability 2
+fb950efdf180: new task (taskCount: 9)
+fb950efdf180: new worker task (taskCount: 9)
+fb950d7af180: resuming capability 0
+fb950d7af180: grabbing all the capabilities (0/3)
+fb950d7af180: grabbing all the capabilities (1/3)
+fb950d7af180: returning; I want capability 1
+fb94effff180: cap 2: schedule()
+fb94effff180: giving up capability 2
+fb94effff180: sync pending, freeing capability 2
+fb950cf9f180: cap 1: running thread 5[""] (ThreadRunGHC)
+fb950cf9f180: cap 1: thread 5[""] stopped (suspended while making a foreign call)
+fb950cf9f180: passing capability 1 to worker 0xfb950d7af180
+fb950cf9f180: returning; I want capability 1
+fb950cf9f180: resuming capability 1
+fb950cf9f180: asking for cap 2 to be idle
+fb950cf9f180: someone else is trying to sync (0)...
+fb950cf9f180: giving up capability 1
+fb950cf9f180: passing capability 1 to worker 0xfb950d7af180
+fb950d7af180: resuming capability 1
+fb950d7af180: grabbing all the capabilities (2/3)
+fb950d7af180: returning; I want capability 2
+fb950d7af180: resuming capability 2
+fb950d7af180: cap 3: initialised
+fb950d7af180: assigned cap 3 to capset 0
+fb950d7af180: assigned cap 3 to capset 1
+fb950d7af180: allocated 1 more capabilities
+fb950d7af180: passing capability 1 to worker 0xfb950cf9f180
+fb950d7af180: cap 0: created thread 13[""]
+fb950d7af180: new bound thread (13)
+fb950d7af180: cap 0: schedule()
+fb950d7af180: passing capability 1 to worker 0xfb950cf9f180
+fb950d7af180: cap 0: 2 threads, 0 sparks, and 1 free capabilities, sharing...
+fb950d7af180: cap 0: thread 10[""] migrating to cap 3
+fb950d7af180: passing capability 3 to bound task 0xfb950dfbf180
+fb950d7af180: cap 0: running thread 13[""] (ThreadRunGHC)
+fb950d7af180: cap 0: thread 13[""] stopped (blocked on an MVar)
+	thread   13 @ 0x420040a778 is blocked on an MVar @ 0x42005ee738 (TSO_DIRTY)
+fb950d7af180: giving up capability 0
+fb950d7af180: freeing capability 0
+fb950cf9f180: resuming capability 1
+fb950cf9f180: asking for cap 0 to be idle
+fb950cf9f180: asking for cap 3 to be idle
+fb950cf9f180: cap 1: requesting parallel GC
+fb950cf9f180: returning; I want capability 0
+fb950cf9f180: resuming capability 0
+fb950cf9f180: returning; I want capability 3
+fb950cf9f180: resuming capability 3
+fb950cf9f180: 2 idle caps, 0 failed grabs
+fb950dfbf180: woken up on capability 3
+fb950dfbf180: capability 3 is owned by another task

@@ -1,0 +1,28 @@
+n_capabilities=8 enabled=8 pending_sync=0xf6b0ba6697e8
+  sync.type=2 sync.idle=0xf6b0a4000e00 sync.task=0x26331060
+cap[0]=0xb37c80 no=0 running_task=0x26331060 in_haskell=0 disabled=0 idle=0 n_run_queue=0 n_susp_ccalls=2 n_returning=1 returning_hd=0x26330e10 n_spare_workers=1 spare_workers=0xf6b0a4000bc0 inbox=0xb30ed8 curTSO=(nil)
+cap[1]=0x26331300 no=1 running_task=0x26331060 in_haskell=0 disabled=0 idle=0 n_run_queue=0 n_susp_ccalls=1 n_returning=1 returning_hd=0x26342b90 n_spare_workers=2 spare_workers=0xf6b0a8000bc0 inbox=0xb30ed8 curTSO=(nil)
+cap[2]=0xf6b09c000e00 no=2 running_task=0x26331060 in_haskell=0 disabled=0 idle=0 n_run_queue=0 n_susp_ccalls=0 n_returning=1 returning_hd=0x26331060 n_spare_workers=0 spare_workers=(nil) inbox=0x4200918c90 curTSO=(nil)
+cap[3]=0xf6b09c011480 no=3 running_task=0x26331060 in_haskell=0 disabled=0 idle=0 n_run_queue=0 n_susp_ccalls=0 n_returning=0 returning_hd=(nil) n_spare_workers=0 spare_workers=(nil) inbox=0x4200919400 curTSO=(nil)
+cap[4]=0xf6b09c021a80 no=4 running_task=0x26331060 in_haskell=0 disabled=0 idle=0 n_run_queue=0 n_susp_ccalls=0 n_returning=0 returning_hd=(nil) n_spare_workers=0 spare_workers=(nil) inbox=0x4200919818 curTSO=(nil)
+cap[5]=0xf6b09c0320c0 no=5 running_task=0x26331060 in_haskell=0 disabled=0 idle=0 n_run_queue=0 n_susp_ccalls=0 n_returning=0 returning_hd=(nil) n_spare_workers=0 spare_workers=(nil) inbox=0x4200919c30 curTSO=(nil)
+cap[6]=0xf6b09c0426c0 no=6 running_task=0x26331060 in_haskell=0 disabled=0 idle=0 n_run_queue=0 n_susp_ccalls=0 n_returning=0 returning_hd=(nil) n_spare_workers=0 spare_workers=(nil) inbox=0x420091a088 curTSO=(nil)
+cap[7]=0xf6b09c052d40 no=7 running_task=0x26331060 in_haskell=0 disabled=0 idle=0 n_run_queue=0 n_susp_ccalls=0 n_returning=0 returning_hd=(nil) n_spare_workers=0 spare_workers=(nil) inbox=0x420091a4a0 curTSO=(nil)
+task=0xf6b09c000bc0 id=0xf6b0a3fff180 cap=0x26331300 wakeup=0 worker=1 stopped=0 incall=0xf6b094000b70 incall.tso=(nil) susp_tso=(nil) susp_cap=(nil) next=(nil)
+task=0xf6b0a4000bc0 id=0xf6b0b8e3a180 cap=0xb37c80 wakeup=0 worker=1 stopped=0 incall=0xf6b098000b70 incall.tso=(nil) susp_tso=(nil) susp_cap=(nil) next=(nil)
+task=0xf6b0a8000bc0 id=0xf6b0b964a180 cap=0x26331300 wakeup=0 worker=1 stopped=0 incall=0xf6b09c000b70 incall.tso=(nil) susp_tso=(nil) susp_cap=(nil) next=0xf6b09c000bc0
+task=0x26342b90 id=0xf6b0b9e5a180 cap=0x26331300 wakeup=0 worker=1 stopped=0 incall=0xf6b0a8000b70 incall.tso=(nil) susp_tso=0x420040a958 susp_cap=0x26331300 next=(nil)
+task=0x26331060 id=0xf6b0ba66a180 cap=0xf6b09c000e00 wakeup=0 worker=1 stopped=0 incall=0xf6b0a4000b70 incall.tso=(nil) susp_tso=(nil) susp_cap=(nil) next=(nil)
+task=0xf6b0ac000bc0 id=0xf6b0bae7a180 cap=0xb37c80 wakeup=0 worker=1 stopped=0 incall=0xf6b0b0000b70 incall.tso=(nil) susp_tso=0x42004068f0 susp_cap=0xb37c80 next=(nil)
+task=0x26330e10 id=0xf6b0bb68a180 cap=0xb37c80 wakeup=0 worker=1 stopped=0 incall=0xf6b0ac000b70 incall.tso=(nil) susp_tso=0x4200406498 susp_cap=0xb37c80 next=(nil)
+task=0x26330cf0 id=0xf6b0bc695420 cap=0xb37c80 wakeup=0 worker=0 stopped=0 incall=0x26330dc0 incall.tso=0x4200406d20 susp_tso=(nil) susp_cap=(nil) next=(nil)
+  Id   Target Id                                        Frame 
+* 1    Thread 0xf6b0bc695420 (LWP 15198) "setcaps-race" 0x0000f6b0bc3df228 in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+  2    Thread 0xf6b0a3fff180 (LWP 15207) "ghc_worker"   0x0000f6b0bc3df228 in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+  3    Thread 0xf6b0b8e3a180 (LWP 15206) "ghc_worker"   0x0000f6b0bc3df228 in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+  4    Thread 0xf6b0b964a180 (LWP 15205) "ghc_worker"   0x0000f6b0bc3df228 in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+  5    Thread 0xf6b0b9e5a180 (LWP 15204) "ghc_worker"   0x0000f6b0bc3df228 in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+  6    Thread 0xf6b0ba66a180 (LWP 15203) "ghc_worker"   0x0000f6b0bc3df228 in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+  7    Thread 0xf6b0bae7a180 (LWP 15202) "ghc_worker"   0x0000f6b0bc3df228 in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+  8    Thread 0xf6b0bb68a180 (LWP 15201) "ghc_worker"   0x0000f6b0bc3df228 in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+  9    Thread 0xf6b0bbef3180 (LWP 15200) "ghc_ticker"   0x0000f6b0bc3df228 in ?? () from /lib/aarch64-linux-gnu/libc.so.6

@@ -1,0 +1,1 @@
+RESULT noopN8 bin=caprace mode=noop rounds=3 M=4 W=4 rts=[-N8] n=200 ok=200 idle_hang=0 busy_timeout=0 other=0

@@ -1,0 +1,19 @@
+rts: Fix capability leak in concurrent setNumCapabilities calls
+
+setNumCapabilities read n_capabilities and enabled_capabilities before
+stopAllCapabilities() and used the stale values afterwards.  If another
+setNumCapabilities call grew the capability array in between, the second
+call acquired all n_capabilities capabilities in acquireAllCapabilities()
+but released only the old count in releaseAllCapabilities(), leaving the
+new capabilities with a running_task that had already moved on.  The next
+stop-the-world sync, typically a GC, then waited for those capabilities
+forever (in waitForCapability or in the waitForGcThreads loop).
+
+Read the counts after the world has been stopped, re-check whether there
+is anything left to do, and release exactly the capabilities that were
+acquired.  Add Note [setNumCapabilities and concurrent calls] and a test
+that hangs without the fix.
+
+Fixes #NNNNN
+
+Assisted-By: Claude Code (Anthropic)

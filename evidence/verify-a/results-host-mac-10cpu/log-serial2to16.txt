@@ -1,0 +1,11 @@
+run 2 SLOW-OK
+run 13 SLOW-OK
+run 22 BUSY-TIMEOUT cpu_s_3s=7 last=[]
+run 57 SLOW-OK
+run 64 BUSY-TIMEOUT cpu_s_3s=6 last=[]
+run 96 BUSY-TIMEOUT cpu_s_3s=7 last=[]
+run 101 BUSY-TIMEOUT cpu_s_3s=5 last=[]
+run 108 BUSY-TIMEOUT cpu_s_3s=5 last=[]
+run 117 BUSY-TIMEOUT cpu_s_3s=6 last=[]
+run 183 BUSY-TIMEOUT cpu_s_3s=5 last=[]
+RESULT(host mac 10cpu) serial2to16 mode=serial rounds=1 M=14 W=4 rts=[-N2] n=200 ok=193 idle_hang=0 busy_timeout=7 other=0

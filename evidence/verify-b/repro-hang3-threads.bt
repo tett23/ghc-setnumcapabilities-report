@@ -1,0 +1,113 @@
+[New LWP 16102]
+[New LWP 16101]
+[New LWP 16100]
+[New LWP 16099]
+[New LWP 16098]
+[New LWP 16097]
+[New LWP 16096]
+[New LWP 16095]
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/aarch64-linux-gnu/libthread_db.so.1".
+0x0000ea56e933f228 in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+
+Thread 9 (Thread 0xea56e8e53180 (LWP 16095) "ghc_ticker"):
+#0  0x0000ea56e933f228 in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+#1  0x0000ea56e93328b8 in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+#2  0x0000ea56e93328fc [PAC] in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+#3  0x0000ea56e93938a0 [PAC] in poll () from /lib/aarch64-linux-gnu/libc.so.6
+#4  0x00000000008458fc [PAC] in itimer_thread_func ()
+#5  0x0000ea56e93361d8 in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+#6  0x0000ea56e939e15c [PAC] in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+
+Thread 8 (Thread 0xea56e85ea180 (LWP 16096) "ghc_worker"):
+#0  0x0000ea56e933f22c in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+#1  0x0000ea56e93328b8 in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+#2  0x0000ea56e93328fc [PAC] in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+#3  0x0000ea56e939e424 [PAC] in epoll_pwait () from /lib/aarch64-linux-gnu/libc.so.6
+#4  0x0000000000740004 [PAC] in ghczminternal_GHCziInternalziEventziEPoll_new10_info ()
+#5  0x000c000000740004 in ?? ()
+Backtrace stopped: previous frame identical to this frame (corrupt stack?)
+
+Thread 7 (Thread 0xea56e7dda180 (LWP 16097) "ghc_worker"):
+#0  0x0000ea56e933f228 in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+#1  0x0000ea56e93328b8 in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+#2  0x0000ea56e93328fc [PAC] in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+#3  0x0000ea56e93938a0 [PAC] in poll () from /lib/aarch64-linux-gnu/libc.so.6
+#4  0x000000000074dc24 [PAC] in ?? ()
+Backtrace stopped: previous frame identical to this frame (corrupt stack?)
+
+Thread 6 (Thread 0xea56e75ca180 (LWP 16098) "ghc_worker"):
+#0  0x0000ea56e933f228 in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+#1  0x0000ea56e93328b8 in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+#2  0x0000ea56e9332c50 [PAC] in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+#3  0x0000ea56e933564c [PAC] in pthread_cond_wait () from /lib/aarch64-linux-gnu/libc.so.6
+#4  0x00000000008467c8 [PAC] in waitCondition ()
+#5  0x00000000008164c4 in waitForReturnCapability ()
+#6  0x0000000000816fa8 in waitForCapability ()
+#7  0x000000000082578c in scheduleDoGC ()
+#8  0x0000000000826284 in schedule ()
+#9  0x0000000000826c10 in scheduleWorker ()
+#10 0x000000000082ab90 in workerStart ()
+#11 0x0000ea56e93361d8 in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+#12 0x0000ea56e939e15c [PAC] in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+
+Thread 5 (Thread 0xea56e6dba180 (LWP 16099) "ghc_worker"):
+#0  0x0000ea56e933f22c in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+#1  0x0000ea56e93328b8 in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+#2  0x0000ea56e93328fc [PAC] in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+#3  0x0000ea56e939e424 [PAC] in epoll_pwait () from /lib/aarch64-linux-gnu/libc.so.6
+#4  0x0000000000740004 [PAC] in ghczminternal_GHCziInternalziEventziEPoll_new10_info ()
+#5  0x0059000000740004 in ?? ()
+Backtrace stopped: previous frame identical to this frame (corrupt stack?)
+
+Thread 4 (Thread 0xea56e65aa180 (LWP 16100) "ghc_worker"):
+#0  0x0000ea56e933f228 in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+#1  0x0000ea56e93328b8 in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+#2  0x0000ea56e9332c50 [PAC] in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+#3  0x0000ea56e933564c [PAC] in pthread_cond_wait () from /lib/aarch64-linux-gnu/libc.so.6
+#4  0x00000000008467c8 [PAC] in waitCondition ()
+#5  0x0000000000817230 in yieldCapability ()
+#6  0x0000000000825d84 in schedule ()
+#7  0x0000000000826c10 in scheduleWorker ()
+#8  0x000000000082ab90 in workerStart ()
+#9  0x0000ea56e93361d8 in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+#10 0x0000ea56e939e15c [PAC] in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+
+Thread 3 (Thread 0xea56e5d9a180 (LWP 16101) "ghc_worker"):
+#0  0x0000ea56e933f228 in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+#1  0x0000ea56e93328b8 in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+#2  0x0000ea56e9332c50 [PAC] in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+#3  0x0000ea56e933564c [PAC] in pthread_cond_wait () from /lib/aarch64-linux-gnu/libc.so.6
+#4  0x00000000008467c8 [PAC] in waitCondition ()
+#5  0x0000000000817230 in yieldCapability ()
+#6  0x0000000000825d84 in schedule ()
+#7  0x0000000000826c10 in scheduleWorker ()
+#8  0x000000000082ab90 in workerStart ()
+#9  0x0000ea56e93361d8 in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+#10 0x0000ea56e939e15c [PAC] in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+
+Thread 2 (Thread 0xea56e558a180 (LWP 16102) "ghc_worker"):
+#0  0x0000ea56e933f228 in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+#1  0x0000ea56e93328b8 in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+#2  0x0000ea56e9332c50 [PAC] in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+#3  0x0000ea56e933564c [PAC] in pthread_cond_wait () from /lib/aarch64-linux-gnu/libc.so.6
+#4  0x00000000008467c8 [PAC] in waitCondition ()
+#5  0x0000000000817230 in yieldCapability ()
+#6  0x0000000000825d84 in schedule ()
+#7  0x0000000000826c10 in scheduleWorker ()
+#8  0x000000000082ab90 in workerStart ()
+#9  0x0000ea56e93361d8 in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+#10 0x0000ea56e939e15c [PAC] in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+
+Thread 1 (Thread 0xea56e95f1420 (LWP 16093) "setcaps-race"):
+#0  0x0000ea56e933f228 in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+#1  0x0000ea56e93328b8 in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+#2  0x0000ea56e9332c50 [PAC] in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+#3  0x0000ea56e933564c [PAC] in pthread_cond_wait () from /lib/aarch64-linux-gnu/libc.so.6
+#4  0x00000000008467c8 [PAC] in waitCondition ()
+#5  0x0000000000817230 in yieldCapability ()
+#6  0x0000000000825d84 in schedule ()
+#7  0x0000000000826bdc in scheduleWaitThread ()
+#8  0x0000000000821108 in hs_main ()
+#9  0x0000000000410bf0 in main ()
+[Inferior 1 (process 16093) detached]

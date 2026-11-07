@@ -1,0 +1,11 @@
+# Add to testsuite/tests/rts/all.T (next to T27131, which has the same shape).
+
+# Concurrent setNumCapabilities calls leaked capabilities and deadlocked the
+# next GC (#NNNNN)
+test('TNNNNN',
+     [ only_ways(['threaded1', 'threaded2'])
+     , req_ghc_with_threaded_rts
+     , req_target_smp
+     , req_ghc_smp
+     ],
+     compile_and_run, ['TNNNNN_c.c'])

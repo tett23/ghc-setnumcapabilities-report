@@ -1,0 +1,58 @@
+######## pid 4197
+n_capabilities=8 enabled=8 pending_sync=0xe92c852f97c8
+  sync.type=2 sync.idle=0xe92c7025f250 sync.task=0xcaf7150
+cap[0]=0x2354b40 no=0 running_task=0xcaf7150 in_haskell=0 disabled=0 idle=0 n_run_queue=2 n_susp_ccalls=2 n_returning=2 returning_hd=0xe92c78000bc0 n_spare_workers=1 spare_workers=0xcba11b0 inbox=0x234dab0 curTSO=(nil)
+cap[1]=0xcb8f740 no=1 running_task=0xcaf7150 in_haskell=0 disabled=0 idle=0 n_run_queue=2 n_susp_ccalls=1 n_returning=1 returning_hd=0xcba0fa0 n_spare_workers=2 spare_workers=0xe92c6c000bc0 inbox=0x234dab0 curTSO=(nil)
+cap[2]=0xe92c6400e6c0 no=2 running_task=0xcaf7150 in_haskell=0 disabled=0 idle=0 n_run_queue=0 n_susp_ccalls=0 n_returning=1 returning_hd=0xcaf7150 n_spare_workers=0 spare_workers=(nil) inbox=0x42003a8818 curTSO=(nil)
+cap[3]=0xe92c64013e80 no=3 running_task=0xcaf7150 in_haskell=0 disabled=0 idle=0 n_run_queue=0 n_susp_ccalls=0 n_returning=0 returning_hd=(nil) n_spare_workers=0 spare_workers=(nil) inbox=0x42003a4818 curTSO=(nil)
+cap[4]=0xe92c64016a40 no=4 running_task=0xcaf7150 in_haskell=0 disabled=0 idle=0 n_run_queue=0 n_susp_ccalls=0 n_returning=0 returning_hd=(nil) n_spare_workers=0 spare_workers=(nil) inbox=0x42003a4c30 curTSO=(nil)
+cap[5]=0xe92c641e2380 no=5 running_task=0xcaf7150 in_haskell=0 disabled=0 idle=0 n_run_queue=0 n_susp_ccalls=0 n_returning=0 returning_hd=(nil) n_spare_workers=0 spare_workers=(nil) inbox=0x42003a7088 curTSO=(nil)
+cap[6]=0xe92c640b3640 no=6 running_task=0xcaf7150 in_haskell=0 disabled=0 idle=0 n_run_queue=0 n_susp_ccalls=0 n_returning=0 returning_hd=(nil) n_spare_workers=0 spare_workers=(nil) inbox=0x42003a74a0 curTSO=(nil)
+cap[7]=0xe92c641e1300 no=7 running_task=0xcaf7150 in_haskell=0 disabled=0 idle=0 n_run_queue=0 n_susp_ccalls=0 n_returning=0 returning_hd=(nil) n_spare_workers=0 spare_workers=(nil) inbox=0x42003a78b8 curTSO=(nil)
+task=0xcba11b0 id=0xe92c767cf160 cap=0x2354b40 wakeup=0 worker=1 stopped=0 incall=0xe92c5c000b70 incall.tso=(nil) susp_tso=(nil) susp_cap=(nil) next=(nil)
+task=0xe92c64000bc0 id=0xe92c76fdf160 cap=0xcb8f740 wakeup=0 worker=1 stopped=0 incall=0xe92c68000b70 incall.tso=(nil) susp_tso=(nil) susp_cap=(nil) next=(nil)
+task=0xe92c6c000bc0 id=0xe92c777ef160 cap=0xcb8f740 wakeup=0 worker=1 stopped=0 incall=0xe92c64000b70 incall.tso=(nil) susp_tso=(nil) susp_cap=(nil) next=0xe92c64000bc0
+task=0xcba0fa0 id=0xe92c77fff160 cap=0xcb8f740 wakeup=0 worker=1 stopped=0 incall=0xe92c6c000b70 incall.tso=(nil) susp_tso=0x4201bf94b8 susp_cap=0xcb8f740 next=(nil)
+task=0xcaf7150 id=0xe92c852fa160 cap=0xe92c6400e6c0 wakeup=0 worker=1 stopped=0 incall=0xe92c70000b70 incall.tso=(nil) susp_tso=(nil) susp_cap=(nil) next=(nil)
+task=0xe92c78000bc0 id=0xe92c85b0a160 cap=0x2354b40 wakeup=0 worker=1 stopped=0 incall=0xe92c7c000b70 incall.tso=(nil) susp_tso=0x4201bf1088 susp_cap=0x2354b40 next=0xcaf6ee0
+task=0xcaf6ee0 id=0xe92c8631a160 cap=0x2354b40 wakeup=0 worker=1 stopped=0 incall=0xe92c78000b70 incall.tso=(nil) susp_tso=0x4201bf1110 susp_cap=0x2354b40 next=(nil)
+task=0xcaf6dc0 id=0xe92c875ce020 cap=0x2354b40 wakeup=0 worker=0 stopped=0 incall=0xcaf6e90 incall.tso=0x4201bf1000 susp_tso=(nil) susp_cap=(nil) next=(nil)
+  Id   Target Id                                          Frame 
+* 1    Thread 0xe92c875ce020 (LWP 4197) "golem-font-test" 0x0000e92c870af228 in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+  2    Thread 0xe92c767cf160 (LWP 4214) "ghc_worker"      0x0000e92c870af228 in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+  3    Thread 0xe92c76fdf160 (LWP 4213) "ghc_worker"      0x0000e92c870af228 in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+  4    Thread 0xe92c777ef160 (LWP 4212) "ghc_worker"      0x0000e92c870af228 in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+  5    Thread 0xe92c77fff160 (LWP 4211) "ghc_worker"      0x0000e92c870af228 in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+  6    Thread 0xe92c852fa160 (LWP 4210) "ghc_worker"      0x0000e92c870af228 in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+  7    Thread 0xe92c85b0a160 (LWP 4207) "ghc_worker"      0x0000e92c870af228 in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+  8    Thread 0xe92c8631a160 (LWP 4206) "ghc_worker"      0x0000e92c870af228 in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+  9    Thread 0xe92c86b83160 (LWP 4205) "ghc_ticker"      0x0000e92c870af228 in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+######## pid 7138
+n_capabilities=8 enabled=8 pending_sync=0xed3db98a67c8
+  sync.type=2 sync.idle=0xed3d9c003070 sync.task=0xed3da8000bc0
+cap[0]=0x1d5e780 no=0 running_task=0xed3da8000bc0 in_haskell=0 disabled=0 idle=0 n_run_queue=2 n_susp_ccalls=2 n_returning=2 returning_hd=0xed3dac000bc0 n_spare_workers=2 spare_workers=0x1f35a150 inbox=0x1d576e8 curTSO=(nil)
+cap[1]=0x1f396600 no=1 running_task=0xed3da8000bc0 in_haskell=0 disabled=0 idle=0 n_run_queue=1 n_susp_ccalls=1 n_returning=1 returning_hd=0x1f3a7e60 n_spare_workers=1 spare_workers=0xed3d9c002e10 inbox=0x1d576e8 curTSO=(nil)
+cap[2]=0xed3da4009fc0 no=2 running_task=0xed3da8000bc0 in_haskell=0 disabled=0 idle=0 n_run_queue=0 n_susp_ccalls=0 n_returning=1 returning_hd=0xed3da8000bc0 n_spare_workers=0 spare_workers=(nil) inbox=0x4200520c18 curTSO=(nil)
+cap[3]=0xed3da401a580 no=3 running_task=0xed3da8000bc0 in_haskell=0 disabled=0 idle=0 n_run_queue=0 n_susp_ccalls=0 n_returning=0 returning_hd=(nil) n_spare_workers=0 spare_workers=(nil) inbox=0x42005c8088 curTSO=(nil)
+cap[4]=0xed3da402ab80 no=4 running_task=0xed3da8000bc0 in_haskell=0 disabled=0 idle=0 n_run_queue=0 n_susp_ccalls=0 n_returning=0 returning_hd=(nil) n_spare_workers=0 spare_workers=(nil) inbox=0x42005c84a0 curTSO=(nil)
+cap[5]=0xed3da403b1c0 no=5 running_task=0xed3da8000bc0 in_haskell=0 disabled=0 idle=0 n_run_queue=0 n_susp_ccalls=0 n_returning=0 returning_hd=(nil) n_spare_workers=0 spare_workers=(nil) inbox=0x42005c88b8 curTSO=(nil)
+cap[6]=0xed3da404b7c0 no=6 running_task=0xed3da8000bc0 in_haskell=0 disabled=0 idle=0 n_run_queue=0 n_susp_ccalls=0 n_returning=0 returning_hd=(nil) n_spare_workers=0 spare_workers=(nil) inbox=0x42005c8cd0 curTSO=(nil)
+cap[7]=0xed3da405be40 no=7 running_task=0xed3da8000bc0 in_haskell=0 disabled=0 idle=0 n_run_queue=0 n_susp_ccalls=0 n_returning=0 returning_hd=(nil) n_spare_workers=0 spare_workers=(nil) inbox=0x42005c9400 curTSO=(nil)
+task=0xed3d9c002e10 id=0xed3db8887160 cap=0x1f396600 wakeup=0 worker=1 stopped=0 incall=0xed3da0000b70 incall.tso=(nil) susp_tso=(nil) susp_cap=(nil) next=(nil)
+task=0xed3da40024b0 id=0xed3db9097160 cap=0x1d5e780 wakeup=0 worker=1 stopped=0 incall=0xed3d94000b70 incall.tso=(nil) susp_tso=(nil) susp_cap=(nil) next=(nil)
+task=0xed3da8000bc0 id=0xed3db98a7160 cap=0xed3da4009fc0 wakeup=0 worker=1 stopped=0 incall=0xed3d9c000b70 incall.tso=(nil) susp_tso=(nil) susp_cap=(nil) next=(nil)
+task=0x1f3a7e60 id=0xed3dba0b7160 cap=0x1f396600 wakeup=0 worker=1 stopped=0 incall=0xed3da8000b70 incall.tso=(nil) susp_tso=0x4201bff088 susp_cap=0x1f396600 next=(nil)
+task=0x1f35a150 id=0xed3dbaf0a160 cap=0x1d5e780 wakeup=0 worker=1 stopped=0 incall=0xed3da4000b70 incall.tso=(nil) susp_tso=(nil) susp_cap=(nil) next=0xed3da40024b0
+task=0xed3dac000bc0 id=0xed3dbb71a160 cap=0x1d5e780 wakeup=0 worker=1 stopped=0 incall=0xed3db0000b70 incall.tso=(nil) susp_tso=0x4201bff810 susp_cap=0x1d5e780 next=0x1f359ee0
+task=0x1f359ee0 id=0xed3dbbf2a160 cap=0x1d5e780 wakeup=0 worker=1 stopped=0 incall=0xed3dac000b70 incall.tso=(nil) susp_tso=0x4200491990 susp_cap=0x1d5e780 next=(nil)
+task=0x1f359dc0 id=0xed3dbd1e1020 cap=0x1d5e780 wakeup=0 worker=0 stopped=0 incall=0x1f359e90 incall.tso=0x4200490450 susp_tso=(nil) susp_cap=(nil) next=(nil)
+  Id   Target Id                                          Frame 
+* 1    Thread 0xed3dbd1e1020 (LWP 7138) "golem-font-race" 0x0000ed3dbccbf228 in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+  2    Thread 0xed3db8887160 (LWP 7147) "ghc_worker"      0x0000ed3dbccbf228 in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+  3    Thread 0xed3db9097160 (LWP 7146) "ghc_worker"      0x0000ed3dbccbf228 in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+  4    Thread 0xed3db98a7160 (LWP 7145) "ghc_worker"      0x0000ed3dbccbf228 in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+  5    Thread 0xed3dba0b7160 (LWP 7144) "ghc_worker"      0x0000ed3dbccbf228 in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+  6    Thread 0xed3dbaf0a160 (LWP 7143) "ghc_worker"      0x0000ed3dbccbf228 in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+  7    Thread 0xed3dbb71a160 (LWP 7142) "ghc_worker"      0x0000ed3dbccbf228 in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+  8    Thread 0xed3dbbf2a160 (LWP 7141) "ghc_worker"      0x0000ed3dbccbf228 in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+  9    Thread 0xed3dbc793160 (LWP 7140) "ghc_ticker"      0x0000ed3dbccbf22c in ?? () from /lib/aarch64-linux-gnu/libc.so.6

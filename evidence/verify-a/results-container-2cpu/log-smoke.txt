@@ -1,0 +1,6 @@
+run 0 HANG last=[Killed]
+run 1 HANG last=[Killed]
+run 2 HANG last=[Killed]
+run 3 HANG last=[Killed]
+run 4 HANG last=[Killed]
+RESULT smoke bin=caprace mode=conc rounds=3 M=4 W=4 rts=[-N1] n=5 ok=0 hang=5 other=0

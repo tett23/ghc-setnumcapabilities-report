@@ -1,0 +1,67 @@
+set pagination off
+set $ncap = *(unsigned int*)&n_capabilities
+set $ecap = *(unsigned int*)&enabled_capabilities
+printf "n_capabilities=%u enabled=%u pending_sync=%p\n", $ncap, $ecap, *(void**)&pending_sync
+set $psync = *(long*)&pending_sync
+if $psync != 0
+  printf "  sync.type=%u sync.idle=%p sync.task=%p\n", *(unsigned int*)$psync, *(void**)($psync+8), *(void**)($psync+16)
+end
+set $caps = *(long*)&capabilities
+set $i = 0
+while $i < $ncap
+  set $c = *(long*)($caps + 8*$i)
+  printf "cap[%d]=%p no=%u running_task=%p in_haskell=%u disabled=%u idle=%u n_run_queue=%u n_susp_ccalls=%u n_returning=%u returning_hd=%p n_spare_workers=%u spare_workers=%p inbox=%p curTSO=%p\n", $i, $c, *(unsigned int*)($c+944), *(void**)($c+952), *(unsigned char*)($c+960), *(unsigned char*)($c+968), *(unsigned char*)($c+964), *(unsigned int*)($c+992), *(unsigned int*)($c+1008), *(unsigned int*)($c+1288), *(void**)($c+1272), *(unsigned int*)($c+1216), *(void**)($c+1208), *(void**)($c+1296), *(void**)($c+896)
+  set $i = $i + 1
+end
+set $t = *(long*)&all_tasks
+while $t != 0
+  set $ic = *(long*)($t+128)
+  printf "task=%p id=%p cap=%p wakeup=%u worker=%u stopped=%u incall=%p", $t, *(void**)$t, *(void**)($t+120), *(unsigned char*)($t+112), *(unsigned char*)($t+152), *(unsigned char*)($t+153), $ic
+  if $ic != 0
+    printf " incall.tso=%p susp_tso=%p susp_cap=%p", *(void**)$ic, *(void**)($ic+8), *(void**)($ic+16)
+  end
+  printf " next=%p\n", *(void**)($t+160)
+  set $t = *(long*)($t+168)
+end
+info threads
+
+#include <stdio.h>
+#include <stddef.h>
+#define THREADED_RTS 1
+#include "Rts.h"
+#include "rts/Threads.h"
+#include "Capability.h"
+#include "Task.h"
+int main(void){
+ printf("sizeof(Capability)=%zu\n", sizeof(Capability));
+ printf("Capability.no=%zu\n", offsetof(Capability,no));
+ printf("Capability.in_haskell=%zu\n", offsetof(Capability,in_haskell));
+ printf("Capability.disabled=%zu\n", offsetof(Capability,disabled));
+ printf("Capability.running_task=%zu\n", offsetof(Capability,running_task));
+ printf("Capability.lock=%zu\n", offsetof(Capability,lock));
+ printf("Capability.run_queue_hd=%zu\n", offsetof(Capability,run_queue_hd));
+ printf("Capability.n_run_queue=%zu\n", offsetof(Capability,n_run_queue));
+ printf("Capability.suspended_ccalls=%zu\n", offsetof(Capability,suspended_ccalls));
+ printf("Capability.n_suspended_ccalls=%zu\n", offsetof(Capability,n_suspended_ccalls));
+ printf("Capability.returning_tasks_hd=%zu\n", offsetof(Capability,returning_tasks_hd));
+ printf("Capability.n_returning_tasks=%zu\n", offsetof(Capability,n_returning_tasks));
+ printf("Capability.spare_workers=%zu\n", offsetof(Capability,spare_workers));
+ printf("Capability.n_spare_workers=%zu\n", offsetof(Capability,n_spare_workers));
+ printf("Capability.inbox=%zu\n", offsetof(Capability,inbox));
+ printf("Capability.idle=%zu\n", offsetof(Capability,idle));
+ printf("Capability.interrupt=%zu\n", offsetof(Capability,interrupt));
+ printf("Capability.context_switch=%zu\n", offsetof(Capability,context_switch));
+ printf("Capability.r.rCurrentTSO=%zu\n", offsetof(Capability,r.rCurrentTSO));
+ printf("sizeof(Task)=%zu\n", sizeof(Task));
+ printf("Task.id=%zu\n", offsetof(Task,id));
+ printf("Task.cap=%zu\n", offsetof(Task,cap));
+ printf("Task.incall=%zu\n", offsetof(Task,incall));
+ printf("Task.worker=%zu\n", offsetof(Task,worker));
+ printf("Task.stopped=%zu\n", offsetof(Task,stopped));
+ printf("Task.wakeup=%zu\n", offsetof(Task,wakeup));
+ printf("Task.cond=%zu\n", offsetof(Task,cond));
+ printf("Task.next=%zu\n", offsetof(Task,next));
+ printf("Task.all_next=%zu\n", offsetof(Task,all_next));
+ printf("InCall.tso=%zu InCall.suspended_tso=%zu InCall.suspended_cap=%zu InCall.rstat=%zu\n", offsetof(InCall,tso), offsetof(InCall,suspended_tso), offsetof(InCall,suspended_cap), offsetof(InCall,rstat));
+ return 0;
+}

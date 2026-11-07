@@ -1,0 +1,121 @@
+run 1 BUSY-TIMEOUT cpu_s_3s=5 last=[]
+run 2 BUSY-TIMEOUT cpu_s_3s=5 last=[]
+run 3 BUSY-TIMEOUT cpu_s_3s=6 last=[]
+run 6 BUSY-TIMEOUT cpu_s_3s=6 last=[]
+run 8 BUSY-TIMEOUT cpu_s_3s=6 last=[]
+run 11 SLOW-OK
+run 13 SLOW-OK
+run 14 BUSY-TIMEOUT cpu_s_3s=5 last=[]
+run 16 SLOW-OK
+run 19 BUSY-TIMEOUT cpu_s_3s=6 last=[]
+run 20 BUSY-TIMEOUT cpu_s_3s=6 last=[]
+run 21 SLOW-OK
+run 23 BUSY-TIMEOUT cpu_s_3s=5 last=[]
+run 24 BUSY-TIMEOUT cpu_s_3s=5 last=[]
+run 26 BUSY-TIMEOUT cpu_s_3s=6 last=[]
+run 29 SLOW-OK
+run 31 BUSY-TIMEOUT cpu_s_3s=6 last=[]
+run 32 BUSY-TIMEOUT cpu_s_3s=5 last=[]
+run 34 BUSY-TIMEOUT cpu_s_3s=5 last=[]
+run 35 BUSY-TIMEOUT cpu_s_3s=5 last=[]
+run 38 SLOW-OK
+run 39 BUSY-TIMEOUT cpu_s_3s=6 last=[]
+run 42 BUSY-TIMEOUT cpu_s_3s=7 last=[]
+run 44 SLOW-OK
+run 45 BUSY-TIMEOUT cpu_s_3s=5 last=[]
+run 46 BUSY-TIMEOUT cpu_s_3s=5 last=[]
+run 47 BUSY-TIMEOUT cpu_s_3s=5 last=[]
+run 48 BUSY-TIMEOUT cpu_s_3s=5 last=[]
+run 49 BUSY-TIMEOUT cpu_s_3s=5 last=[]
+run 50 BUSY-TIMEOUT cpu_s_3s=5 last=[]
+run 51 BUSY-TIMEOUT cpu_s_3s=5 last=[]
+run 52 SLOW-OK
+run 53 SLOW-OK
+run 54 BUSY-TIMEOUT cpu_s_3s=5 last=[]
+run 55 BUSY-TIMEOUT cpu_s_3s=5 last=[]
+run 60 SLOW-OK
+run 62 BUSY-TIMEOUT cpu_s_3s=5 last=[]
+run 63 BUSY-TIMEOUT cpu_s_3s=5 last=[]
+run 65 SLOW-OK
+run 68 SLOW-OK
+run 69 SLOW-OK
+run 70 BUSY-TIMEOUT cpu_s_3s=5 last=[]
+run 71 BUSY-TIMEOUT cpu_s_3s=5 last=[]
+run 72 SLOW-OK
+run 73 SLOW-OK
+run 74 SLOW-OK
+run 75 SLOW-OK
+run 77 BUSY-TIMEOUT cpu_s_3s=5 last=[]
+run 81 SLOW-OK
+run 84 SLOW-OK
+run 85 BUSY-TIMEOUT cpu_s_3s=6 last=[]
+run 86 SLOW-OK
+run 88 BUSY-TIMEOUT cpu_s_3s=5 last=[]
+run 89 BUSY-TIMEOUT cpu_s_3s=6 last=[]
+run 92 SLOW-OK
+run 94 BUSY-TIMEOUT cpu_s_3s=5 last=[]
+run 96 SLOW-OK
+run 98 BUSY-TIMEOUT cpu_s_3s=6 last=[]
+run 101 BUSY-TIMEOUT cpu_s_3s=6 last=[]
+run 102 SLOW-OK
+run 103 SLOW-OK
+run 104 SLOW-OK
+run 105 BUSY-TIMEOUT cpu_s_3s=5 last=[]
+run 108 BUSY-TIMEOUT cpu_s_3s=5 last=[]
+run 111 BUSY-TIMEOUT cpu_s_3s=5 last=[]
+run 112 BUSY-TIMEOUT cpu_s_3s=5 last=[]
+run 114 SLOW-OK
+run 116 BUSY-TIMEOUT cpu_s_3s=4 last=[]
+run 122 BUSY-TIMEOUT cpu_s_3s=5 last=[]
+run 124 BUSY-TIMEOUT cpu_s_3s=5 last=[]
+run 125 SLOW-OK
+run 127 SLOW-OK
+run 129 SLOW-OK
+run 130 BUSY-TIMEOUT cpu_s_3s=5 last=[]
+run 133 SLOW-OK
+run 134 BUSY-TIMEOUT cpu_s_3s=5 last=[]
+run 135 SLOW-OK
+run 136 SLOW-OK
+run 137 BUSY-TIMEOUT cpu_s_3s=5 last=[]
+run 139 BUSY-TIMEOUT cpu_s_3s=4 last=[]
+run 140 SLOW-OK
+run 142 BUSY-TIMEOUT cpu_s_3s=2 last=[]
+run 143 BUSY-TIMEOUT cpu_s_3s=5 last=[]
+run 144 SLOW-OK
+run 145 BUSY-TIMEOUT cpu_s_3s=3 last=[]
+run 146 BUSY-TIMEOUT cpu_s_3s=3 last=[]
+run 147 SLOW-OK
+run 148 BUSY-TIMEOUT cpu_s_3s=2 last=[]
+run 149 BUSY-TIMEOUT cpu_s_3s=3 last=[]
+run 150 BUSY-TIMEOUT cpu_s_3s=4 last=[]
+run 151 BUSY-TIMEOUT cpu_s_3s=5 last=[]
+run 152 BUSY-TIMEOUT cpu_s_3s=6 last=[]
+run 153 BUSY-TIMEOUT cpu_s_3s=5 last=[]
+run 154 BUSY-TIMEOUT cpu_s_3s=6 last=[]
+run 156 BUSY-TIMEOUT cpu_s_3s=6 last=[]
+run 157 BUSY-TIMEOUT cpu_s_3s=4 last=[]
+run 158 BUSY-TIMEOUT cpu_s_3s=6 last=[]
+run 159 BUSY-TIMEOUT cpu_s_3s=5 last=[]
+run 160 BUSY-TIMEOUT cpu_s_3s=2 last=[]
+run 161 BUSY-TIMEOUT cpu_s_3s=2 last=[]
+run 162 BUSY-TIMEOUT cpu_s_3s=2 last=[]
+run 163 BUSY-TIMEOUT cpu_s_3s=5 last=[]
+run 165 BUSY-TIMEOUT cpu_s_3s=6 last=[]
+run 167 BUSY-TIMEOUT cpu_s_3s=4 last=[]
+run 168 BUSY-TIMEOUT cpu_s_3s=5 last=[]
+run 170 SLOW-OK
+run 173 BUSY-TIMEOUT cpu_s_3s=4 last=[]
+run 180 BUSY-TIMEOUT cpu_s_3s=4 last=[]
+run 184 BUSY-TIMEOUT cpu_s_3s=5 last=[]
+run 185 BUSY-TIMEOUT cpu_s_3s=6 last=[]
+run 187 BUSY-TIMEOUT cpu_s_3s=6 last=[]
+run 188 BUSY-TIMEOUT cpu_s_3s=6 last=[]
+run 189 BUSY-TIMEOUT cpu_s_3s=5 last=[]
+run 190 BUSY-TIMEOUT cpu_s_3s=5 last=[]
+run 191 BUSY-TIMEOUT cpu_s_3s=4 last=[]
+run 193 BUSY-TIMEOUT cpu_s_3s=5 last=[]
+run 197 BUSY-TIMEOUT cpu_s_3s=5 last=[]
+run 198 BUSY-TIMEOUT cpu_s_3s=5 last=[]
+run 199 BUSY-TIMEOUT cpu_s_3s=5 last=[]
+run 200 BUSY-TIMEOUT cpu_s_3s=6 last=[]
+RESULT(host mac 10cpu) serial mode=serial rounds=3 M=4 W=4 rts=[-N1] n=200 ok=116 idle_hang=0 busy_timeout=84 other=0

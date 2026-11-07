@@ -1,0 +1,127 @@
+[New LWP 7147]
+[New LWP 7146]
+[New LWP 7145]
+[New LWP 7144]
+[New LWP 7143]
+[New LWP 7142]
+[New LWP 7141]
+[New LWP 7140]
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/aarch64-linux-gnu/libthread_db.so.1".
+0x0000ed3dbccbf228 in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+  Id   Target Id                                          Frame 
+* 1    Thread 0xed3dbd1e1020 (LWP 7138) "golem-font-race" 0x0000ed3dbccbf228 in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+  2    Thread 0xed3db8887160 (LWP 7147) "ghc_worker"      0x0000ed3dbccbf228 in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+  3    Thread 0xed3db9097160 (LWP 7146) "ghc_worker"      0x0000ed3dbccbf228 in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+  4    Thread 0xed3db98a7160 (LWP 7145) "ghc_worker"      0x0000ed3dbccbf228 in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+  5    Thread 0xed3dba0b7160 (LWP 7144) "ghc_worker"      0x0000ed3dbccbf22c in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+  6    Thread 0xed3dbaf0a160 (LWP 7143) "ghc_worker"      0x0000ed3dbccbf228 in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+  7    Thread 0xed3dbb71a160 (LWP 7142) "ghc_worker"      0x0000ed3dbccbf228 in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+  8    Thread 0xed3dbbf2a160 (LWP 7141) "ghc_worker"      0x0000ed3dbccbf22c in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+  9    Thread 0xed3dbc793160 (LWP 7140) "ghc_ticker"      0x0000ed3dbccbf228 in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+
+Thread 9 (Thread 0xed3dbc793160 (LWP 7140) "ghc_ticker"):
+#0  0x0000ed3dbccbf228 in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+#1  0x0000ed3dbccb28b8 in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+#2  0x0000ed3dbccb28fc [PAC] in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+#3  0x0000ed3dbcd138a0 [PAC] in poll () from /lib/aarch64-linux-gnu/libc.so.6
+#4  0x000000000177aeac [PAC] in itimer_thread_func ()
+#5  0x0000ed3dbccb61d8 in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+#6  0x0000ed3dbcd1e15c [PAC] in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+
+Thread 8 (Thread 0xed3dbbf2a160 (LWP 7141) "ghc_worker"):
+#0  0x0000ed3dbccbf22c in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+#1  0x0000ed3dbccb28b8 in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+#2  0x0000ed3dbccb28fc [PAC] in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+#3  0x0000ed3dbcd1e424 [PAC] in epoll_pwait () from /lib/aarch64-linux-gnu/libc.so.6
+#4  0x000000000168e37c [PAC] in ghczminternal_GHCziInternalziEventziEPoll_new10_info ()
+#5  0x006500000168e37c in ?? ()
+Backtrace stopped: previous frame identical to this frame (corrupt stack?)
+
+Thread 7 (Thread 0xed3dbb71a160 (LWP 7142) "ghc_worker"):
+#0  0x0000ed3dbccbf228 in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+#1  0x0000ed3dbccb28b8 in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+#2  0x0000ed3dbccb2c50 [PAC] in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+#3  0x0000ed3dbccb564c [PAC] in pthread_cond_wait () from /lib/aarch64-linux-gnu/libc.so.6
+#4  0x000000000177bd78 [PAC] in waitCondition ()
+#5  0x000000000174aa74 in waitForReturnCapability ()
+#6  0x000000000174b558 in waitForCapability ()
+#7  0x0000000001758dc8 in resumeThread ()
+#8  0x000000000169bfbc in ?? ()
+Backtrace stopped: previous frame identical to this frame (corrupt stack?)
+
+Thread 6 (Thread 0xed3dbaf0a160 (LWP 7143) "ghc_worker"):
+#0  0x0000ed3dbccbf228 in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+#1  0x0000ed3dbccb28b8 in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+#2  0x0000ed3dbccb2c50 [PAC] in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+#3  0x0000ed3dbccb564c [PAC] in pthread_cond_wait () from /lib/aarch64-linux-gnu/libc.so.6
+#4  0x000000000177bd78 [PAC] in waitCondition ()
+#5  0x000000000174b7e0 in yieldCapability ()
+#6  0x000000000175a334 in schedule ()
+#7  0x000000000175b1c0 in scheduleWorker ()
+#8  0x000000000175f140 in workerStart ()
+#9  0x0000ed3dbccb61d8 in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+#10 0x0000ed3dbcd1e15c [PAC] in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+
+Thread 5 (Thread 0xed3dba0b7160 (LWP 7144) "ghc_worker"):
+#0  0x0000ed3dbccbf22c in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+#1  0x0000ed3dbccb28b8 in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+#2  0x0000ed3dbccb28fc [PAC] in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+#3  0x0000ed3dbcd1e424 [PAC] in epoll_pwait () from /lib/aarch64-linux-gnu/libc.so.6
+#4  0x000000000168e37c [PAC] in ghczminternal_GHCziInternalziEventziEPoll_new10_info ()
+#5  0x005900000168e37c in ?? ()
+Backtrace stopped: previous frame identical to this frame (corrupt stack?)
+
+Thread 4 (Thread 0xed3db98a7160 (LWP 7145) "ghc_worker"):
+#0  0x0000ed3dbccbf228 in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+#1  0x0000ed3dbccb28b8 in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+#2  0x0000ed3dbccb2c50 [PAC] in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+#3  0x0000ed3dbccb564c [PAC] in pthread_cond_wait () from /lib/aarch64-linux-gnu/libc.so.6
+#4  0x000000000177bd78 [PAC] in waitCondition ()
+#5  0x000000000174aa74 in waitForReturnCapability ()
+#6  0x000000000174b558 in waitForCapability ()
+#7  0x0000000001759d3c in scheduleDoGC ()
+#8  0x000000000175a5e0 in schedule ()
+#9  0x000000000175b1c0 in scheduleWorker ()
+#10 0x000000000175f140 in workerStart ()
+#11 0x0000ed3dbccb61d8 in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+#12 0x0000ed3dbcd1e15c [PAC] in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+
+Thread 3 (Thread 0xed3db9097160 (LWP 7146) "ghc_worker"):
+#0  0x0000ed3dbccbf228 in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+#1  0x0000ed3dbccb28b8 in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+#2  0x0000ed3dbccb2c50 [PAC] in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+#3  0x0000ed3dbccb564c [PAC] in pthread_cond_wait () from /lib/aarch64-linux-gnu/libc.so.6
+#4  0x000000000177bd78 [PAC] in waitCondition ()
+#5  0x000000000174b7e0 in yieldCapability ()
+#6  0x000000000175a334 in schedule ()
+#7  0x000000000175b1c0 in scheduleWorker ()
+#8  0x000000000175f140 in workerStart ()
+#9  0x0000ed3dbccb61d8 in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+#10 0x0000ed3dbcd1e15c [PAC] in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+
+Thread 2 (Thread 0xed3db8887160 (LWP 7147) "ghc_worker"):
+#0  0x0000ed3dbccbf228 in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+#1  0x0000ed3dbccb28b8 in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+#2  0x0000ed3dbccb2c50 [PAC] in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+#3  0x0000ed3dbccb564c [PAC] in pthread_cond_wait () from /lib/aarch64-linux-gnu/libc.so.6
+#4  0x000000000177bd78 [PAC] in waitCondition ()
+#5  0x000000000174b7e0 in yieldCapability ()
+#6  0x000000000175a334 in schedule ()
+#7  0x000000000175b1c0 in scheduleWorker ()
+#8  0x000000000175f140 in workerStart ()
+#9  0x0000ed3dbccb61d8 in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+#10 0x0000ed3dbcd1e15c [PAC] in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+
+Thread 1 (Thread 0xed3dbd1e1020 (LWP 7138) "golem-font-race"):
+#0  0x0000ed3dbccbf228 in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+#1  0x0000ed3dbccb28b8 in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+#2  0x0000ed3dbccb2c50 [PAC] in ?? () from /lib/aarch64-linux-gnu/libc.so.6
+#3  0x0000ed3dbccb564c [PAC] in pthread_cond_wait () from /lib/aarch64-linux-gnu/libc.so.6
+#4  0x000000000177bd78 [PAC] in waitCondition ()
+#5  0x000000000174b7e0 in yieldCapability ()
+#6  0x000000000175a334 in schedule ()
+#7  0x000000000175b18c in scheduleWaitThread ()
+#8  0x00000000017556b8 in hs_main ()
+#9  0x00000000004134a0 in main ()
+[Inferior 1 (process 7138) detached]
