@@ -70,7 +70,7 @@ tett23/golem#174 で、テストを `-with-rtsopts=-N` でリンクし、テス�
 
 ## ファイルの地図
 
-- `README.md`：公開時の入口（英語）。`publish-checklist.md`：公開前に tett23 が決めること・直すこと（2026-11-08）。
+- `README.md`：公開時の入口（英語）。リポジトリ: https://github.com/tett23/ghc-setnumcapabilities-report（2026-11-08 公開）。`publish-checklist.md`：公開前に tett23 が決めること・直すこと（2026-11-08）。
 - `tasty-comment.md`：tasty#485 への任意のコメントの下書き（HANDOFF の 5 の結論は notes-sources.md）。
 - `issue-stoptimer.md`：遅延（HANDOFF の 2）の別 issue の英語の下書き。341ed474 のバックポート依頼。証拠は `evidence/sync-lag/`。
 - `LOG.md`：調査の過程の時系列の記録（英語。2026-10-17 の引き継ぎ後に追加。試したこと、失敗、計測、判断の理由）。

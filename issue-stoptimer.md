@@ -153,6 +153,10 @@ With `-threaded -debug` instead of `-O -threaded`, the `caps` run finishes
 but individual calls take up to several seconds; `+RTS -Ds` shows the
 starved bound thread as described above.
 
+The reproducer, the measurement logs and the `-Ds` trace are in
+https://github.com/tett23/ghc-setnumcapabilities-report
+(`evidence/sync-lag/`).
+
 ## Expected behavior
 
 `setNumCapabilities` should return in a bounded time once the sync is

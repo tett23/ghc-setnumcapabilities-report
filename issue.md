@@ -301,6 +301,12 @@ idle" and never completes. Attaching gdb to a hung process and printing
 shows the capabilities `old_n .. n_capabilities-1` owned by a Task whose
 thread is parked in `waitForWorkerCapability`.
 
+The reproducer, the loop scripts, the per-run results on both machines, the
+gdb/lldb backtraces and the `-Ds` traces of hung processes are in
+https://github.com/tett23/ghc-setnumcapabilities-report
+(`evidence/verify-a/`, `evidence/verify-b/`; the fix and its verification
+under `mr/` and `evidence/rts-fix-check/`).
+
 ## Expected behavior
 
 Concurrent `setNumCapabilities` calls should be safe: the function already

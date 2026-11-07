@@ -390,3 +390,13 @@ tett23 chose BSD-3-Clause: `LICENSE` written. `evidence/rts-9.10.3-source/`
 refer to immutable tags, so nothing is lost. Kept the three function excerpts
 `evidence/verify-b/ghc-*.c` (703 lines in all) and the two patches, with a
 third-party notice in `README.md` pointing at GHC's licence.
+
+## 2026-11-08 Repository published
+
+On tett23's instruction: `git init` (branch `main`), first commit 252127e
+(138 files; `raw/`, `.claude/`, `.DS_Store` ignored), and
+`gh repo create tett23/ghc-setnumcapabilities-report --public --push`.
+URL: https://github.com/tett23/ghc-setnumcapabilities-report. Added the URL
+to the end of "Steps to reproduce" in `issue.md` and `issue-stoptimer.md`.
+The sandbox refused to create `.git`, so the git and gh commands ran outside
+it.

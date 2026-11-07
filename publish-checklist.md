@@ -27,7 +27,9 @@ repository). Items are ordered by how much a GHC reader would notice them.
 4. **Make `README.md` the entry point and fill the placeholders** (`NNNNN`,
    `MMMMM`, `XXXX`) once the issue and MR numbers exist. The same numbers go
    into `mr/` (`TNNNNN`, `changelog.d/NNNNN`) per `maintainer-checklist.md`.
-5. **Add the repository URL to the issue texts.** Neither `issue.md` nor
+5. Done 2026-11-08 (https://github.com/tett23/ghc-setnumcapabilities-report,
+   first commit 252127e). Original note: **Add the repository URL to the issue
+   texts.** Neither `issue.md` nor
    `issue-stoptimer.md` has a line for it yet. Suggested place: the end of
    "Steps to reproduce" in `issue.md` ("Full logs, gdb dumps and `-Ds` traces:
    <URL>, `evidence/verify-a`, `evidence/verify-b`") and the "Evidence" line of
@@ -93,7 +95,8 @@ repository). Items are ordered by how much a GHC reader would notice them.
 13. **Nothing secret was found**: no tokens, e-mail addresses or keys (grep
     over the folder for `ghp_`, `glpat-`, `token`, `secret`, `password`,
     `Authorization`); the only hits are GHC source comments.
-14. **`git init` and first commit** after items 1–3, so the issue can link a
+14. Done 2026-11-08: `git init`, commit 252127e, pushed to the public
+    repository above. Original note: **`git init` and first commit** after items 1–3, so the issue can link a
     commit hash rather than a moving branch. Commit the `mr/` files as they
     are; the GHC MR itself is created from the GHC checkout, not from here.
 
