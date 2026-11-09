@@ -1,5 +1,7 @@
 # 引き継ぎ：GHC の setNumCapabilities の競合の調査と報告
 
+English translation: `HANDOFF.en.md`.
+
 2026-10-17 に Golem（tett23/golem）のセッションで調べた内容を、このフォルダーで調査と報告を続けるセッションに引き継ぐ。
 このファイルを最初に読み、続けて下の「ファイルの地図」の順に読む。
 

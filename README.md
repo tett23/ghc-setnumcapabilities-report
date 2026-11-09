@@ -52,7 +52,7 @@ Loop drivers that classify each run as ok / idle hang / busy timeout are in
 - `notes-sources.md`: the GHC wiki pages and tickets read, and the duplicate
   search (tickets #8209, #14707, #18808, #20144, #22989, #27460, #27473).
 - `HANDOFF.md`, `maintainer-checklist.md`, `mr-outline.md`: working notes
-  (`HANDOFF.md` is in Japanese).
+  (`HANDOFF.md` is in Japanese; `HANDOFF.en.md` is its English translation).
 
 ## Environments
 

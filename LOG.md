@@ -400,3 +400,10 @@ URL: https://github.com/tett23/ghc-setnumcapabilities-report. Added the URL
 to the end of "Steps to reproduce" in `issue.md` and `issue-stoptimer.md`.
 The sandbox refused to create `.git`, so the git and gh commands ran outside
 it.
+
+## 2026-11-10 English translation of HANDOFF.md
+
+`HANDOFF.md` was the only Japanese file left (grep for kana/kanji over the
+folder). Added `HANDOFF.en.md`, a translation with a note that it is a
+snapshot of the 2026-10-17 hand-over, and linked it from `HANDOFF.md` and
+`README.md`.
