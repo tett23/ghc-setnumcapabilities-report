@@ -11,6 +11,12 @@ Title: `setNumCapabilities` leaks capabilities when another `setNumCapabilities`
 
 ## Summary
 
+(Everything referred to below, including the reproducer, the per-run logs,
+gdb/lldb dumps and `-Ds` traces of hung processes, the investigation log,
+and a proposed fix with a testsuite test and its verification, is in
+https://github.com/tett23/ghc-setnumcapabilities-report; its README has a
+reading guide.)
+
 `setNumCapabilities` (rts/Schedule.c) reads `n_capabilities` and
 `enabled_capabilities` *before* it stops the world and uses those values
 *after* the world has been stopped:

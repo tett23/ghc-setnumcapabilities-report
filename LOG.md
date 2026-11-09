@@ -407,3 +407,12 @@ it.
 folder). Added `HANDOFF.en.md`, a translation with a note that it is a
 snapshot of the 2026-10-17 hand-over, and linked it from `HANDOFF.md` and
 `README.md`.
+
+## 2026-11-10 Repository pointer in the issue texts; Japanese translations
+
+Added a parenthetical at the top of "Summary" in `issue.md` and
+`issue-stoptimer.md` pointing at this repository (reproducer, logs, dumps,
+investigation log, fix). Added `issue.ja.md` and `issue-stoptimer.ja.md`,
+Japanese translations for the author's review; code blocks, commands and
+quoted log lines are kept verbatim. The English texts remain the ones to
+post.

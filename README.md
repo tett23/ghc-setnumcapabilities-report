@@ -36,6 +36,7 @@ Loop drivers that classify each run as ok / idle hang / busy timeout are in
 ├── issue.md                  issue 1: the capability leak that hangs the next GC
 ├── issue-stoptimer.md        issue 2: setNumCapabilities stalls while the timer is stopped
 │                             (backport request for 341ed474)
+├── issue.ja.md, issue-stoptimer.ja.md   Japanese translations of the two issue texts
 ├── mr/                       everything for the merge request
 │   ├── rts-Schedule.c.patch  the fix, against master
 │   ├── testsuite/tests/rts/  TNNNNN.hs, TNNNNN_c.c (native watchdog), all.T fragment

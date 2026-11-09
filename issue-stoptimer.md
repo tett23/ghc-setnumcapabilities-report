@@ -9,6 +9,11 @@ Title: `setNumCapabilities` can stall for seconds or longer because it keeps the
 
 ## Summary
 
+(The reproducer, the measurement logs, the `-Ds` trace and the
+investigation log are in
+https://github.com/tett23/ghc-setnumcapabilities-report, under
+`evidence/sync-lag/`; the same repository holds the material for #NNNNN.)
+
 In every released GHC I looked at (9.10.3, 9.12.4, 9.14.1) `setNumCapabilities`
 (rts/Schedule.c) calls `stopTimer()` before it stops the world and
 `startTimer()` only after the I/O-manager notification at the end:
