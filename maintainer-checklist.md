@@ -22,9 +22,11 @@ GHC rules read on 2026-10-17 (URLs in notes-sources.md).
    be visible in the description).
 4. New issue → template "default" → paste. Leave the `/label` quick actions.
    Make the title your own words if you prefer.
-5. After posting, note the issue number NNNNN; put the test name
-   `testsuite/tests/rts/TNNNNN` in the issue description once it exists
-   (fixing-bugs wiki asks for this).
+5. Done 2026-11-10: posted as #28109
+   (https://gitlab.haskell.org/ghc/ghc/-/issues/28109). Still to do on the
+   issue: add a line naming the test `testsuite/tests/rts/T28109` once the MR
+   exists (fixing-bugs wiki asks for this), and post `issue-stoptimer.md`
+   (its #NNNNN placeholders were replaced with #28109 on 2026-11-10).
 
 ## If you also submit the fix (MR)
 6. Decide whether you are willing to take responsibility for every line of the
@@ -35,12 +37,13 @@ GHC rules read on 2026-10-17 (URLs in notes-sources.md).
    many times, to show it catches the bug and is not flaky.
    Done once on 2026-11-07 (evidence/rts-fix-check/RESULTS.md, "Hadrian
    build"): the checkout /Users/tett23/repositories/src/gitlab.haskell.org/ghc/ghc
-   has the patch and the test applied, uncommitted. Re-run after renaming
-   TNNNNN -> T<issue number> (files, all.T, the C file's message, the Haskell
-   comment).
+   has the patch and the test applied, uncommitted. Renamed to T28109 on
+   2026-11-10 (files, all.T, the C file's message, the Haskell comment) and
+   re-run through the driver; see RESULTS.md and
+   evidence/rts-fix-check/hadrian-test-T28109.log.
 8. Push a branch to your fork (or to ghc/ghc if you get push rights), open an
    MR against `master`, replace the template text with your own description
-   (see mr-outline.md §5), reference `#NNNNN`, add `changelog.d/NNNNN`, and
+   (see mr-outline.md §5), reference `#28109`, add `changelog.d/28109`, and
    mark `Draft:` until CI passes. One squashed commit; `Assisted-By: <tool>`
    trailer in the commit message if an LLM generated part of it.
 9. Ask in a comment (@triagers) for labels ~RTS ~concurrency and, after merge,

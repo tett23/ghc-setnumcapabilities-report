@@ -1,13 +1,13 @@
 <!--
 issue-stoptimer.md の日本語訳（2026-11-10）。投稿するのは英語版で、この訳は
-tett23 の確認用。#NNNNN は capability の漏れの issue の番号に置き換える。
+tett23 の確認用。#28109 は capability の漏れの issue の番号に置き換える。
 -->
 
 題名: `setNumCapabilities` は、I/O マネージャへの通知を実行する間タイマーを止めたままにするため、数秒かそれ以上止まることがある（master では 341ed474 で修正済み。バックポートは？）
 
 ## 要約
 
-（再現プログラム、計測ログ、`-Ds` トレース、調査ログは https://github.com/tett23/ghc-setnumcapabilities-report の `evidence/sync-lag/` にある。同じリポジトリに #NNNNN の資料もある。）
+（再現プログラム、計測ログ、`-Ds` トレース、調査ログは https://github.com/tett23/ghc-setnumcapabilities-report の `evidence/sync-lag/` にある。同じリポジトリに #28109 の資料もある。）
 
 見たリリース済みの GHC（9.10.3、9.12.4、9.14.1）のすべてで、`setNumCapabilities`（rts/Schedule.c）は世界を止める前に `stopTimer()` を呼び、最後の I/O マネージャへの通知の後でようやく `startTimer()` を呼ぶ。
 
@@ -43,7 +43,7 @@ debug ビルドで 2.5 秒かかった呼び出しの `+RTS -Ds` トレースは
 
 タイマーの停止は #17289（再割り当て中の capability 配列に tick が触る）のためにあった。配列はもう再割り当てされないので、master では 2026-06-12 に 341ed474（「Remove redundant use of stopTimer in setNumCapabilities」。そこでは #27105 の部分的な修正とされている）でこの対が外された。master は動かしていない。表の最後の行は、9.10.3 の `rts/Schedule.c` から同じ 2 行を外してコンパイルし、9.10.3 の RTS アーカイブに差し替えたものである。
 
-これは #NNNNN（同時の `setNumCapabilities` 呼び出しによる capability の漏れ）の調査中に遭遇した。2 つは独立で、#NNNNN の修正はこの挙動を変えない。関係しうるもの: #27105（`stopTimer` は非同期）、#27473（GC の sync の即応性）。
+これは #28109（同時の `setNumCapabilities` 呼び出しによる capability の漏れ）の調査中に遭遇した。2 つは独立で、#28109 の修正はこの挙動を変えない。関係しうるもの: #27105（`stopTimer` は非同期）、#27473（GC の sync の即応性）。
 
 ## 再現手順
 

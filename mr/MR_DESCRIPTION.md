@@ -1,6 +1,6 @@
-<!-- Replace the MR template text with this. NNNNN = issue number, MMMMM = this MR's number. -->
+<!-- Replace the MR template text with this. MMMMM = this MR's number. -->
 
-Fixes #NNNNN.
+Fixes #28109.
 
 `setNumCapabilities` read `n_capabilities` and `enabled_capabilities` before
 `stopAllCapabilities()` and used the stale values afterwards. When another
@@ -20,7 +20,7 @@ is anything left to do (and releases what it holds if not), and adds
 Where to look: `rts/Schedule.c`, `setNumCapabilities`, the block right after
 `stopAllCapabilities`.
 
-Test: `testsuite/tests/rts/TNNNNN` (threaded1, threaded2). It runs six
+Test: `testsuite/tests/rts/T28109` (threaded1, threaded2). It runs six
 rounds of four concurrent `setNumCapabilities` calls with distinct,
 increasing targets and forces a GC after each round; a watchdog on a
 native thread (started from C, so it does not depend on the RTS) fails
@@ -40,10 +40,10 @@ reproducer and the first version of the patch, test and Note, and to draft
 this text. I have reviewed and revised every line and take full
 responsibility for it (P3); the commit carries an `Assisted-By:` trailer.
 
-- [x] This MR solves the problem described in #NNNNN
-- [x] Changelog entry added in `changelog.d/NNNNN`
-- [x] Testcase added: `testsuite/tests/rts/TNNNNN`
-- [x] Commit message describes what it does, referring to #NNNNN
+- [x] This MR solves the problem described in #28109
+- [x] Changelog entry added in `changelog.d/28109`
+- [x] Testcase added: `testsuite/tests/rts/T28109`
+- [x] Commit message describes what it does, referring to #28109
 
 @triagers: could you add ~RTS ~concurrency? The bug is present in every
 release since at least 9.10, so a backport to the maintained branches would

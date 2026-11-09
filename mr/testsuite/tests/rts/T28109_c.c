@@ -15,7 +15,7 @@ static DWORD WINAPI watchdog_main(LPVOID arg)
 {
     int seconds = (int)(intptr_t)arg;
     Sleep((DWORD)seconds * 1000);
-    fprintf(stderr, "TNNNNN: still running after %d s, giving up\n", seconds);
+    fprintf(stderr, "T28109: still running after %d s, giving up\n", seconds);
     fflush(stderr);
     _exit(1);
     return 0;
@@ -35,7 +35,7 @@ static void *watchdog_main(void *arg)
 {
     int seconds = (int)(intptr_t)arg;
     sleep((unsigned)seconds);
-    fprintf(stderr, "TNNNNN: still running after %d s, giving up\n", seconds);
+    fprintf(stderr, "T28109: still running after %d s, giving up\n", seconds);
     fflush(stderr);
     _exit(1);
     return NULL;

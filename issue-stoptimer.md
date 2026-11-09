@@ -1,6 +1,6 @@
 <!--
 Draft for a second GHC issue (file after the capability-leak issue; replace
-#NNNNN with that issue's number). Same template as issue.md. Everything
+#28109 with that issue's number). Same template as issue.md. Everything
 below was measured on GHC 9.10.3 (macOS, 10 cores) except where it says
 "read in the source". Evidence: evidence/sync-lag/.
 -->
@@ -12,7 +12,7 @@ Title: `setNumCapabilities` can stall for seconds or longer because it keeps the
 (The reproducer, the measurement logs, the `-Ds` trace and the
 investigation log are in
 https://github.com/tett23/ghc-setnumcapabilities-report, under
-`evidence/sync-lag/`; the same repository holds the material for #NNNNN.)
+`evidence/sync-lag/`; the same repository holds the material for #28109.)
 
 In every released GHC I looked at (9.10.3, 9.12.4, 9.14.1) `setNumCapabilities`
 (rts/Schedule.c) calls `stopTimer()` before it stops the world and
@@ -78,9 +78,9 @@ of stopTimer in setNumCapabilities", noted there as a partial fix of
 `rts/Schedule.c` with the same two lines removed, compiled and swapped
 into the 9.10.3 RTS archives.
 
-I ran into this while investigating #NNNNN (capabilities leaked by
+I ran into this while investigating #28109 (capabilities leaked by
 concurrent `setNumCapabilities` calls); the two are independent, and the
-fix for #NNNNN does not change this behaviour. Possibly related:
+fix for #28109 does not change this behaviour. Possibly related:
 #27105 (`stopTimer` is asynchronous), #27473 (GC sync promptness).
 
 ## Steps to reproduce

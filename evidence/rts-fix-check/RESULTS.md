@@ -78,7 +78,7 @@ seconds to minutes while other threads run tight allocating loops. It is
 independent of the leak and is left for a separate investigation.
 
 **Decision:** the testsuite test uses the `w0` shape (rounds=3, setters=4,
-no workers). `mr/testsuite/tests/rts/TNNNNN.hs` is that version.
+no workers). `mr/testsuite/tests/rts/T28109.hs` (named `TNNNNN.hs` until the issue number was known) is that version.
 
 ## Same check on Linux (`linux-check.sh`, `linux-check.log`; container `verify-a-1`: Debian 13 aarch64, 2 CPUs, gcc 14.2.0, ghcup GHC 9.10.3)
 
@@ -174,3 +174,24 @@ State left behind: the checkout has the patch and the test applied as an
 uncommitted working-tree change (`git diff --stat`: rts/Schedule.c,
 testsuite/tests/rts/all.T, plus the two untracked test files). Nothing
 committed, nothing pushed.
+
+## Re-run after renaming to T28109 (2026-11-10, macOS, patched tree)
+
+The issue was filed as #28109, so the test was renamed `TNNNNN` → `T28109`
+(files, `all.T` entry, the watchdog message in the C file, the Haskell
+comment) in `mr/` and in the GHC checkout (tip still 20334e1d1f, patch
+identical to `mr/rts-Schedule.c.patch`: applying that patch to `HEAD` gives
+the same `rts/Schedule.c`). Through the driver, patched tree
+(`hadrian-test-T28109.log`):
+
+| way | result |
+|---|---|
+| threaded1 (default at normal speed) | 1 expected pass, 0 unexpected |
+| threaded2 (`--test-way=threaded2`) | 1 expected pass, 0 unexpected |
+
+The first attempt failed before testing because the nix store path of
+`happy` recorded by `./configure` had been garbage-collected; `nix build
+nixpkgs#haskellPackages.happy` re-realised the same path
+(`mksl3a07…-happy-2.1.7`), so `hadrian/cfg/system.config` did not need to
+change. The unpatched failure was not re-run after the rename (the rename
+touches only names and messages; see the 2026-11-07 section).

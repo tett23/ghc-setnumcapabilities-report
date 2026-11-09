@@ -4,7 +4,7 @@ Supporting material for two GHC issues and one merge request:
 
 | What | File | Upstream |
 |---|---|---|
-| Capability leak when two `setNumCapabilities` calls overlap; the next GC hangs | `issue.md` | ghc/ghc#NNNNN (fill in after posting) |
+| Capability leak when two `setNumCapabilities` calls overlap; the next GC hangs | `issue.md` | [ghc/ghc#28109](https://gitlab.haskell.org/ghc/ghc/-/issues/28109) |
 | Stop-the-world syncs stall for seconds while `setNumCapabilities` holds `stopTimer()` (backport request for 341ed474) | `issue-stoptimer.md` | ghc/ghc#MMMMM (fill in after posting) |
 | Fix and testsuite test for the leak | `mr/` | ghc/ghc!XXXX (fill in after opening) |
 
@@ -39,8 +39,8 @@ Loop drivers that classify each run as ok / idle hang / busy timeout are in
 ├── issue.ja.md, issue-stoptimer.ja.md   Japanese translations of the two issue texts
 ├── mr/                       everything for the merge request
 │   ├── rts-Schedule.c.patch  the fix, against master
-│   ├── testsuite/tests/rts/  TNNNNN.hs, TNNNNN_c.c (native watchdog), all.T fragment
-│   ├── changelog.d/NNNNN
+│   ├── testsuite/tests/rts/  T28109.hs, T28109_c.c (native watchdog), all.T fragment
+│   ├── changelog.d/28109
 │   ├── COMMIT_MESSAGE.txt
 │   └── MR_DESCRIPTION.md
 ├── evidence/
@@ -79,7 +79,7 @@ Loop drivers that classify each run as ok / idle hang / busy timeout are in
    classification ok / idle_hang / busy_timeout explained at the top.
    `gdb/hang1-conc-waitForCapability.gdb.txt` shows the Task that still owns
    the leaked capabilities.
-4. `mr/rts-Schedule.c.patch` and `mr/testsuite/tests/rts/TNNNNN.hs`: a few
+4. `mr/rts-Schedule.c.patch` and `mr/testsuite/tests/rts/T28109.hs`: a few
    lines that move the reads after `stopAllCapabilities` and re-check the
    early return, plus Note [setNumCapabilities and concurrent calls]; the test
    is six rounds of four concurrent calls followed by `performGC`, with a

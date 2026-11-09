@@ -1,4 +1,4 @@
--- Concurrent setNumCapabilities calls must not leak capabilities (#NNNNN).
+-- Concurrent setNumCapabilities calls must not leak capabilities (#28109).
 --
 -- Before the fix, setNumCapabilities read n_capabilities before stopping the
 -- world and released only that many capabilities afterwards.  When several
@@ -17,7 +17,7 @@ import Foreign.C.Types
 import System.Mem (performGC)
 
 -- Starts an OS thread outside the RTS that exits the process after the
--- given number of seconds (see TNNNNN_c.c).
+-- given number of seconds (see T28109_c.c).
 foreign import ccall unsafe "start_watchdog" c_startWatchdog :: CInt -> IO ()
 
 rounds, setters :: Int

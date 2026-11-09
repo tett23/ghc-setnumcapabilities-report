@@ -423,3 +423,20 @@ tett23 read both threads while logged in: nothing relevant to the leak, so
 the "possibly related tickets" paragraph in `issue.md` stays as it is. The
 last unchecked item before posting is closed; what remains is tett23
 running the reproducers once and posting.
+
+## 2026-11-10 Issue filed as #28109; test renamed and re-run
+
+tett23 filed `issue.md` as https://gitlab.haskell.org/ghc/ghc/-/issues/28109
+(confirmed via the GitLab API: author tett23, title matches, no labels
+yet). Replaced the placeholders: `#NNNNN` → `#28109` in
+`issue-stoptimer.md`, `issue-stoptimer.ja.md`, `tasty-comment.md`, `mr/`
+(test files renamed to `T28109.hs` / `T28109_c.c`, `changelog.d/28109`,
+commit message, MR description, `all.T` fragment) and the README table and
+tree. `!MMMMM` (the MR number) stays. In the GHC checkout the test files
+were renamed and `all.T` updated; the patch there equals
+`mr/rts-Schedule.c.patch` applied to `HEAD`. The driver run first failed
+with "file does not exist: …/happy" because the nix store path from
+`./configure` had been garbage-collected; re-realising
+`nixpkgs#haskellPackages.happy` produced the same path, and the re-run
+passed in threaded1 and threaded2 (`evidence/rts-fix-check/hadrian-test-T28109.log`).
+`maintainer-checklist.md` steps 5, 7 and 8 updated.

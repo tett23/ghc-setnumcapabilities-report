@@ -1,6 +1,6 @@
 section: rts
 synopsis: Fix a deadlock when several threads call ``setNumCapabilities`` at the same time
-issues: #NNNNN
+issues: #28109
 mrs: !MMMMM
 description: {
 ``setNumCapabilities`` read the number of capabilities before it stopped the
