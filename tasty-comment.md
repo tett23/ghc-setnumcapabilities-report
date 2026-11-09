@@ -20,7 +20,7 @@ such races more likely in test suites, because test code that calls
 second, smaller problem in released GHCs (9.10–9.14) is that
 `setNumCapabilities` keeps the RTS timer stopped while it runs the
 I/O-manager notification, so a single call can stall for seconds when other
-threads are busy (GHC issue #MMMMM, fixed on GHC master).
+threads are busy (GHC issue #28110, fixed on GHC master).
 
 So for users still on 1.5.4: start the binary with `+RTS -N` (or
 `-with-rtsopts=-N`) and avoid calling `setNumCapabilities` from tests.

@@ -5,7 +5,7 @@ Supporting material for two GHC issues and one merge request:
 | What | File | Upstream |
 |---|---|---|
 | Capability leak when two `setNumCapabilities` calls overlap; the next GC hangs | `issue.md` | [ghc/ghc#28109](https://gitlab.haskell.org/ghc/ghc/-/issues/28109) |
-| Stop-the-world syncs stall for seconds while `setNumCapabilities` holds `stopTimer()` (backport request for 341ed474) | `issue-stoptimer.md` | ghc/ghc#MMMMM (fill in after posting) |
+| Stop-the-world syncs stall for seconds while `setNumCapabilities` holds `stopTimer()` (backport request for 341ed474) | `issue-stoptimer.md` | [ghc/ghc#28110](https://gitlab.haskell.org/ghc/ghc/-/issues/28110) |
 | Fix and testsuite test for the leak | `mr/` | ghc/ghc!XXXX (fill in after opening) |
 
 Everything in `issue.md`, `issue-stoptimer.md` and `mr/` was run on a machine

@@ -1,5 +1,5 @@
 <!--
-Second GHC issue, filed after #28109 (the capability leak). Same template as
+Second GHC issue, filed as #28110 on 2026-11-10 after #28109 (the capability leak). Same template as
 issue.md. Everything below was measured on GHC 9.10.3 (macOS, 10 cores)
 except where it says "read in the source". Evidence: evidence/sync-lag/.
 Paste from "Title:" down; the title goes in the title field.

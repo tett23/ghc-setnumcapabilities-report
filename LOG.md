@@ -440,3 +440,14 @@ with "file does not exist: …/happy" because the nix store path from
 `nixpkgs#haskellPackages.happy` produced the same path, and the re-run
 passed in threaded1 and threaded2 (`evidence/rts-fix-check/hadrian-test-T28109.log`).
 `maintainer-checklist.md` steps 5, 7 and 8 updated.
+
+## 2026-11-10 Second issue filed as #28110
+
+tett23 filed `issue-stoptimer.md` as
+https://gitlab.haskell.org/ghc/ghc/-/issues/28110 (confirmed via the API:
+author tett23, title matches, description references #28109, no labels
+yet). Replaced the remaining issue placeholder in the README table and
+`tasty-comment.md`; noted the numbers in the header comments of the issue
+texts and translations and in `maintainer-checklist.md`. The only
+placeholder left is `!MMMMM`, the MR number, in `mr/changelog.d/28109`
+and `mr/MR_DESCRIPTION.md`.

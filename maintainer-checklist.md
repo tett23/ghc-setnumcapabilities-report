@@ -25,8 +25,9 @@ GHC rules read on 2026-10-17 (URLs in notes-sources.md).
 5. Done 2026-11-10: posted as #28109
    (https://gitlab.haskell.org/ghc/ghc/-/issues/28109). Still to do on the
    issue: add a line naming the test `testsuite/tests/rts/T28109` once the MR
-   exists (fixing-bugs wiki asks for this), and post `issue-stoptimer.md`
-   (its #NNNNN placeholders were replaced with #28109 on 2026-11-10).
+   exists (fixing-bugs wiki asks for this). `issue-stoptimer.md` was posted
+   as #28110 (https://gitlab.haskell.org/ghc/ghc/-/issues/28110) on
+   2026-11-10.
 
 ## If you also submit the fix (MR)
 6. Decide whether you are willing to take responsibility for every line of the
