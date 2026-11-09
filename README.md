@@ -29,30 +29,72 @@ Loop drivers that classify each run as ok / idle hang / busy timeout are in
 
 ## Layout
 
-- `issue.md`, `issue-stoptimer.md`: the issue texts as posted (GHC default template).
-- `mr/`: `rts-Schedule.c.patch` (against master), the testsuite test
-  `TNNNNN.hs` / `TNNNNN_c.c` / `all.T` fragment, `changelog.d/`, the commit
-  message and the MR description.
-- `evidence/verify-a/`: the minimal reproducer, hang counts on macOS (10 cores)
-  and a 2-CPU Linux container, gdb/lldb backtraces and `+RTS -Ds` traces of hung
-  processes.
-- `evidence/verify-b/`: an earlier independent reproduction, gdb dumps of
-  `Capability`/`Task` state for three hangs, and the CI job logs that showed
-  which test binaries were left orphaned.
-- `evidence/plugin-test-repro/`, `evidence/tasty-pure-repro/`: how the hang was
-  narrowed down from a real test suite (tasty 1.5.4, which called
-  `setNumCapabilities` from `runInParallel`) to the RTS.
-- `evidence/rts-fix-check/`: the fix verified two ways: by recompiling
-  `rts/Schedule.c` into a copy of the shipped 9.10.3 RTS archive (`README.md`
-  explains the method and one pitfall), and by a hadrian build of GHC master
-  with the patch and the new test (`hadrian-*.log`, `RESULTS.md`).
-- `evidence/sync-lag/`: the second phenomenon (stalls, not hangs), its
-  reproducer `SyncLag.hs`, and the `-C0` / no-`stopTimer` control runs.
-- `LOG.md`: chronological log of the investigation, including the mistakes.
-- `notes-sources.md`: the GHC wiki pages and tickets read, and the duplicate
-  search (tickets #8209, #14707, #18808, #20144, #22989, #27460, #27473).
-- `HANDOFF.md`, `maintainer-checklist.md`, `mr-outline.md`: working notes
-  (`HANDOFF.md` is in Japanese; `HANDOFF.en.md` is its English translation).
+```
+.
+├── README.md                 this file
+├── LICENSE                   BSD-3-Clause
+├── issue.md                  issue 1: the capability leak that hangs the next GC
+├── issue-stoptimer.md        issue 2: setNumCapabilities stalls while the timer is stopped
+│                             (backport request for 341ed474)
+├── mr/                       everything for the merge request
+│   ├── rts-Schedule.c.patch  the fix, against master
+│   ├── testsuite/tests/rts/  TNNNNN.hs, TNNNNN_c.c (native watchdog), all.T fragment
+│   ├── changelog.d/NNNNN
+│   ├── COMMIT_MESSAGE.txt
+│   └── MR_DESCRIPTION.md
+├── evidence/
+│   ├── verify-a/             minimal reproducer CapRace.hs; hang counts on a 10-core Mac
+│   │                         and a 2-CPU Linux container; gdb/lldb dumps; -Ds traces
+│   ├── verify-b/             earlier independent reproduction SetCapsRace.hs; Capability/Task
+│   │                         state of three hangs; CI orphan-process lists
+│   ├── plugin-test-repro/    narrowing the hang down from a real test suite to the RTS
+│   ├── tasty-pure-repro/     the same hang with tasty alone, no project code
+│   ├── rts-fix-check/        the fix verified by RTS-archive swapping and by a hadrian build
+│   ├── sync-lag/             issue 2: SyncLag.hs, -C0 and no-stopTimer control runs
+│   └── rts-fix-9.10.3.patch  the fix for the 9.10 branch (adds startTimer to the early return)
+├── LOG.md                    chronological investigation log, mistakes included
+├── notes-sources.md          wiki pages and tickets read; duplicate search; the tasty decision
+├── publish-checklist.md      what was checked before publishing this repository
+├── maintainer-checklist.md   the author's own to-do list (account, posting, MR)
+├── mr-outline.md             early notes on the MR and the test
+├── tasty-comment.md          optional comment for UnkindPartition/tasty#485
+├── HANDOFF.md                hand-over notes between sessions (Japanese)
+└── HANDOFF.en.md             English translation of HANDOFF.md
+```
+
+## Where to start
+
+1. `issue.md`, "Summary": the mechanism. `setNumCapabilities` reads
+   `n_capabilities` before `stopAllCapabilities` and releases only that many
+   afterwards; whenever another call grows the array in between, the
+   capabilities in between are left owned by a Task that has returned. Two
+   observed interleavings and the two hang sites (`waitForCapability`,
+   `waitForGcThreads`) follow.
+2. `issue.md`, the results table under "Steps to reproduce": concurrent
+   increases hang 198/200 (Mac) and 163/200 (2-CPU Linux); the three controls
+   (serialised, decreases only, no-op) hang 0/200. `-fno-omit-yields` and a
+   `-debug` RTS change nothing.
+3. `evidence/verify-a/RESULTS.md`: the raw numbers behind that table, with the
+   classification ok / idle_hang / busy_timeout explained at the top.
+   `gdb/hang1-conc-waitForCapability.gdb.txt` shows the Task that still owns
+   the leaked capabilities.
+4. `mr/rts-Schedule.c.patch` and `mr/testsuite/tests/rts/TNNNNN.hs`: a few
+   lines that move the reads after `stopAllCapabilities` and re-check the
+   early return, plus Note [setNumCapabilities and concurrent calls]; the test
+   is six rounds of four concurrent calls followed by `performGC`, with a
+   60 s watchdog on a native thread.
+5. `evidence/rts-fix-check/RESULTS.md`, "Hadrian build of GHC master": the
+   test fails unpatched in threaded1 and threaded2 and passes patched; 60/60
+   loops, slowest 0.45 s. The sections above it verify the same fix without
+   building GHC, and `evidence/rts-fix-check/README.md` explains the method
+   and the `-optl-L` pitfall.
+6. `issue-stoptimer.md`, "Summary": the separate stall. Released GHCs keep
+   the timer stopped across the I/O-manager notification, so a yielding
+   thread is re-queued at the front forever and the bound notification
+   thread starves; `+RTS -C0` works around it; master fixed it in 341ed474.
+   `evidence/sync-lag/RESULTS.md` has the measurements.
+7. `LOG.md`: how each of the above was established, including what went
+   wrong on the way.
 
 ## Environments
 
