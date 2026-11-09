@@ -4,3 +4,10 @@
 # not needed by readers of the issue (see publish-checklist.md)
 # raw/ was removed on 2026-11-08; kept here in case it is regenerated
 raw/
+# GHC build products from running the reproducers in place
+*.hi
+*.o
+*.dyn_hi
+*.dyn_o
+evidence/verify-a/scripts/caprace
+evidence/sync-lag/synclag
