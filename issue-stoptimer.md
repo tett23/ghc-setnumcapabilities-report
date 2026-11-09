@@ -1,8 +1,8 @@
 <!--
-Draft for a second GHC issue (file after the capability-leak issue; replace
-#28109 with that issue's number). Same template as issue.md. Everything
-below was measured on GHC 9.10.3 (macOS, 10 cores) except where it says
-"read in the source". Evidence: evidence/sync-lag/.
+Second GHC issue, filed after #28109 (the capability leak). Same template as
+issue.md. Everything below was measured on GHC 9.10.3 (macOS, 10 cores)
+except where it says "read in the source". Evidence: evidence/sync-lag/.
+Paste from "Title:" down; the title goes in the title field.
 -->
 
 Title: `setNumCapabilities` can stall for seconds or longer because it keeps the timer stopped while running the I/O-manager notification (fixed on master by 341ed474; backport?)
