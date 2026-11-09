@@ -37,10 +37,10 @@ commits_Schedule_c.json. Script: searches paged with per_page=100 and X-Next-Pag
   setNumCapabilities are f08a72eb / 71f050b7 (MAX_N_CAPS assert and max_n_capabilities, Dec 2024)
   and 341ed474 (remove stopTimer, Jun 2026). None moves the snapshot after stopAllCapabilities;
   master 7dedcf135e still has the pattern (Schedule.c:2281/2283/2300/2376).
-- Not checked: the comment threads of #22989 and #18808. The notes endpoint returns 401 without
-  a token, and the web UI (Anubis) refused the in-app browser. tett23 can read them when logged in;
-  if a comment there already names the stale old_n_capabilities, link it from the new issue
-  instead of opening a duplicate.
+- Comment threads of #22989 and #18808: not readable from this session (the notes endpoint
+  returns 401 without a token, and the web UI (Anubis) refused the in-app browser). tett23 read
+  them while logged in on 2026-11-10: nothing of substance for this report, no mention of the
+  stale old_n_capabilities. No change to the issue text.
 - Conclusion unchanged: no existing ticket or MR describes the leak; file a new issue and
   cross-reference #18808 and #22989 as "possibly the same test, different symptom".
 

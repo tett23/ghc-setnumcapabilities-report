@@ -416,3 +416,10 @@ investigation log, fix). Added `issue.ja.md` and `issue-stoptimer.ja.md`,
 Japanese translations for the author's review; code blocks, commands and
 quoted log lines are kept verbatim. The English texts remain the ones to
 post.
+
+## 2026-11-10 Comment threads of #22989 and #18808
+
+tett23 read both threads while logged in: nothing relevant to the leak, so
+the "possibly related tickets" paragraph in `issue.md` stays as it is. The
+last unchecked item before posting is closed; what remains is tett23
+running the reproducers once and posting.
