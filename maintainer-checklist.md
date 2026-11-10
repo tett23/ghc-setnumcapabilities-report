@@ -13,6 +13,8 @@ GHC rules read on 2026-10-17 (URLs in notes-sources.md).
    with the `get-verified` template ("I want to fix issue #NNNNN in ghc/ghc";
    tick the box about GHC-related projects only). Filing an issue itself may
    already be possible before verification; try it first.
+   Status 2026-11-10: issues #28109 and #28110 filed; verification request
+   pending, so the fork and the MR wait.
 
 ## Posting the issue (do this first)
 3. Re-read issue.md (all [FILL]/[VERIFY] markers were resolved on 2026-10-17

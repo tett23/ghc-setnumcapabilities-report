@@ -477,3 +477,12 @@ and `mr/MR_DESCRIPTION.md`.
 - Wrote `mr/HOWTO-submit.md` (commit, push to fork, open MR, fill the MR
   number and amend, after CI); linked from README and the checklist.
 - MR description now also mentions the re-run on 19ff36f2ae.
+
+## 2026-11-10 Waiting for account verification
+
+tett23's gitlab.haskell.org account is not yet verified, so no fork and no
+MR for now. The MR branch stays staged and uncommitted in the checkout
+(`wip/T28109-setNumCapabilities-race` on 19ff36f2ae); `mr/HOWTO-submit.md`
+has the steps. Before pushing later, fetch origin/master again and re-check
+that the patch and the `all.T` entry still apply (the branch can be
+rebased or recreated the same way).
