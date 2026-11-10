@@ -42,7 +42,9 @@ GHC rules read on 2026-10-17 (URLs in notes-sources.md).
    2026-11-10 (files, all.T, the C file's message, the Haskell comment) and
    re-run through the driver; see RESULTS.md and
    evidence/rts-fix-check/hadrian-test-T28109.log.
-8. Push a branch to your fork (or to ghc/ghc if you get push rights), open an
+8. Prepared 2026-11-10: branch `wip/T28109-setNumCapabilities-race` in the
+   checkout, on origin/master 19ff36f2ae, with everything staged; the exact
+   commands are in `mr/HOWTO-submit.md`. Original note: Push a branch to your fork (or to ghc/ghc if you get push rights), open an
    MR against `master`, replace the template text with your own description
    (see mr-outline.md §5), reference `#28109`, add `changelog.d/28109`, and
    mark `Draft:` until CI passes. One squashed commit; `Assisted-By: <tool>`

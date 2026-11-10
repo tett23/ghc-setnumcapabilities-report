@@ -451,3 +451,29 @@ yet). Replaced the remaining issue placeholder in the README table and
 texts and translations and in `maintainer-checklist.md`. The only
 placeholder left is `!MMMMM`, the MR number, in `mr/changelog.d/28109`
 and `mr/MR_DESCRIPTION.md`.
+
+## 2026-11-10 MR preparation on current master
+
+- Fetched origin/master (19ff36f2ae, 16 commits ahead of the checkout).
+  `rts/Schedule.c` untouched upstream; `patch --dry-run` of
+  `mr/rts-Schedule.c.patch` against it is clean. Stashed the working tree,
+  fast-forwarded, popped: one conflict in `testsuite/tests/rts/all.T`
+  (upstream appended `T26169`/`T27376` where our entry was); resolved by
+  placing `T28109` after them. `all.T` parses as Python.
+- Created branch `wip/T28109-setNumCapabilities-race`, copied
+  `changelog.d/28109`, staged all five files; `git diff --cached --check`
+  clean. No commit: that is tett23's (identity, responsibility).
+- The nix store path of `happy` had been garbage-collected again; pinned it
+  with a GC root (`nix build -o <scratch>/happy-root`). Same path as before.
+- Rebuild: first attempt failed at `rts/prim/int64x2minmax.c` after 18 min
+  with only "ExitFailure 1" captured (my `tail -3` discarded the message);
+  a second attempt with a filtered log was cut short by `head`; the third,
+  with the full log to a file, completed in 21m43s with no errors. Cause of
+  the first failure unknown; recorded as such.
+- `T28109` passes through the driver in threaded1 and threaded2 on the
+  rebuilt master. `changelog-d --validate` fails on `!MMMMM` as expected and
+  passes with a stand-in number; `mrs` is a required field and CI checks
+  `--expect-mr <MR>`, so the number is filled in after the MR exists.
+- Wrote `mr/HOWTO-submit.md` (commit, push to fork, open MR, fill the MR
+  number and amend, after CI); linked from README and the checklist.
+- MR description now also mentions the re-run on 19ff36f2ae.

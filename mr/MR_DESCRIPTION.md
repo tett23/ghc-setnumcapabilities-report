@@ -29,7 +29,8 @@ Verified on a hadrian build of master (20334e1d1f, `--flavour=quick`,
 macOS aarch64, 10 cores): through the testsuite driver the test fails
 unpatched in both threaded1 and threaded2 (exit code 1 from the watchdog)
 and passes patched in both ways; the patched stage1-built binaries pass
-60 / 60 runs per way, slowest 0.45 s. Earlier, with the patched
+60 / 60 runs per way, slowest 0.45 s. Re-run on master 19ff36f2ae with the
+final file names: passes in both ways. Earlier, with the patched
 `Schedule.c` swapped into the GHC 9.10.3 RTS archives, the unfixed RTS
 failed 19 / 20 runs on the same machine and 37 / 40 in a 2-CPU Linux
 container, while the fixed RTS passed 120 / 120 on each.

@@ -1,6 +1,6 @@
 <!--
 Optional comment for UnkindPartition/tasty#485 (the revert of #457), to be
-posted only after the GHC issue exists; replace #28109. Recommendation in
+posted only if tett23 wants to; the GHC issues are #28109 and #28110. Recommendation in
 notes-sources.md: no separate tasty issue is needed, because tasty 1.5.5
 already removed the call; this is information for the maintainers only.
 -->

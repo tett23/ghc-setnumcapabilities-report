@@ -195,3 +195,25 @@ nixpkgs#haskellPackages.happy` re-realised the same path
 (`mksl3a07…-happy-2.1.7`), so `hadrian/cfg/system.config` did not need to
 change. The unpatched failure was not re-run after the rename (the rename
 touches only names and messages; see the 2026-11-07 section).
+
+## MR branch on master 19ff36f2ae (2026-11-10, macOS)
+
+Checkout fast-forwarded from 20334e1d1f to origin/master 19ff36f2ae (16
+commits; `rts/Schedule.c` unchanged upstream, `all.T` gained `T26169` and
+`T27376` at the end, so the `T28109` entry was moved after them). Branch
+`wip/T28109-setNumCapabilities-race`, everything staged, not committed.
+Full rebuild 21m43s (`--flavour=quick`). The first rebuild attempt stopped
+with `ExitFailure 1` at `rts/prim/int64x2minmax.c` after 17m51s; the log
+kept only the last three lines, so the cause is unknown, and an identical
+second run built everything. Through the driver
+(`hadrian-test-T28109-master-19ff36f2ae.log`):
+
+| way | result |
+|---|---|
+| threaded1 | 1 expected pass, 0 unexpected |
+| threaded2 | 1 expected pass, 0 unexpected |
+
+`changelog-d changelog.d/ --validate` rejects `mrs: !MMMMM` ("expecting
+integral"); with a stand-in `!1` the entry validates and
+`--expect-mr 1` passes. The real MR number must be filled in after the MR
+is opened (`mr/HOWTO-submit.md` step 4).

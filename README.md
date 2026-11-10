@@ -42,7 +42,8 @@ Loop drivers that classify each run as ok / idle hang / busy timeout are in
 │   ├── testsuite/tests/rts/  T28109.hs, T28109_c.c (native watchdog), all.T fragment
 │   ├── changelog.d/28109
 │   ├── COMMIT_MESSAGE.txt
-│   └── MR_DESCRIPTION.md
+│   ├── MR_DESCRIPTION.md
+│   └── HOWTO-submit.md       the author's steps to commit, push and open the MR
 ├── evidence/
 │   ├── verify-a/             minimal reproducer CapRace.hs; hang counts on a 10-core Mac
 │   │                         and a 2-CPU Linux container; gdb/lldb dumps; -Ds traces
